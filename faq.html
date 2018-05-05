@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/modernizr.js"></script>
+    <meta name="viewport" content="width=device-width">
+
+	<!--
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-105303874-1', 'auto');
+	  ga('send', 'pageview');
+    </script>-->
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: url(assets/img/2L_texture_blank.jpg);">
+
+<nav>
+	<ul class="left_bar">
+		<a href="index.html"> <img src="assets/img/splash.jpg"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="faq.html"> <li> FAQ </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a target="_blank" href="challenge.html" > <li style="color: #e94f70; font-size: 0.94vw;"> challenge <img src="assets/img/goto.png"> </li></a>
+		<a href="about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+</nav>
+
+<div id="faq">
+
+	<p class="question"> #&nbsp; Are Neural Networks really running on the phone in AI-Benchmark?&nbsp; Or is it just a simulation?</p>
+	<p class="answer"> Yes, exactly the same networks that produced visual results are running on the phone.</p>
+
+	<p class="question"> #&nbsp; I am getting an error <span style="margin-left: 0.4vw; margin-right: 0.4vw; color: rgba(23,142,210, 0.9); font-size: 0.94vw;">"TEST FAILED... No enough RAM to run the net."</span> What does this mean?</p>
+	<p class="answer"> This means that your phone <span style="border-bottom: 0.02vw dotted;">doesn't have enough free RAM</span> to run a neural network. Try closing all applications running in the background or rebooting the phone. Note that this is a normal behaviour for devices with less than 2GB of RAM: in general, they are not able to run all test from this benchmark. For more information please refer to our <a href="ranking.html" style="text-decoration: none; color: rgba(234,29,111, 0.87); border-bottom: 0.02vw dotted;">ranking table.</a></p>
+	
+	<p class="question"> #&nbsp; The benchmark <span style="margin-left: 0.2vw; margin-right: 0.2vw; color: rgba(23,142,210, 0.7)">finished with an error</span> after the last test.&nbsp; What was wrong?</p>
+	<p class="answer">This is a normal behaviour: in the last test the benchmark is testing how much memory can be allocated to a neural network and thus pushing the phone to its limits. When these limits are reached, the application can be terminated unexpectedly by an operating system. Note that all results (including the last test) are already stored inside the app, so just restart it again to view the final score.</p>
+	
+	<p class="question"> #&nbsp; What <span style="margin-left: 0.2vw; margin-right: 0.2vw; color: rgba(23,142,210, 0.7)">ML library</span> are you using for training and running Neural Networks?</p>
+	<p class="answer"> Currently, <a href="https://www.tensorflow.org/" target="_blank" style="text-decoration: none; color: rgba(234,29,111, 0.87); border-bottom: 0.02vw dotted;">Tensorflow</a> is used as a back-end in AI Benchmark. This library was chosen due to its tight integration with Android platform and popularity among research and development ML teams.</p>
+
+	<p class="question"> #&nbsp; I have trained <span style="margin-left: 0.2vw; margin-right: 0.2vw; color: rgba(23,142,210, 0.7)">an awesome network for an awesome task</span>!&nbsp; Can you include it into AI Benchmark?</p>
+	<p class="answer"> Send us a link to your <span style="border-bottom: 0.02vw dotted;">paper/technical report and code with pretrained models</span>, and we may consider including it into a new benchmark release. Also, have a look at our <a href="challenge.html" style="text-decoration: none; color: rgba(234,29,111, 0.87); border-bottom: 0.02vw dotted;">current competition.</a></p>
+
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
