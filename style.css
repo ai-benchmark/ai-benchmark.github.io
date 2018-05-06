@@ -76,6 +76,8 @@ nav {
     top: 0;
     font-size: 1.07vw;
     z-index: 990;
+    height: 4.26vw;
+    line-height: 1.07vw;
 }
 
 nav li {
@@ -113,7 +115,6 @@ nav .right_bar {
 	position: fixed;
 	right: 0%;
 	text-align: center;
-	/*background-color: black;*/
 	z-index: 999;
 }
 
@@ -131,8 +132,9 @@ nav .right_bar_samples {
 	z-index: 999;
 }
 
-nav img {
-	width: 13.62vw;
+nav .left_bar img {
+	height: 4.26vw;
+	padding: 0vw;
 }
 
 nav .left_bar_samples img {
