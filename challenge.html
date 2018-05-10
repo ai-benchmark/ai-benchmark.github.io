@@ -46,7 +46,7 @@
 	
 	<p style="text-align: left; margin-left: 5.34vw; padding-top: 0.62vw; font-size: 3.5vw; opacity: 0;">AI Goes Mobile</p> 
 	<p style="text-align: right; margin-right: 8vw; font-size: 2.0vw; color: #178ed2; margin-top: 4.4vw;">&lt; Perceptual Image Enhancement on Smartphones &gt;</p>
-	<p style="font-size: 1.02vw; float: left; margin-left: 47.2vw; color: #2d6a95; margin-top: 2.5vw;"> In conjunction with&nbsp; <span style="color: #ea1d6f;">ECCV 2018</span> <span style="margin-left: 0.7vw; margin-right: 0.7vw;">&mdash;</span> PIRM 2018 <span style="margin-left: 0.7vw; margin-right: 0.7vw;">&mdash;</span>
+	<p style="font-size: 1.02vw; float: left; margin-left: 47.2vw; color: #2d6a95; margin-top: 2.5vw;"> In conjunction with&nbsp; <a style="color: #ea1d6f; text-decoration: none;" href="https://eccv2018.org">ECCV 2018</a> <span style="margin-left: 0.7vw; margin-right: 0.7vw;">&mdash;</span> <a href="https://www.pirm2018.org" style="text-decoration: none; color: #2d6a95;">PIRM 2018</a> <span style="margin-left: 0.7vw; margin-right: 0.7vw;">&mdash;</span>
 	September 14,&nbsp; <span style="color: #ea1d6f;">Munich, Germany</span></p>
 	<div class="description"> 
 		
@@ -81,11 +81,11 @@
 		</tr>
 		<tr>
 			<td style="color: #ea1d6f;">25<sup>th</sup> July:</td>
-			<td style="text-align: left; padding-left: 4vw; font-weight: bold;">Final results submission deadline</td>
+			<td style="text-align: left; padding-left: 4vw; font-weight: bold;">Final models submission deadline</td>
 		</tr>
 		<tr>
-			<td style="color: #ea1d6f;">29<sup>th</sup> July:</td>
-			<td style="text-align: left; padding-left: 4vw;">Poster submission deadline</td>
+			<td style="color: #ea1d6f;">27<sup>th</sup> July:</td>
+			<td style="text-align: left; padding-left: 4vw;">Factsheets submission deadline</td>
 		</tr>
 		<tr>
 			<td style="color: #ea1d6f;">1<sup>st</sup> August:</td>
@@ -160,7 +160,7 @@
 		</tr>
 	</table>
 
-	<p style="margin-top: 6.2vw; font-size: 0.99vw;"> Don't know how to start &nbsp; &rarr; &nbsp; start with <a style="color: #ea1d6f; text-decoration-style: dotted;"href="http://github.com/aiff22/dped" target="_blank">this code</a> that already satisfies all requirements but is quite slow, and try to optimize it!</p>
+	<p style="margin-top: 6.2vw; font-size: 0.99vw;"> Don't know how to start &nbsp; &rarr; &nbsp; start with <a style="color: #ea1d6f; text-decoration-style: dotted;"href="https://github.com/tensorlayer/srgan" target="_blank">this</a> or <a style="color: #ea1d6f; text-decoration-style: dotted;"href="http://github.com/aiff22/dped" target="_blank">this code</a> that already satisfies all requirements but is quite slow, and try to optimize it!</p>
 	<p style="margin-top: 1.2vw; font-size: 0.8vw;">Hint: you can try to play with a number of layers, number and size of filters, or just simply try out other CNN architectures...   </p>
 </div>
 
@@ -200,11 +200,11 @@
 
 	<p style="margin-top: 2.8vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">Rephrasing the above requirements: your solution should be based on Tensorflow Machine Learning framework, and after saving your pre-trained model should not exceed 100<span style="margin-left: 0.2vw;">MB</span>. Yours solution should be capable of processing images of arbitrary size, and for our target images of resolution 1280x720<span style="margin-left: 0.2vw;">px</span> it should require no more than 3.5<span style="margin-left: 0.2vw;">GB</span> of RAM. <span style="color: #ea1d6f;">Note that both SRCNN, DPED and SRGAN networks already satisfy all these requirements!</span></p>
 	
-	<p style="margin-top: 1.8vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">During the validation period, the performance of your solution will be assessed based on two metrics: its speed compared to a baseline SRCNN network and its PSNR accuracy compared to SRGAN or DPED networks:</span></p>
+	<p style="margin-top: 1.8vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">The performance of your solution will be assessed based on three metrics: its speed compared to a baseline network, its fidelity score measured by PSNR, and its perceptual score computed based on MS-SSIM metric. Since PSNR and SSIM scores do not always objectively reflect image quality, during the test phase we will conduct a user study where your final submissions will be evaluated by a large number of people, and the resulting <a href="https://en.wikipedia.org/wiki/Mean_opinion_score" target="_blank" style="color: #ea1d6f; text-decoration-style: dotted;">MOS Scores</a> will replace MS-SSIM results. The total score of your solution will be calculated as a weighted average of the previous scores:</span></p>
 	
-	<img style="width: 34vw; margin-top: 2.6vw;" src="assets/img/score.png">
+	<img style="width: 48vw; margin-top: 2.6vw;" src="assets/img/score.png">
 	
-	<p style="margin-top: 2.6vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">Since PSNR/SSIM scores do not always objectively reflect image quality, during the test phase we will conduct a user study where all your final submissions will be evaluated by a large number of randomly selected people, and the resulting <a href="https://en.wikipedia.org/wiki/Mean_opinion_score" target="_blank" style="color: #ea1d6f; text-decoration-style: dotted;">MOS Scores</a> will replace PSNR scores in the above formula.</p>
+	<p style="margin-top: 2.6vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">We will use three different validation tracks for evaluating your results. The first one is giving preference to the fastest solutions that exceed the baseline PSNR score, the second one is aimed at the solutions providing the best visual results, and the third one is targeted at the best balance between the speed and accuracy. For each track, we will use the above score formula but with different coefficients. The coefficients along with the baseline scores will be released at the beginning of the validation phase.</p>
 
 </div>
 
