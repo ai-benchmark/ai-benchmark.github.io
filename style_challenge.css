@@ -221,6 +221,33 @@ nav .left_bar img {
 	margin-top: 2.8vw;
 }
 
+#submission {
+	margin-top: 7vw;
+	text-align: center;
+	width: 60%;
+	margin-left: 20%;
+	font-size: 1.06vw;
+}
+
+#submission .title {
+	text-align: center;
+	font-size: 2.2vw;
+	color: #178ed2;
+}
+
+#submission table {
+	align: center;
+	width: 40vw;
+	font-size: 1.02vw;
+	margin-top: 1.8vw;
+	margin-left: 13vw;
+	text-align: left;
+}
+
+#submission table td {
+	line-height: 1.6vw;
+}
+
 #contacts {
 	margin-top: 7vw;
 	text-align: center;

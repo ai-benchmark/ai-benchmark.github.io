@@ -69,11 +69,11 @@
 		</tr>
 		<tr>
 			<td style="color: #ea1d6f;">9<sup>th</sup> May:</td>
-			<td style="text-align: left; padding-left: 2.8vw;"> <span style="color: #ea1d6f; margin-right: 0.4vw;">&gt;</span> Training and validation data released</td>
+			<td style="text-align: left; padding-left: 4vw;"> Training and validation data released</td>
 		</tr>
 		<tr>
 			<td style="color: #ea1d6f;">17<sup>th</sup> May:</td>
-			<td style="text-align: left; padding-left: 4vw;">Validation phase starts</td>
+			<td style="text-align: left; padding-left: 2.8vw;"> <span style="color: #ea1d6f; margin-right: 0.4vw;">&gt;</span> Validation phase starts</td>
 		</tr>
 		<tr>
 			<td style="color: #ea1d6f;">18<sup>th</sup> July:</td>
@@ -196,9 +196,9 @@
 		</tr>
 	</table>
 	
-	<p style="margin-top: 2.8vw; font-size: 1.0vw;">A code describing how to convert your Tensorflow model into an appropriate .pb file will be available soon.</p>
+	<p style="margin-top: 2.8vw; font-size: 1.0vw;">A code for converting and testing your Tensorflow model is available in our <a href="https://github.com/aiff22/ai-challenge" target="_blank" style="color: #ea1d6f; text-decoration-style: dotted;">github repository</a></p>
 
-	<p style="margin-top: 2.8vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">Rephrasing the above requirements: your solution should be based on Tensorflow Machine Learning framework, and after saving your pre-trained model should not exceed 100<span style="margin-left: 0.2vw;">MB</span>. Yours solution should be capable of processing images of arbitrary size, and for our target images of resolution 1280x720<span style="margin-left: 0.2vw;">px</span> it should require no more than 3.5<span style="margin-left: 0.2vw;">GB</span> of RAM. <span style="color: #ea1d6f;">Note that both SRCNN, DPED and SRGAN networks already satisfy all these requirements!</span></p>
+	<p style="margin-top: 2.8vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">Rephrasing the above requirements: your solution should be based on Tensorflow Machine Learning framework, and after saving your pre-trained model should not exceed 100<span style="margin-left: 0.2vw;">MB</span>. Your solution should be capable of processing images of arbitrary size, and for our target images of resolution 1280x720<span style="margin-left: 0.2vw;">px</span> it should require no more than 3.5<span style="margin-left: 0.2vw;">GB</span> of RAM. <span style="color: #ea1d6f;">Note that both SRCNN, DPED and SRGAN networks already satisfy all these requirements!</span></p>
 	
 	<p style="margin-top: 1.8vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">The performance of your solution will be assessed based on three metrics: its speed compared to a baseline network, its fidelity score measured by PSNR, and its perceptual score computed based on MS-SSIM metric. Since PSNR and SSIM scores do not always objectively reflect image quality, during the test phase we will conduct a user study where your final submissions will be evaluated by a large number of people, and the resulting <a href="https://en.wikipedia.org/wiki/Mean_opinion_score" target="_blank" style="color: #ea1d6f; text-decoration-style: dotted;">MOS Scores</a> will replace MS-SSIM results. The total score of your solution will be calculated as a weighted average of the previous scores:</span></p>
 	
@@ -206,6 +206,47 @@
 	
 	<p style="margin-top: 2.6vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">We will use three different validation tracks for evaluating your results. The first one is giving preference to the fastest solutions that exceed the baseline PSNR score, the second one is aimed at the solutions providing the best visual results, and the third one is targeted at the best balance between the speed and accuracy. For each track, we will use the above score formula but with different coefficients. The coefficients along with the baseline scores will be released at the beginning of the validation phase.</p>
 
+</div>
+
+<div id="submission">
+	<p class="title">SUBMISSION</p>
+	<p style="margin-top: 2.6vw;">To register your team, send an email to <a style="color: #ea1d6f; text-decoration: none;" href="mailto:example@email.com">ai.mobile.challenge@gmail.com<a> with the following information:</p>
+	<table>
+		<tr>
+			<th style="width: 25%; max-width: 50vw; color: #178ed2;">Email Subject:</th>
+			<th style="width: 75%; max-width: 50vw;">AI Mobile Challenge Registration</th>
+		</tr>
+		<tr>
+			<td style="color: #178ed2; padding-top: 0.6vw;">Email Text:</td>
+			<td>Team Name</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Team Member 1 (Name, Surname, Affiliation)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Team Member 2 (Name, Surname, Affiliation)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>....</td>
+		</tr>
+	</table>
+	
+	<p style="margin-top: 1.6vw;">To validate your model, send an email indicating the track, team id and the corresponding <span style="color: #ea1d6f;">model.pb</span> file:</p>
+	<table>
+		<tr>
+			<th style="width: 25%; max-width: 50vw; color: #178ed2;">Email Subject:</th>
+			<th style="width: 75%; max-width: 50vw;"><span style="color: #ea1d6f;">[Track X]</span> [Team ID] [Team Name] Submission</th>
+		</tr>
+		<tr>
+			<td style="color: #178ed2; padding-top: 0.6vw;">Email Text:</td>
+			<td>Link to <span style="color: #ea1d6f;">model.pb</span> file</td>
+		</tr>
+	</table>
+	
+	<p style="margin-top: 2.6vw; text-align: justify; margin-left: 4.2vw; margin-right: 4.2vw; line-height: 1.3vw;">You are allowed to send up to <span style="color: #178ed2;">2 submissions per day</span> for each track. The leaderboard will show the results of your last successful submission. Please make sure that the results provided by our <a href="https://github.com/aiff22/ai-challenge" target="_blank" style="color: #ea1d6f; text-decoration-style: dotted;">validation scripts</a> are meaningful before sending your submission files.</p>
 </div>
 
 <div id="contacts">
