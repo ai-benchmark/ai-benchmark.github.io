@@ -277,7 +277,8 @@ nav .left_bar_samples li {
 }
 
 #ranking_short .results-info {
-	width: 40%;
+	width: 22vw;
+	margin-left: -7.6vw;
 	padding-top: 1.3vw;
 	padding-bottom: 1.2vw;
 	margin-top: 3.2vw;
@@ -310,14 +311,25 @@ nav .left_bar_samples li {
 }
 
 #ranking table {
-	width: 87%;
+	width: 77vw;
 	margin-bottom: 4vw;
-	margin-left: 7%;
+	margin-left: 11.5vw;
 	font-size: 0.8vw;
 }
 
+@media screen and (max-width: 1081px) {
+  
+	#ranking table {
+		width: 95vw;
+		margin-bottom: 4vw;
+		margin-left: 2vw;
+		font-size: 0.8vw;
+	}
+  
+}
+
 #ranking table .column_0 { text-align: left; padding-left: 0.7vw; text-decoration: none;}
-#ranking table .column_1 { text-align: left; font-size: 0.76vw; }
+#ranking table .column_1 { text-align: center; font-size: 0.76vw; }
 #ranking table .column_2 { text-align: left; font-size: 0.66vw; }
 #ranking table .column_3 { text-align: center; }
 #ranking table .column_4 { text-align: center; }
@@ -344,6 +356,11 @@ nav .left_bar_samples li {
 	border-radius: 0.2vw;
 }
 
+#ranking .blue {
+	background: rgba(111, 234, 108, 0.12);
+	border-radius: 0.2vw;
+}
+
 #ranking .red {
 	background: rgba(250, 81, 97, 0.04);
 	border-radius: 0.2vw;
@@ -351,6 +368,14 @@ nav .left_bar_samples li {
 
 #ranking th {
 	cursor: pointer;
+}
+
+#footnote {
+	width: 77vw;
+	margin-bottom: 4vw;
+	margin-left: 11.5vw;
+	font-size: 0.8vw;
+	text-align: center;
 }
 
 #tests {
@@ -364,7 +389,7 @@ nav .left_bar_samples li {
 	line-height: 1.6vw;
 	text-align: justify;
 }
-
+ 
 #tests .task {
 	margin-top: 4vw;
 	background: linear-gradient(to right, rgba(168,211,235, 0.4), rgba(234, 29, 11, 0.07));
