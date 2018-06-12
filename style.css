@@ -318,13 +318,13 @@ nav .left_bar_samples li {
 	text-align: center;
 	font-size: 1.0vw;
 	padding-bottom: 0vw;
-	padding-top: 5.2vw;
+	padding-top: 7.2vw;
 	color: #2d6a95;
 }
 
 #abstract .beta-info {
-	padding-top: 0.55vw;
-	padding-bottom: 0.45vw;
+	padding-top: 0.45vw;
+	padding-bottom: 0.48vw;
 	margin-left: 0.2vw;
 	background: transparent;
 	text-align: center;
@@ -606,6 +606,15 @@ nav .left_bar_samples li {
     margin-bottom: 3.64vw;
 }
 
+#ranking .right_bar {
+	margin-left: 15.4vw;
+	font-size: 1.12vw;
+}
+
+#ranking .left_bar {	
+	margin-right: 26.5vw;
+}
+
 #ranking table {
 	width: 77vw;
 	margin-bottom: 4vw;
@@ -617,6 +626,15 @@ nav .left_bar_samples li {
   
 	#ranking {
 		margin-top: 11vw;
+	}
+	
+	#ranking .right_bar {
+		margin-left: 23vw;
+		font-size: 1.12vw;
+	}
+
+	#ranking .left_bar {	
+		margin-right: 35vw;
 	}
   
 	#ranking table {
