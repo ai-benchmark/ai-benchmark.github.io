@@ -483,6 +483,7 @@ nav .left_bar_samples li {
 	float:left;
     width: 100%;
     height: 0.1vw;
+    padding: 0.012vw;
     background: linear-gradient(to right, rgba(23,142,210, 0.4), #ea1d6f);
     margin-top: 0.32vw;
     border-radius: 0.1vw;
@@ -560,13 +561,15 @@ nav .left_bar_samples li {
 	}
 
 	#ranking_short .line {
-		float:left;
+		float: left;
 	    width: 100%;
 	    height: 0.157vw;
+	    padding: 0.07vw;
 	    background: linear-gradient(to right, rgba(23,142,210, 0.4), #ea1d6f);
 	    margin-top: 0.5vw;
 	    border-radius: 0.157vw;
 	    margin-bottom: 1.41vw;
+	    overflow: hidden;
 	}
 
 	#ranking_short .beta_icon {
