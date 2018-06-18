@@ -204,7 +204,9 @@
 	
 	<img style="width: 48vw; margin-top: 2.6vw;" src="assets/img/score.png">
 	
-	<p style="margin-top: 2.6vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">We will use three different validation tracks for evaluating your results. The first one is giving preference to the fastest solutions that exceed the baseline PSNR score, the second one is aimed at the solutions providing the best visual results, and the third one is targeted at the best balance between the speed and accuracy. For each track, we will use the above score formula but with different coefficients. The coefficients along with the baseline scores will be released at the beginning of the validation phase.</p>
+	<p style="margin-top: 2.6vw; font-size: 1.0vw; text-align: justify; line-height: 1.4vw;">
+	We will use three different validation tracks for evaluating your results. Score <span style="color: #178ed2;">A</span> is giving preference to solution with the highest fidelity (PSNR) score, score <span style="color: #178ed2;">B</span> is aimed at the solution providing the best visual results (MS-SSIM/MOS scores), and score <span style="color: #178ed2;">C</span> is targeted at the best balance between the speed and perceptual/quantitative performance. For each track, we will use the above score formula but with different coefficients. The coefficients along with the baseline scores are available in the <a href="https://github.com/aiff22/ai-challenge" target="_blank" style="color: #ea1d6f; text-decoration-style: dotted;">github repository</a>.
+	</p>
 
 </div>
 
@@ -247,6 +249,150 @@
 	</table>
 	
 	<p style="margin-top: 2.6vw; text-align: justify; margin-left: 4.2vw; margin-right: 4.2vw; line-height: 1.3vw;">You are allowed to send up to <span style="color: #178ed2;">2 submissions per day</span> for each track. The leaderboard will show the results of your last successful submission. Please make sure that the results provided by our <a href="https://github.com/aiff22/ai-challenge" target="_blank" style="color: #ea1d6f; text-decoration-style: dotted;">validation scripts</a> are meaningful before sending your submission files.</p>
+</div>
+
+<div id="leaderboard">
+	<p class="title">LEADERBOARD</p>
+	
+	<!--------------------------------------------TRACK_A------------------------------------------->
+	
+	<p class="track">Track <span style="color: #178ed2;">A</span><p>
+	<table>
+		<tr>
+			<th style="width: 15%;">Team</th>
+			<th style="width: 15%;">Method</th>
+			<th style="width: 10%;">PSNR</th>
+			<th style="width: 10%;">MS-SSIM</th>
+			<th style="width: 10%;">Speed-up</th>
+			<th style="width: 10%;">RAM</th>
+			<th style="width: 10%;">Score <span style="color: #178ed2;">A</span></th>
+			<th style="width: 10%;">Score <span style="color: #178ed2;">B</span></th>
+			<th style="width: 10%;">Score <span style="color: #178ed2;">C</span></th>
+		</tr>
+		<tr>
+			<td style="padding-top: 0.8vw;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">Bicubic</td>
+			<td class="rborder">26.63</td>
+			<td class="rborder">0.9423</td>
+			<td class="rborder">&infin;</td>
+			<td class="rborder">-</td>
+			<td class="rborder">4.75</td>
+			<td class="rborder">5.05</td>
+			<td>6.72</td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">VGG-19</td>
+			<td class="rborder">27.91</td>
+			<td class="rborder">0.9574</td>
+			<td class="rborder">0.16</td>
+			<td class="rborder">2.7GB</td>
+			<td class="rborder">7.55</td>
+			<td class="rborder">8.54</td>
+			<td>6.55</td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">SRCNN</td>
+			<td class="rborder">27.39</td>
+			<td class="rborder">0.9546</td>
+			<td class="rborder">1</td>
+			<td class="rborder">2.6GB</td>
+			<td class="rborder">6.02</td>
+			<td class="rborder">7.73</td>
+			<td>6.2</td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">SRGAN</td>
+			<td class="rborder">25.68</td>
+			<td class="rborder">0.9384</td>
+			<td class="rborder">0.69</td>
+			<td class="rborder">2.2GB</td>
+			<td class="rborder">-2.74</td>
+			<td class="rborder">-0.76</td>
+			<td>-0.91</td>
+		</tr>
+	</table>
+	
+	<!--------------------------------------------TRACK_B------------------------------------------->
+	
+	<p class="track">Track <span style="color: #178ed2;">B</span><p>
+	<table style="margin-bottom: 9vw;">
+		<tr>
+			<th style="width: 15%;">Team</th>
+			<th style="width: 15%;">Method</th>
+			<th style="width: 10%;">PSNR</th>
+			<th style="width: 10%;">MS-SSIM</th>
+			<th style="width: 10%;">Speed-up</th>
+			<th style="width: 10%;">RAM</th>
+			<th style="width: 10%;">Score <span style="color: #178ed2;">A</span></th>
+			<th style="width: 10%;">Score <span style="color: #178ed2;">B</span></th>
+			<th style="width: 10%;">Score <span style="color: #178ed2;">C</span></th>
+		</tr>
+		<tr>
+			<td style="padding-top: 0.8vw;"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">Resnet-8-32</td>
+			<td class="rborder">22.23</td>
+			<td class="rborder">0.9143</td>
+			<td class="rborder">0.5154</td>
+			<td class="rborder">2.4GB</td>
+			<td class="rborder">7.38</td>
+			<td class="rborder">7.98</td>
+			<td>6.81</td>
+		</tr>
+		<tr>
+			<td class="rborder">MENet</td>
+			<td class="rborder">N/A</td>
+			<td class="rborder">22.26</td>
+			<td class="rborder">0.917</td>
+			<td class="rborder">0.154</td>
+			<td class="rborder">2.8GB</td>
+			<td class="rborder">7.05</td>
+			<td class="rborder">8.37</td>
+			<td>6.37</td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">Resnet-12-64</td>
+			<td class="rborder">21.98</td>
+			<td class="rborder">0.9183</td>
+			<td class="rborder">0.1623</td>
+			<td class="rborder">2.8GB</td>
+			<td class="rborder">6.07</td>
+			<td class="rborder">8.62</td>
+			<td>6.09</td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">SRCNN</td>
+			<td class="rborder">21.08</td>
+			<td class="rborder">0.8992</td>
+			<td class="rborder">1</td>
+			<td class="rborder">2.6GB</td>
+			<td class="rborder">2.24</td>
+			<td class="rborder">1.76</td>
+			<td>2.9</td>
+		</tr>
+		<tr style="opacity: 0.7">
+			<td class="rborder">Baseline</td>
+			<td class="rborder">Output = Input</td>
+			<td class="rborder">17.01</td>
+			<td class="rborder">0.8379</td>
+			<td class="rborder">&infin;</td>
+			<td class="rborder">-</td>
+			<td class="rborder">-14.17</td>
+			<td class="rborder">-20.83</td>
+			<td>-8.8</td>
+		</tr>
+	</table>
+	
 </div>
 
 <div id="contacts">

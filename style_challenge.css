@@ -248,6 +248,41 @@ nav .left_bar img {
 	line-height: 1.6vw;
 }
 
+#leaderboard {
+	margin-top: 7vw;
+	text-align: center;
+	width: 60%;
+	margin-left: 20%;
+	font-size: 1.06vw;
+}
+
+#leaderboard .title {
+	text-align: center;
+	font-size: 2.2vw;
+	color: #178ed2;
+}
+
+#leaderboard .track {
+	text-align: center;
+	font-size: 1.7vw;
+	color: #ea1d6f;
+	margin-top: 4.8vw;
+}
+
+#leaderboard table {
+	margin-top: 2.2vw;
+	width: 100%;
+	font-size: 1.02vw;
+}
+
+#leaderboard table td{
+	padding-top: 0.2vw;
+}
+
+#leaderboard .rborder {
+	border-right: solid 1px #f00;
+}
+
 #contacts {
 	margin-top: 7vw;
 	text-align: center;
