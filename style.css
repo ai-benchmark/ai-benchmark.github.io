@@ -415,7 +415,7 @@ nav .left_bar_samples li {
 
 #ranking_short {
 	position: relative;
-	margin-top: 7.4vw;
+	margin-top: 9.4vw;
 	width: 60%;
 	left: 50%;
 	margin-left: -30%;
@@ -883,7 +883,15 @@ nav .left_bar_samples li {
 	float: right;
 }
 
+#tests .mode {
+	font-size: 0.94vw;
+}
+
 @media screen and (max-width: 1081px) {
+
+	#tests .mode {
+		font-size: 1.47vw;
+	}
 
 	#tests {
 		position: relative;
