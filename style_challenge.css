@@ -38,6 +38,12 @@ body {
     background: rgba(0,0,0,0);
     background-size: 100% auto;
 }
+
+sup2 {
+	font-size: 0.7vw;
+	color: red;
+	vertical-align: super;
+}
 }
 p {
     line-height: 150%;
@@ -251,8 +257,8 @@ nav .left_bar img {
 #leaderboard {
 	margin-top: 7vw;
 	text-align: center;
-	width: 60%;
-	margin-left: 20%;
+	width: 84%;
+	margin-left: 8%;
 	font-size: 1.06vw;
 }
 
@@ -277,6 +283,11 @@ nav .left_bar img {
 
 #leaderboard table td{
 	padding-top: 0.2vw;
+}
+
+#leaderboard .green{
+	background: rgba(111, 234, 108, 0.12);
+	border-radius: 0.2vw;
 }
 
 #leaderboard .rborder {
