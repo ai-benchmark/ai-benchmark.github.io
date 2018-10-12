@@ -617,7 +617,8 @@ nav .left_bar_samples li {
 }
 
 #ranking .left_bar {	
-	margin-right: 26.5vw;
+	margin-right: 15.4vw;
+	font-size: 1.12vw;
 }
 
 #ranking table {
@@ -637,9 +638,10 @@ nav .left_bar_samples li {
 		margin-left: 23vw;
 		font-size: 1.12vw;
 	}
-
-	#ranking .left_bar {	
-		margin-right: 35vw;
+	
+	#ranking .left_bar {
+		margin-right: 23vw;
+		font-size: 1.12vw;
 	}
   
 	#ranking table {
