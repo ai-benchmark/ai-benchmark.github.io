@@ -424,7 +424,6 @@ nav .left_bar_samples li {
 	width: 60%;
 	left: 50%;
 	margin-left: -30%;
-	text-align: center;
 }
 
 #ranking_short .title {
@@ -432,6 +431,7 @@ nav .left_bar_samples li {
     font-size: 2.6vw;
     color: #ea1d6f;
     margin-bottom: 5.4vw;
+    text-align: center;
 }
 
 #ranking_short .item {
@@ -466,6 +466,7 @@ nav .left_bar_samples li {
     font-size: 0.9vw;
     color: #2d6a95;
     opacity: 0.94;
+    text-align: center;
 }
 
 #ranking_short .score {
@@ -496,8 +497,9 @@ nav .left_bar_samples li {
 }
 
 #ranking_short .results-info {
-	width: 22vw;
-	margin-left: -7.6vw;
+	padding-right: 8vw;
+	padding-left: 8vw;
+	margin-left: -8vw;
 	padding-top: 1.3vw;
 	padding-bottom: 1.2vw;
 	margin-top: 4.8vw;
@@ -505,7 +507,6 @@ nav .left_bar_samples li {
 	background-image: url(assets/img/button.png);
 	background-size: 100% auto;
 	background-position: center center;
-	text-align: center;
 	font-size: 1.0vw;
 	border-radius: 0.4vw;
 	border-color: #178ed2;
@@ -584,8 +585,9 @@ nav .left_bar_samples li {
 	}
 
 	#ranking_short .results-info {
-		width: 34.5vw;
-		margin-left: -11.2vw;
+		padding-right: 12vw;
+		padding-left: 12vw;
+		margin-left: -12vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
@@ -617,14 +619,14 @@ nav .left_bar_samples li {
 }
 
 #ranking .left_bar {	
-	margin-right: 15.4vw;
+	margin-right: 19.4vw;
 	font-size: 1.12vw;
 }
 
 #ranking table {
-	width: 78vw;
+	width: 84vw;
 	margin-bottom: 4vw;
-	margin-left: 11vw;
+	margin-left: 8.2vw;
 	font-size: 0.8vw;
 }
 
@@ -694,6 +696,11 @@ nav .left_bar_samples li {
 
 #ranking .blue {
 	background: rgba(0, 204, 255, 0.08);
+	border-radius: 0.2vw;
+}
+
+#ranking .purple {
+	background: rgba(255, 102, 255, 0.22);
 	border-radius: 0.2vw;
 }
 
