@@ -497,9 +497,10 @@ nav .left_bar_samples li {
 }
 
 #ranking_short .results-info {
+	text-align: center;
+	margin-left: 2.2vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
-	margin-left: -8vw;
 	padding-top: 1.3vw;
 	padding-bottom: 1.2vw;
 	margin-top: 4.8vw;
@@ -587,7 +588,7 @@ nav .left_bar_samples li {
 	#ranking_short .results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: -12vw;
+		margin-left: 1.4vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
@@ -691,6 +692,11 @@ nav .left_bar_samples li {
 
 #ranking .yellow {
 	background: rgba(255, 214, 102, 0.18);
+	border-radius: 0.2vw;
+}
+
+#ranking .orange {
+	background: rgba(255, 165, 0, 0.18);
 	border-radius: 0.2vw;
 }
 
