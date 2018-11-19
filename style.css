@@ -662,6 +662,7 @@ nav .left_bar_samples li {
 #ranking table .column_3 { text-align: center; }
 #ranking table .column_4 { text-align: center; }
 #ranking table .column_5 { text-align: center; }
+#ranking table .column_5_proto { text-align: center; background: rgba(255, 0, 102, 0.02);}
 #ranking table .column_6 { text-align: center; }
 
 #ranking table .highlight {
