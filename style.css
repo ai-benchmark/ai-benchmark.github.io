@@ -624,6 +624,26 @@ nav .left_bar_samples li {
 	font-size: 1.12vw;
 }
 
+#ranking .results-proto {
+	width: 83.6vw;
+	float: left;
+	margin-left: 8.335vw;
+	padding-top: 0.7vw;
+	padding-bottom: 0.6vw;
+	margin-top: -1.2vw;
+	margin-bottom: 0.4vw;
+	background-color: Transparent;
+    background-repeat: no-repeat;
+	font-size: 0.9vw;
+	border-radius: 0.4vw;
+	border-color: rgba(245, 187, 164, 0.4);
+	border-style: solid;
+	border-width: 0.08vw;
+	opacity: 0.84;
+	color: rgba(255, 167, 94, 1.0);
+	cursor: pointer;
+}
+
 #ranking table {
 	width: 84vw;
 	margin-bottom: 4vw;
@@ -646,6 +666,14 @@ nav .left_bar_samples li {
 		margin-right: 23vw;
 		font-size: 1.12vw;
 	}
+  
+  	#ranking .results-proto {
+		width: 94.4vw;
+		font-size: 0.94vw;
+		padding-top: 1.1vw;
+		padding-bottom: 1.0vw;
+		margin-left: 2.24vw;  	
+  	}
   
 	#ranking table {
 		width: 95vw;
