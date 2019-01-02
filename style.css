@@ -498,7 +498,7 @@ nav .left_bar_samples li {
 
 #ranking_short .results-info {
 	text-align: center;
-	margin-left: 1.2vw;
+	margin-left: 3.7vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
 	padding-top: 1.3vw;
@@ -588,7 +588,7 @@ nav .left_bar_samples li {
 	#ranking_short .results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: 0.8vw;
+		margin-left: 2.9vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
@@ -615,19 +615,19 @@ nav .left_bar_samples li {
 }
 
 #ranking .right_bar {
-	margin-left: 15.4vw;
+	margin-left: 15.8vw;
 	font-size: 1.12vw;
 }
 
 #ranking .left_bar {	
-	margin-right: 19.4vw;
+	margin-right: 20.5vw;
 	font-size: 1.12vw;
 }
 
 #ranking .results-proto {
-	width: 83.6vw;
+	width: 87.6vw;
 	float: left;
-	margin-left: 8.335vw;
+	margin-left: 6.335vw;
 	padding-top: 0.7vw;
 	padding-bottom: 0.6vw;
 	margin-top: -1.2vw;
@@ -645,9 +645,9 @@ nav .left_bar_samples li {
 }
 
 #ranking table {
-	width: 84vw;
+	width: 88vw;
 	margin-bottom: 4vw;
-	margin-left: 8.2vw;
+	margin-left: 6.2vw;
 	font-size: 0.8vw;
 }
 
