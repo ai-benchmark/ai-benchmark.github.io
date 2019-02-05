@@ -498,7 +498,7 @@ nav .left_bar_samples li {
 
 #ranking_short .results-info {
 	text-align: center;
-	margin-left: 3.7vw;
+	margin-left: 5.7vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
 	padding-top: 1.3vw;
@@ -588,7 +588,7 @@ nav .left_bar_samples li {
 	#ranking_short .results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: 2.9vw;
+		margin-left: 5.7vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
@@ -763,6 +763,104 @@ nav .left_bar_samples li {
 		text-align: left;
 		line-height: 1.4vw;
 	}
+}
+
+#news {
+	position: relative;
+	margin-top: 8.0vw;
+	width: 60%;
+	left: 50%;
+	margin-left: -29.8%;
+	overflow: hidden;
+	font-size: 1.07vw;
+	line-height: 1.6vw;
+	text-align: justify;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#news .title1 {
+    width: 100%;
+    font-size: 2.0vw;
+    line-height: 2.4vw;
+    text-align: center;
+    margin-bottom: 1.2vw;
+}
+
+#news .title2 {
+    width: 100%;
+    font-size: 1.4vw;
+    line-height: 2.4vw;
+    text-align: center;
+    letter-spacing: -0.007vw;
+    margin-bottom: 3vw;
+}
+
+#news .paragraph_title {
+	margin-top: 3.4vw;
+	margin-bottom: 2.6vw;
+	font-size: 1.2vw;
+	text-align: center;
+	font-weight: 400;
+}
+
+#news .paragraph {
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	font-size: 1.04vw;
+	font-weight: 300;
+	letter-spacing: 0.007vw;
+}
+
+#news lh {
+	font-weight: 600;
+	color: rgba(234, 29, 111, 0.8);
+}
+
+#news a {
+	text-decoration-style: dotted;
+}
+
+@media screen and (max-width: 1081px) {
+
+	#news {
+		margin-top: 11.5vw;
+		width: 89.5vw;
+		left: 0;
+		margin-left: 4vw;
+		font-size: 1.07vw;4
+		line-height: 1.6vw;
+	}
+	
+	#news .title1 {
+	    font-size: 3.0vw;
+	    margin-bottom: 3.0vw;
+	}
+
+	#news .title2 {
+	    width: 100%;
+	    font-size: 2.1vw;
+	    line-height: 3.0vw;
+	    text-align: center;
+	    letter-spacing: -0.012vw;
+	    margin-bottom: 4.8vw;
+	}
+
+	#news .paragraph_title {
+		margin-top: 4.8vw;
+		margin-bottom: 3.6vw;
+		font-size: 1.8vw;
+		font-weight: 400;
+	}
+
+	#news .paragraph {
+		margin-top: 3.2vw;
+		margin-bottom: 3.2vw;
+		font-size: 1.566vw;
+		font-weight: 300;
+		letter-spacing: 0.012vw;
+		line-height: 2.2vw;
+	}
+
 }
 
 #tests {
