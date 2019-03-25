@@ -927,13 +927,18 @@ nav .left_bar_samples li {
 #tests {
 	position: relative;
 	margin-top: 8.0vw;
-	width: 50.4%;
-	left: 50%;
+	width: 51.4%;
+	left: 50.5%;
 	margin-left: -25.2%;
 	overflow: hidden;
 	font-size: 1.07vw;
 	line-height: 1.6vw;
 	text-align: justify;
+}
+
+#tests .abstract {
+	color: rgb(51, 51, 51);
+	line-height: 1.8vw;
 }
  
 #tests .task {
@@ -958,13 +963,19 @@ nav .left_bar_samples li {
 #tests .image_style_3 {
 	float: left;
 	margin-left: -0.2vw;
-	margin-top: 1.8vw;
+	margin-top: 0.9vw;
 }
 
 #tests .image_style_4 {
 	float: right;
 	margin-right: -0.1vw;
 	margin-top: 1.2vw;
+}
+
+#tests .image_style_5 {
+	float: left;
+	margin-left: -0.2vw;
+	margin-top: 0.7vw;
 }
 
 #tests .title_class_1 {
@@ -1111,6 +1122,12 @@ nav .left_bar_samples li {
 	float: right;
 }
 
+#tests .img_style_right_2 {
+	margin-right: -0.1vw;
+	margin-top: 2vw;
+	float: right;
+}
+
 #tests .mode {
 	font-size: 0.94vw;
 }
@@ -1133,6 +1150,11 @@ nav .left_bar_samples li {
 		text-align: justify;
 	}
 	
+	#tests .abstract {
+		color: rgb(51, 51, 51);
+		line-height: 2.9vw;
+	}
+	
 	#tests .task {
 		margin-top: 5vw;
 		padding: 3.14vw;
@@ -1147,12 +1169,18 @@ nav .left_bar_samples li {
 	#tests .image_style_3 {
 		float: left;
 		margin-left: 0.2vw;
-		margin-top: 3.6vw;
+		margin-top: 1.5vw;
 	}
 	
 	#tests .image_style_4 {
 		margin-right: -0.1vw;
 		margin-top: 2.38vw;
+	}
+	
+	#tests .image_style_5 {
+		float: left;
+		margin-left: 0.2vw;
+		margin-top: 1.3vw;
 	}
 	
 	#tests .img_style_left_2 {
@@ -1172,6 +1200,12 @@ nav .left_bar_samples li {
 		float: right;
 	}
 
+	#tests .img_style_right_2 {
+		margin-right: -0.1vw;
+		margin-top: 4vw;
+		float: right;
+	}
+	
 	#tests .title_class_1 {
 		margin-left: 25.6vw;
 		padding-top: 0.9vw;
