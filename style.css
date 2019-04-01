@@ -817,6 +817,33 @@ nav .left_bar_samples li {
 	padding: 0vw;
 }
 
+
+#read_full_article {
+	margin-top: 1.2vw;
+	margin-bottom: 5.8vw;
+	height: 3.2vw;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	line-height: 1.6vw;
+	background: white;
+}
+
+#read_full_article p {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 0.8vw;
+	font-size: 1.12vw;
+	color: white;
+	background: rgba(239, 63, 113, 0.72);
+}
+
+#read_full_article img {
+	height: 0.8vw;
+	padding: 0vw;
+}
+
 @media screen and (max-width: 1081px) {
 
 	#news_link {
@@ -847,6 +874,23 @@ nav .left_bar_samples li {
 	}
 	
 	#news_link_bottom img {
+		height: 1.2vw;
+		padding: 0vw;
+	}
+	
+	#read_full_article {
+		margin-top: 3.2vw;
+		margin-bottom: 10.2vw;
+		height: 5.2vw;
+		line-height: 3.2vw;
+	}
+
+	#read_full_article p {
+		padding-top: 1.0vw;
+		font-size: 1.8vw;
+	}
+	
+	#read_full_article img {
 		height: 1.2vw;
 		padding: 0vw;
 	}
@@ -940,6 +984,111 @@ nav .left_bar_samples li {
 	font-size: 0.94vw;
 }
 
+
+#news_review {
+	position: relative;
+	margin-top: 6.9vw;
+	width: 60%;
+	left: 50%;
+	margin-left: -29.8%;
+	overflow: hidden;
+	font-size: 1.07vw;
+	line-height: 1.6vw;
+	text-align: justify;
+	font-family: 'Open Sans', sans-serif;
+}
+#news_review .image_title {
+	width: 100%;
+	margin-left: 0%;
+	margin-top: 0vw;
+	margin-bottom: 2.6vw;
+}
+
+#news_review .title1 {
+    width: 100%;
+    font-size: 2.0vw;
+    line-height: 2.4vw;
+    text-align: center;
+    margin-bottom: 1.2vw;
+}
+
+#news_review .title2 {
+    width: 100%;
+    font-size: 1.4vw;
+    line-height: 2.4vw;
+    text-align: center;
+    letter-spacing: -0.007vw;
+    margin-bottom: 3vw;
+}
+
+#news_review .title3 {
+    width: 100%;
+    font-size: 1.7vw;
+    line-height: 2.4vw;
+    text-align: center;
+    letter-spacing: -0.007vw;
+    margin-bottom: 3vw;
+}
+
+#news_review .paragraph_title {
+	margin-top: 3.4vw;
+	margin-bottom: 2.6vw;
+	font-size: 1.2vw;
+	text-align: center;
+	font-weight: 400;
+}
+
+#news_review .paragraph {
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	font-size: 1.04vw;
+	font-weight: 300;
+	letter-spacing: 0.007vw;
+	line-height: 1.7vw;
+}
+
+#news_review lh {
+	font-weight: 600;
+	color: rgba(234, 29, 111, 0.8);
+}
+
+#news_review a {
+	text-decoration-style: dotted;
+}
+
+#news_review .meta {
+	margin-top: 3.2vw;
+	margin-bottom: 0.7vw;
+	font-weight: 400;
+	font-size: 1.04vw;
+}
+
+#news_review .meta_related {
+	margin-top: 3.2vw;
+	margin-bottom: 0.7vw;
+	font-size: 1.12vw;
+	font-weight: 500;
+}
+
+#news_review .item-list {
+	line-height: 2.0vw;
+	font-weight: 300;
+}
+
+#news_review mode {
+	font-size: 0.77vw;
+	color: rgb(255,127,80);
+}
+
+#news_review .item {
+	margin-left: 0.7vw;
+}
+
+#news_review .test_ids {
+	font-weight: 500;
+	font-size: 0.94vw;
+}
+
 @media screen and (max-width: 1081px) {
 
 	#news {
@@ -1009,6 +1158,91 @@ nav .left_bar_samples li {
 	}
 
 	#news .test_ids {
+		font-weight: 500;
+		font-size: 1.4vw;
+	}
+
+	#news_review {
+		margin-top: 10vw;
+		width: 89.5vw;
+		left: 0;
+		margin-left: 4vw;
+		font-size: 1.07vw;
+		line-height: 1.6vw;
+	}
+	
+	#news_review .image_title {
+		margin-bottom: 5.2vw;
+	}
+	
+	#news_review .title1 {
+	    font-size: 3.9vw;
+	    margin-bottom: 3.2vw;
+	}
+	
+	#news_review .title2 {
+	    width: 100%;
+	    font-size: 2.1vw;
+	    line-height: 3.0vw;
+	    text-align: center;
+	    letter-spacing: -0.012vw;
+	    margin-bottom: 4.8vw;
+	}
+
+	#news_review .title3 {
+	    width: 100%;
+	    font-size: 3vw;
+	    line-height: 3.0vw;
+	    text-align: center;
+	    letter-spacing: -0.012vw;
+	    margin-bottom: 4.8vw;
+	}
+
+	#news_review .paragraph_title {
+		margin-top: 4.8vw;
+		margin-bottom: 3.6vw;
+		font-size: 1.8vw;
+		font-weight: 400;
+	}
+
+	#news_review .paragraph {
+		margin-top: 3.2vw;
+		margin-bottom: 3.2vw;
+		font-size: 1.77vw;
+		font-weight: 300;
+		letter-spacing: 0.012vw;
+		line-height: 3.1vw;
+	}
+	
+	#news_review .meta {
+		margin-top: 4.8vw;
+		margin-bottom: 1.2vw;
+		font-weight: 400;
+		font-size: 1.52vw;
+	}
+	
+	#news_review .meta_related {
+		margin-top: 4.8vw;
+		margin-bottom: 1.2vw;
+		font-weight: 400;
+		font-size: 1.8vw;
+	}
+	
+	#news_review .item-list {
+		line-height: 3.4vw;
+		font-size: 2vw;
+	}
+	
+	#news_review mode {
+		font-size: 1.02vw;
+		color: rgb(255,127,80);
+	}
+	
+	#news_review .item {
+		margin-left: 2.4vw;
+	}
+
+	#news_review .test_ids {
 		font-weight: 500;
 		font-size: 1.4vw;
 	}
