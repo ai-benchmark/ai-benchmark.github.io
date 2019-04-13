@@ -498,7 +498,7 @@ nav .left_bar_samples li {
 
 #ranking_short .results-info {
 	text-align: center;
-	margin-left: 8.0vw;
+	margin-left: 7.73vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
 	padding-top: 1.3vw;
@@ -588,7 +588,7 @@ nav .left_bar_samples li {
 	#ranking_short .results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: 9.4vw;
+		margin-left: 9.03vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
@@ -626,16 +626,17 @@ nav .left_bar_samples li {
 }
 
 #ranking .results-proto {
-	width: 87.6vw;
+	width: 85.6vw;
 	float: left;
-	margin-left: 6.335vw;
-	padding-top: 0.7vw;
-	padding-bottom: 0.6vw;
+	margin-left: 7.335vw;
+	padding-top: 0.8vw;
+	padding-bottom: 0.7vw;
 	margin-top: -1.2vw;
-	margin-bottom: 0.4vw;
-	background-color: Transparent;
+	margin-bottom: 0.5vw;
+	background-color: rgba(245, 187, 164, 0.07);
     background-repeat: no-repeat;
-	font-size: 0.9vw;
+	font-size: 0.93vw;
+	letter-spacing: 0.04vw;
 	border-radius: 0.4vw;
 	border-color: rgba(245, 187, 164, 0.4);
 	border-style: solid;
@@ -645,11 +646,34 @@ nav .left_bar_samples li {
 	cursor: pointer;
 }
 
+#ranking .results-detailed {
+	width: 93.9vw;
+	margin-left: 3.02vw;
+}
+
 #ranking table {
-	width: 88vw;
+	width: 86vw;
 	margin-bottom: 4vw;
-	margin-left: 6.2vw;
+	margin-left: 7.2vw;
 	font-size: 0.8vw;
+}
+
+#ranking .detailed_table {
+	width: 94.2vw;
+	margin-left: 2.9vw;
+	font-size: 0.72vw;
+}
+
+#ranking .accuracy {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+#ranking .quant {
+	background-color: rgba(255, 255, 0, 0.04);
+}
+
+#ranking .fp {
+	background-color: rgba(0, 0, 255, 0.04);
 }
 
 @media screen and (max-width: 1081px) {
@@ -675,12 +699,23 @@ nav .left_bar_samples li {
 		padding-bottom: 1.0vw;
 		margin-left: 2.24vw;  	
   	}
+  	
+  	#ranking .results-detailed {
+		width: 93.9vw;
+		margin-left: 2.802vw;
+	}
   
 	#ranking table {
 		width: 95vw;
 		margin-bottom: 4vw;
 		margin-left: 2vw;
 		font-size: 0.8vw;
+	}
+	
+	#ranking .detailed_table {
+		width: 94.2vw;
+		margin-left: 2.5vw;
+		font-size: 0.72vw;
 	}
   
 }

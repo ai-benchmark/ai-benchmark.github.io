@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/modernizr.js"></script>
+    <meta name="viewport" content="width=device-width">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: none;">
+
+<nav>
+	<ul class="left_bar">
+		<a href="index.html"> <img src="assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a href="https://play.google.com/store/apps/details?id=org.benchmark.demo" target="_blank"> <img style="width: 6.8vw; margin-top: 1.07vw; position: fixed; margin-left: -8.5vw;" src="assets/img/google_play.png"> </a>
+		<a href="https://arxiv.org/pdf/1810.01109.pdf" > <li style="color: #e94f70; font-size: 0.94vw;"> Research <img src="assets/img/goto.png"> </li></a>
+		<a href="about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+	
+	<div id="news_link">
+		<a href="news_2019_02_05_february_updates.html"><p>
+			Chipsets: &nbsp;Snapdragon 855, &nbsp;MediaTek P90, &nbsp;Kirin 980 &nbsp;or&nbsp; Exynos 9820 &nbsp;—&nbsp; who rules the game? &nbsp; <img src="assets/img/goto_white.png">
+		</p></a>
+	</div>
+
+</nav>
+
+<div id="nav_mobile">
+	<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="https://arxiv.org/pdf/1810.01109.pdf" > <li style="color: #e94f70; font-size: 1.57vw; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="assets/img/goto.png"> </li></a>
+	</ul>
+	
+	<div id="news_link">
+		<a href="news_2019_02_05_february_updates.html"><p>
+			Chipsets: &nbsp;Snapdragon 855, &nbsp;MediaTek P90, &nbsp;Kirin 980 &nbsp;or&nbsp; Exynos 9820 &nbsp;—&nbsp; who rules the game? &nbsp;<img src="assets/img/goto_white.png">
+		</p></a>
+	</div>
+	
+</div>
+
+<div id="ranking">
+
+	<div class="title">
+	
+		<span class="left_bar"><a href="#ranking" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">V3.0.0</a> | <a href="ranking_processors_2_1_2.html" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">V2.1.2</a></span>
+	
+		Performance Ranking
+	
+		<span class="right_bar"><a href="ranking.html" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">phones</a> | <a href="#ranking" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">processors</a></span></div>
+	
+	<div><a href="ranking_processors.html"><button class="results-proto results-detailed">View Aggregated Scores</button></a></div>
+	
+	 <table id="scoreTable" class="detailed_table">
+		<colgroup>
+			<col class="" />
+			<col class="" /><col class="quant" /><col class="accuracy"/><col class="fp" /><col class="accuracy"/>
+			<col class="" /><col class="quant" /><col class="accuracy"/><col class="fp" /><col class="accuracy"/>
+			<col class="" /><col class="quant" /><col class="accuracy"/><col class="fp" /><col class="accuracy"/>
+			<col class="" />
+			<col class="quant" /><col class="accuracy"/><col class="fp" /><col class="accuracy"/>
+			<col class="quant" /><col class="accuracy"/><col class="fp" /><col class="accuracy"/>
+			<col class="" /><col class="" />
+			<col class="" />
+			<col class="" />
+			<col class="fp" /><col class="" />
+		</colgroup>
+  		<tr>
+  			<th onclick="sortTable(0)" class="highlight" style="width: 8%;">SoC</th>
+   			<th onclick="sortTableFloat(1)" class="highlight" style="width: 2%;">1c-f, <br> ms</th>
+   			<th onclick="sortTableFloat(2)" class="highlight" style="width: 2%;">1q, <br> ms</th>
+   			<th onclick="sortTableFloat(3)" class="highlight" style="width: 2%;">1q, <br> error</th>
+   			<th onclick="sortTableFloat(4)" class="highlight" style="width: 2%;">1f, <br> ms</th>
+   			<th onclick="sortTableFloat(5)" class="highlight" style="width: 2%;">1f, <br> error</th>
+   			<th onclick="sortTableFloat(6)" class="highlight" style="width: 2%;">2c-f, <br> ms</th>
+   			<th onclick="sortTableFloat(7)" class="highlight" style="width: 2%;">2q, <br> ms</th>
+   			<th onclick="sortTableFloat(8)" class="highlight" style="width: 2%;">2q, <br> error</th>
+   			<th onclick="sortTableFloat(9)" class="highlight" style="width: 2%;">2f, <br> ms</th>
+   			<th onclick="sortTableFloat(10)" class="highlight" style="width: 2%;">2f, <br> error</th>
+   			<th onclick="sortTableFloat(11)" class="highlight" style="width: 2%;">3c-q, <br> ms</th>
+   			<th onclick="sortTableFloat(12)" class="highlight" style="width: 2%;">3q, <br> ms</th>
+   			<th onclick="sortTableFloat(13)" class="highlight" style="width: 2%;">3q, <br> error</th>
+   			<th onclick="sortTableFloat(14)" class="highlight" style="width: 2%;">3f, <br> ms</th>
+   			<th onclick="sortTableFloat(15)" class="highlight" style="width: 2%;">3f, <br> error</th>
+   			<th onclick="sortTableFloat(16)" class="highlight" style="width: 2%;">4c-f, <br> ms</th>
+   			<th onclick="sortTableFloat(17)" class="highlight" style="width: 2%;">5q, <br> ms</th>
+   			<th onclick="sortTableFloat(18)" class="highlight" style="width: 2%;">5q, <br> error</th>
+   			<th onclick="sortTableFloat(19)" class="highlight" style="width: 2%;">5f, <br> ms</th>
+   			<th onclick="sortTableFloat(20)" class="highlight" style="width: 2%;">5f, <br> error</th>
+   			<th onclick="sortTableFloat(21)" class="highlight" style="width: 2%;">6q, <br> ms</th>
+   			<th onclick="sortTableFloat(22)" class="highlight" style="width: 2%;">6q, <br> error</th>
+   			<th onclick="sortTableFloat(23)" class="highlight" style="width: 2%;">6f, <br> ms</th>
+   			<th onclick="sortTableFloat(24)" class="highlight" style="width: 2%;">6f, <br> error</th>
+   			<th onclick="sortTableFloat(25)" class="highlight" style="width: 2%;">7c-q, <br> ms</th>
+   			<th onclick="sortTableFloat(26)" class="highlight" style="width: 2%;">7c-f, <br> ms</th>
+   			<th onclick="sortTableFloat(27)" class="highlight" style="width: 2%;">8c-fq, <br> ms</th>
+   			<th onclick="sortTableFloat(28)" class="highlight" style="width: 2%;">9f-p, <br> ms</th>
+   			<th onclick="sortTableFloat(29)" class="highlight" style="width: 2%;">10f, <br> ms</th>
+   			<th onclick="sortTableFloat(30)" class="highlight" style="width: 2%;">10f32, <br> ms</th>
+ 			<th class="highlight" style="width: 3.2%;">AI-Score</th>
+  		</tr>
+  		
+<tr><td></td></tr>
+
+<tr><td class="column_0"><a id=0010 href="https://www.notebookcheck.net/MediaTek-officially-announces-the-Helio-P90-SoC.377011.0.html" target="_blank" style="text-decoration: none;">Mediatek Helio P90</a></td><td class="column_5">71</td><td class="column_5 green">4.6</td><td class="column_5">6.77</td><td class="column_5 green">8.8</td><td class="column_5">6.72</td><td class="column_5">782</td><td class="column_5">27</td><td class="column_5">5.33</td><td class="column_5">105</td><td class="column_5 green">4.87</td><td class="column_5">979</td><td class="column_5 green">38</td><td class="column_5">6</td><td class="column_5">264</td><td class="column_5">5.91</td><td class="column_5">174</td><td class="column_5 green">22</td><td class="column_5">3.78</td><td class="column_5 green">76</td><td class="column_5">4.31</td><td class="column_5 green">144</td><td class="column_5 green">3.45</td><td class="column_5">311</td><td class="column_5">3.06</td><td class="column_5">1348</td><td class="column_5">3501</td><td class="column_5">2079</td><td class="column_5">4124</td><td class="column_5 green">66</td><td class="column_5">990</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 19496 <sup2>1,4</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0024 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-855-SoC-Benchmarks-and-Specs.375436.0.html" target="_blank" style="text-decoration: none;">Snapdragon 855</a></td><td class="column_5">53</td><td class="column_5">8.2</td><td class="column_5">11.44</td><td class="column_5">25</td><td class="column_5">6.88</td><td class="column_5 green">436</td><td class="column_5 green">19</td><td class="column_5">31.58</td><td class="column_5">69</td><td class="column_5">23.65</td><td class="column_5">448</td><td class="column_5">44</td><td class="column_5">14.62</td><td class="column_5">165</td><td class="column_5">12.87</td><td class="column_5">89</td><td class="column_5">32</td><td class="column_5">5.8</td><td class="column_5">84</td><td class="column_5">37.92</td><td class="column_5">415</td><td class="column_5">3.58</td><td class="column_5">212</td><td class="column_5">3.07</td><td class="column_5 green">656</td><td class="column_5 green">1716</td><td class="column_5">1410</td><td class="column_5 green">186</td><td class="column_5">85</td><td class="column_5 green">135</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 18924 <sup2>1</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0007 href="https://www.notebookcheck.net/HiSilicon-Kirin-980-SoC-Benchmarks-and-Specs.354856.0.html" target="_blank" style="text-decoration: none;">HiSilicon Kirin 980</a></td><td class="column_5 green">51</td><td class="column_5">78</td><td class="column_5 green">6.73</td><td class="column_5">25</td><td class="column_5">6.61</td><td class="column_5">523</td><td class="column_5">302</td><td class="column_5 green">5.19</td><td class="column_5 green">58</td><td class="column_5">6.24</td><td class="column_5">493</td><td class="column_5">709</td><td class="column_5">628</td><td class="column_5 green">117</td><td class="column_5">17.52</td><td class="column_5 green">83</td><td class="column_5">397</td><td class="column_5 green">3.57</td><td class="column_5">100</td><td class="column_5 green">3.14</td><td class="column_5">1117</td><td class="column_5 green">3.45</td><td class="column_5 green">163</td><td class="column_5 green">2.97</td><td class="column_5">814</td><td class="column_5">1771</td><td class="column_5">1331</td><td class="column_5">2388</td><td class="column_5">71</td><td class="column_5">1124</td><td class="column_6 blue"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 16684 <sup2>2</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0022 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-845-SoC-Benchmarks-and-Specs.299446.0.html" target="_blank" style="text-decoration: none;">Snapdragon 845</a></td><td class="column_5">109</td><td class="column_5">11</td><td class="column_5">11.44</td><td class="column_5">27</td><td class="column_5">6.8</td><td class="column_5">541</td><td class="column_5">45</td><td class="column_5">19.37</td><td class="column_5">81</td><td class="column_5">24.95</td><td class="column_5">488</td><td class="column_5">91</td><td class="column_5">14.62</td><td class="column_5">204</td><td class="column_5">12.07</td><td class="column_5">165</td><td class="column_5">71</td><td class="column_5">5.8</td><td class="column_5">100</td><td class="column_5">37.92</td><td class="column_5">610</td><td class="column_5">3.58</td><td class="column_5">264</td><td class="column_5">3.07</td><td class="column_5">962</td><td class="column_5">2564</td><td class="column_5">1761</td><td class="column_5">218</td><td class="column_5">93</td><td class="column_5">169</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 13868 <sup2>1</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0025 href="https://www.androidauthority.com/spreadtrum-processors-guide-848691/" target="_blank" style="text-decoration: none;">Spreadtrum ud710</a></td><td class="column_5_proto">141</td><td class="column_5_proto">202</td><td class="column_5_proto">6.73</td><td class="column_5_proto">19</td><td class="column_5_proto">13.47</td><td class="column_5_proto">862</td><td class="column_5_proto">718</td><td class="column_5_proto">5.19</td><td class="column_5_proto">48</td><td class="column_5_proto">147</td><td class="column_5_proto">588</td><td class="column_5_proto">1449</td><td class="column_5_proto">628</td><td class="column_5_proto">103</td><td class="column_5_proto">29.45</td><td class="column_5_proto">289</td><td class="column_5_proto">646</td><td class="column_5_proto">3.57</td><td class="column_5_proto">149</td><td class="column_5_proto">3.14</td><td class="column_5_proto">1643</td><td class="column_5_proto">3.45</td><td class="column_5_proto">183</td><td class="column_5_proto">2.97</td><td class="column_5_proto">860</td><td class="column_5_proto">3148</td><td class="column_5_proto">2458</td><td class="column_5_proto">5051</td><td class="column_5_proto">60</td><td class="column_5_proto">2326</td><td class="column_6 red"><a href="#footnote" style="text-decoration: none; opacity: 0.8; color: #de1e6a;"> 10773 <sup2>2,4</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0003 href="https://www.notebookcheck.net/Samsung-Exynos-9820-SoC-Benchmarks-and-Specs.410624.0.html" target="_blank" style="text-decoration: none;">Exynos 9820 Octa</a></td><td class="column_5">92</td><td class="column_5">36</td><td class="column_5 green">6.73</td><td class="column_5">52</td><td class="column_5 green">6.6</td><td class="column_5">695</td><td class="column_5">108</td><td class="column_5 green">5.19</td><td class="column_5">196</td><td class="column_5">5.31</td><td class="column_5">584</td><td class="column_5">211</td><td class="column_5">6.4</td><td class="column_5">440</td><td class="column_5">6.27</td><td class="column_5">284</td><td class="column_5">424</td><td class="column_5 green">3.57</td><td class="column_5">914</td><td class="column_5">3.22</td><td class="column_5">500</td><td class="column_5 green">3.45</td><td class="column_5">871</td><td class="column_5">3.11</td><td class="column_5">802</td><td class="column_5">1865</td><td class="column_5 green">1308</td><td class="column_5">1095</td><td class="column_5">845</td><td class="column_5">841</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 7288 <sup2>1</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0006 href="https://www.notebookcheck.net/HiSilicon-Kirin-970-SoC-Benchmarks-and-Specs.262356.0.html" target="_blank" style="text-decoration: none;">HiSilicon Kirin 970</a></td><td class="column_5">93</td><td class="column_5">141</td><td class="column_5 green">6.73</td><td class="column_5">43</td><td class="column_5">172</td><td class="column_5">730</td><td class="column_5">380</td><td class="column_5 green">5.19</td><td class="column_5">69</td><td class="column_5">58.21</td><td class="column_5">592</td><td class="column_5">791</td><td class="column_5">628</td><td class="column_5">1514</td><td class="column_5">6.27</td><td class="column_5">175</td><td class="column_5">513</td><td class="column_5 green">3.57</td><td class="column_5">141</td><td class="column_5">3.2</td><td class="column_5">1518</td><td class="column_5 green">3.45</td><td class="column_5">235</td><td class="column_5">2.98</td><td class="column_5">1022</td><td class="column_5">3074</td><td class="column_5">2496</td><td class="column_5">2997</td><td class="column_5">83</td><td class="column_5">1185</td><td class="column_6 blue"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 7147 <sup2>2</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0022 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-845-SoC-Benchmarks-and-Specs.299446.0.html" target="_blank" style="text-decoration: none;">Snapdragon 845</a></td><td class="column_5">85</td><td class="column_5">11</td><td class="column_5">11.44</td><td class="column_5">153</td><td class="column_5 green">6.6</td><td class="column_5">541</td><td class="column_5">70</td><td class="column_5">19.37</td><td class="column_5">723</td><td class="column_5">5.31</td><td class="column_5 green">422</td><td class="column_5">93</td><td class="column_5">14.62</td><td class="column_5">1384</td><td class="column_5">6.27</td><td class="column_5">185</td><td class="column_5">94</td><td class="column_5">5.8</td><td class="column_5">1533</td><td class="column_5">3.22</td><td class="column_5">691</td><td class="column_5">3.58</td><td class="column_5">3492</td><td class="column_5">3.11</td><td class="column_5">777</td><td class="column_5">2728</td><td class="column_5">2145</td><td class="column_5">3236</td><td class="column_5">1235</td><td class="column_5">1208</td><td class="column_6 yellow"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 6752 <sup2>3</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0009 href="https://www.notebookcheck.net/Mediatek-Helio-P60-SoC.301188.0.html" target="_blank" style="text-decoration: none;">Mediatek Helio P60</a></td><td class="column_5">104</td><td class="column_5">27</td><td class="column_5">6.77</td><td class="column_5">68</td><td class="column_5">6.99</td><td class="column_5">806</td><td class="column_5">89</td><td class="column_5">5.31</td><td class="column_5">353</td><td class="column_5">19.98</td><td class="column_5">667</td><td class="column_5">181</td><td class="column_5 green">5.91</td><td class="column_5">948</td><td class="column_5">9.81</td><td class="column_5">190</td><td class="column_5">164</td><td class="column_5">3.78</td><td class="column_5">1896</td><td class="column_5">4.31</td><td class="column_5">475</td><td class="column_5 green">3.45</td><td class="column_5">889</td><td class="column_5">3.09</td><td class="column_5">1136</td><td class="column_5">3597</td><td class="column_5">2783</td><td class="column_5">996</td><td class="column_5">1439</td><td class="column_5">1390</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 5806 <sup2>1</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0017 href="https://browser.geekbench.com/v4/cpu/11125426" target="_blank" style="text-decoration: none;">Snapdragon 675</a></td><td class="column_5">93</td><td class="column_5">11</td><td class="column_5">6.87</td><td class="column_5">134</td><td class="column_5 green">6.6</td><td class="column_5">857</td><td class="column_5">62</td><td class="column_5">5.42</td><td class="column_5">769</td><td class="column_5">5.31</td><td class="column_5">1123</td><td class="column_5">147</td><td class="column_5">7.09</td><td class="column_5">1741</td><td class="column_5">6.27</td><td class="column_5">133</td><td class="column_5">90</td><td class="column_5">4.92</td><td class="column_5">1834</td><td class="column_5">3.22</td><td class="column_5">830</td><td class="column_5">3.58</td><td class="column_5">4742</td><td class="column_5">3.11</td><td class="column_5">1521</td><td class="column_5">3248</td><td class="column_5">1798</td><td class="column_5">3449</td><td class="column_5">1486</td><td class="column_5">1441</td><td class="column_6 yellow"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 5785 <sup2>3</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0018 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-710-SoC.366561.0.html" target="_blank" style="text-decoration: none;">Snapdragon 710</a></td><td class="column_5">132</td><td class="column_5">12</td><td class="column_5">11.44</td><td class="column_5">187</td><td class="column_5 green">6.6</td><td class="column_5">1000</td><td class="column_5">47</td><td class="column_5">19.37</td><td class="column_5">841</td><td class="column_5">5.31</td><td class="column_5">1270</td><td class="column_5">95</td><td class="column_5">14.62</td><td class="column_5">1649</td><td class="column_5">6.27</td><td class="column_5">206</td><td class="column_5">70</td><td class="column_5">5.8</td><td class="column_5">1867</td><td class="column_5">3.22</td><td class="column_5">609</td><td class="column_5">3.58</td><td class="column_5">4014</td><td class="column_5">3.11</td><td class="column_5">1634</td><td class="column_5">3960</td><td class="column_5">2351</td><td class="column_5">3380</td><td class="column_5">1469</td><td class="column_5">1435</td><td class="column_6 yellow"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 5329 <sup2>3</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0002 href="https://www.notebookcheck.net/Samsung-Exynos-9810-SoC.276866.0.html" target="_blank" style="text-decoration: none;">Exynos 9810 Octa</a></td><td class="column_5">115</td><td class="column_5">132</td><td class="column_5 green">6.73</td><td class="column_5">105</td><td class="column_5 green">6.6</td><td class="column_5">887</td><td class="column_5">391</td><td class="column_5 green">5.19</td><td class="column_5">278</td><td class="column_5">5.31</td><td class="column_5">724</td><td class="column_5">1118</td><td class="column_5">628</td><td class="column_5">802</td><td class="column_5">6.27</td><td class="column_5">235</td><td class="column_5">754</td><td class="column_5 green">3.57</td><td class="column_5">1922</td><td class="column_5">3.22</td><td class="column_5">1331</td><td class="column_5 green">3.45</td><td class="column_5">576</td><td class="column_5">3.11</td><td class="column_5">1125</td><td class="column_5">2107</td><td class="column_5">1806</td><td class="column_5">3279</td><td class="column_5">5971</td><td class="column_5">5076</td><td class="column_6"> 4530 </td></tr>
+<tr><td class="column_0"><a id=0001 href="https://www.notebookcheck.net/The-Exynos-7-9610-processor-coming-later-this-year-with-deep-learning-and-faster-image-processing.290338.0.html" target="_blank" style="text-decoration: none;">Exynos 9610</a></td><td class="column_5">161</td><td class="column_5">73</td><td class="column_5 green">6.73</td><td class="column_5">86</td><td class="column_5 green">6.6</td><td class="column_5">1134</td><td class="column_5">410</td><td class="column_5 green">5.19</td><td class="column_5">475</td><td class="column_5">5.31</td><td class="column_5">659</td><td class="column_5">1008</td><td class="column_5">6.4</td><td class="column_5">1349</td><td class="column_5">6.27</td><td class="column_5">189</td><td class="column_5">1153</td><td class="column_5 green">3.57</td><td class="column_5">1777</td><td class="column_5">3.22</td><td class="column_5">2418</td><td class="column_5 green">3.45</td><td class="column_5">1520</td><td class="column_5">3.11</td><td class="column_5">1071</td><td class="column_5">3949</td><td class="column_5">2813</td><td class="column_5">1874</td><td class="column_5">802</td><td class="column_5">796</td><td class="column_6 blue"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 4365 <sup2>2</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0020 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-835-SoC-Benchmarks-and-Specs.207842.0.html" target="_blank" style="text-decoration: none;">Snapdragon 835</a></td><td class="column_5">131</td><td class="column_5">136</td><td class="column_5 green">6.73</td><td class="column_5">181</td><td class="column_5 green">6.6</td><td class="column_5">768</td><td class="column_5">384</td><td class="column_5 green">5.19</td><td class="column_5">786</td><td class="column_5">5.31</td><td class="column_5">643</td><td class="column_5">801</td><td class="column_5">628</td><td class="column_5">1515</td><td class="column_5">6.27</td><td class="column_5">199</td><td class="column_5">563</td><td class="column_5 green">3.57</td><td class="column_5">1722</td><td class="column_5">3.22</td><td class="column_5">1525</td><td class="column_5 green">3.45</td><td class="column_5">3754</td><td class="column_5">3.11</td><td class="column_5">1078</td><td class="column_5">3370</td><td class="column_5">2698</td><td class="column_5">3303</td><td class="column_5">1317</td><td class="column_5">1243</td><td class="column_6"> 4129 </td></tr>
+<tr><td class="column_0"><a id=0019 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-820-MSM8996-SoC.156150.0.html" target="_blank" style="text-decoration: none;">Snapdragon 820</a></td><td class="column_5">106</td><td class="column_5">80</td><td class="column_5 green">6.73</td><td class="column_5">98</td><td class="column_5 green">6.6</td><td class="column_5">769</td><td class="column_5">484</td><td class="column_5 green">5.19</td><td class="column_5">783</td><td class="column_5">5.31</td><td class="column_5">1051</td><td class="column_5">1284</td><td class="column_5">628</td><td class="column_5">2581</td><td class="column_5">6.27</td><td class="column_5">165</td><td class="column_5">811</td><td class="column_5 green">3.57</td><td class="column_5">2014</td><td class="column_5">3.22</td><td class="column_5">2493</td><td class="column_5 green">3.45</td><td class="column_5">4995</td><td class="column_5">3.11</td><td class="column_5">1743</td><td class="column_5">3827</td><td class="column_5">2025</td><td class="column_5">2345</td><td class="column_5">1695</td><td class="column_5">1667</td><td class="column_6"> 3874 </td></tr>
+<tr><td class="column_0"><a id=0000 href="https://www.notebookcheck.net/Samsung-Exynos-8895-Octa-SoC-Benchmarks-and-Specs.210830.0.html" target="_blank" style="text-decoration: none;">Exynos 8895 Octa</a></td><td class="column_5">154</td><td class="column_5">98</td><td class="column_5 green">6.73</td><td class="column_5">194</td><td class="column_5 green">6.6</td><td class="column_5">766</td><td class="column_5">456</td><td class="column_5 green">5.19</td><td class="column_5">1030</td><td class="column_5">5.31</td><td class="column_5">656</td><td class="column_5">1045</td><td class="column_5">628</td><td class="column_5">1946</td><td class="column_5">6.27</td><td class="column_5">719</td><td class="column_5">480</td><td class="column_5 green">3.57</td><td class="column_5">1810</td><td class="column_5">3.22</td><td class="column_5">1397</td><td class="column_5 green">3.45</td><td class="column_5">4503</td><td class="column_5">3.11</td><td class="column_5">990</td><td class="column_5">2564</td><td class="column_5">2192</td><td class="column_5">3245</td><td class="column_5">1537</td><td class="column_5">1492</td><td class="column_6"> 3671 </td></tr>
+<tr><td class="column_0"><a id=0020 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-835-SoC-Benchmarks-and-Specs.207842.0.html" target="_blank" style="text-decoration: none;">Snapdragon 835</a></td><td class="column_5">128</td><td class="column_5">195</td><td class="column_5">8.22</td><td class="column_5">146</td><td class="column_5">7.72</td><td class="column_5">742</td><td class="column_5">409</td><td class="column_5">6.39</td><td class="column_5">1762</td><td class="column_5">7.06</td><td class="column_5">640</td><td class="column_5">870</td><td class="column_5">6.4</td><td class="column_5">4466</td><td class="column_5">6.27</td><td class="column_5">213</td><td class="column_5">750</td><td class="column_5 green">3.57</td><td class="column_5">3738</td><td class="column_5">3.22</td><td class="column_5">1495</td><td class="column_5 green">3.45</td><td class="column_5">11021</td><td class="column_5">3.11</td><td class="column_5">1209</td><td class="column_5">3758</td><td class="column_5">2708</td><td class="column_5">4564</td><td class="column_5">3036</td><td class="column_5">2744</td><td class="column_6"> 3661 </td></tr>
+<tr><td class="column_0"><a id=0005 href="https://www.notebookcheck.net/HiSilicon-Kirin-960-SoC.185280.0.html" target="_blank" style="text-decoration: none;">HiSilicon Kirin 960</a></td><td class="column_5">193</td><td class="column_5">86</td><td class="column_5 green">6.73</td><td class="column_5">242</td><td class="column_5 green">6.6</td><td class="column_5">1625</td><td class="column_5">401</td><td class="column_5 green">5.19</td><td class="column_5">855</td><td class="column_5">5.31</td><td class="column_5">674</td><td class="column_5">913</td><td class="column_5">628</td><td class="column_5">1917</td><td class="column_5">6.27</td><td class="column_5">173</td><td class="column_5">589</td><td class="column_5 green">3.57</td><td class="column_5">1642</td><td class="column_5">3.22</td><td class="column_5">1695</td><td class="column_5 green">3.45</td><td class="column_5">4459</td><td class="column_5">3.11</td><td class="column_5">1099</td><td class="column_5">3679</td><td class="column_5">3019</td><td class="column_5">3024</td><td class="column_5">1447</td><td class="column_5">1319</td><td class="column_6"> 3561 </td></tr>
+<tr><td class="column_0"><a id=0011 href="https://www.notebookcheck.net/NVIDIA-Tegra-X1-Maxwell-GPU.137006.0.html" target="_blank" style="text-decoration: none;">Nvidia Tegra X1</a></td><td class="column_5">127</td><td class="column_5">62</td><td class="column_5 green">6.73</td><td class="column_5">82</td><td class="column_5 green">6.6</td><td class="column_5">1050</td><td class="column_5">351</td><td class="column_5 green">5.19</td><td class="column_5">829</td><td class="column_5">5.31</td><td class="column_5">819</td><td class="column_5">826</td><td class="column_5">628</td><td class="column_5">2015</td><td class="column_5">6.27</td><td class="column_5">342</td><td class="column_5">723</td><td class="column_5 green">3.57</td><td class="column_5">2288</td><td class="column_5">3.22</td><td class="column_5">1916</td><td class="column_5 green">3.45</td><td class="column_5">5523</td><td class="column_5">3.11</td><td class="column_5">1290</td><td class="column_5">4384</td><td class="column_5">3271</td><td class="column_5">2720</td><td class="column_5">1732</td><td class="column_5">1714</td><td class="column_6"> 3381 </td></tr>
+<tr><td class="column_0"><a id=0014 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-636-SoC.300988.0.html" target="_blank" style="text-decoration: none;">Snapdragon 636</a></td><td class="column_5">129</td><td class="column_5">81</td><td class="column_5">6.99</td><td class="column_5">156</td><td class="column_5">6.62</td><td class="column_5">984</td><td class="column_5">452</td><td class="column_5">10.57</td><td class="column_5">1096</td><td class="column_5">11.13</td><td class="column_5">897</td><td class="column_5">981</td><td class="column_5">629</td><td class="column_5">2030</td><td class="column_5">15.32</td><td class="column_5">234</td><td class="column_5">704</td><td class="column_5">7.97</td><td class="column_5">2039</td><td class="column_5">9.76</td><td class="column_5">2267</td><td class="column_5">5.47</td><td class="column_5">5416</td><td class="column_5">4.16</td><td class="column_5">1599</td><td class="column_5">4906</td><td class="column_5">3099</td><td class="column_5">5748</td><td class="column_5">1726</td><td class="column_5">1725</td><td class="column_6"> 3197 </td></tr>
+<tr><td class="column_0"><a id=0004 href="https://www.notebookcheck.net/HiSilicon-Kirin-710-SoC-Benchmarks-and-Specs.333292.0.html" target="_blank" style="text-decoration: none;">HiSilicon Kirin 710</a></td><td class="column_5">161</td><td class="column_5">112</td><td class="column_5 green">6.73</td><td class="column_5">178</td><td class="column_5 green">6.6</td><td class="column_5">1631</td><td class="column_5">451</td><td class="column_5 green">5.19</td><td class="column_5">937</td><td class="column_5">5.31</td><td class="column_5">837</td><td class="column_5">1023</td><td class="column_5">628</td><td class="column_5">1994</td><td class="column_5">6.27</td><td class="column_5">232</td><td class="column_5">755</td><td class="column_5 green">3.57</td><td class="column_5">2009</td><td class="column_5">3.22</td><td class="column_5">2319</td><td class="column_5 green">3.45</td><td class="column_5">4827</td><td class="column_5">3.11</td><td class="column_5">1496</td><td class="column_5">4581</td><td class="column_5">3207</td><td class="column_5">3211</td><td class="column_5">1699</td><td class="column_5">1487</td><td class="column_6"> 3169 </td></tr>
+<tr><td class="column_0"><a id=0016 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-660-SoC-Benchmarks-and-Specs.299438.0.html" target="_blank" style="text-decoration: none;">Snapdragon 660</a></td><td class="column_5">190</td><td class="column_5">439</td><td class="column_5">6.99</td><td class="column_5">568</td><td class="column_5">6.62</td><td class="column_5">1079</td><td class="column_5">1032</td><td class="column_5">10.57</td><td class="column_5">1052</td><td class="column_5">11.13</td><td class="column_5">1121</td><td class="column_5">1887</td><td class="column_5">629</td><td class="column_5">2372</td><td class="column_5">15.32</td><td class="column_5">212</td><td class="column_5">688</td><td class="column_5">7.97</td><td class="column_5">2237</td><td class="column_5">9.76</td><td class="column_5">2052</td><td class="column_5">5.47</td><td class="column_5">6159</td><td class="column_5">4.16</td><td class="column_5">1941</td><td class="column_5">4090</td><td class="column_5">3183</td><td class="column_5">3567</td><td class="column_5">1871</td><td class="column_5">1823</td><td class="column_6"> 2813 </td></tr>
+<tr><td class="column_0"><a id=0015 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-650-MSM8956-SoC-Benchmarks-and-Specs.169857.0.html" target="_blank" style="text-decoration: none;">Snapdragon 650</a></td><td class="column_5">178</td><td class="column_5">100</td><td class="column_5 green">6.73</td><td class="column_5">302</td><td class="column_5 green">6.6</td><td class="column_5">1757</td><td class="column_5">600</td><td class="column_5 green">5.19</td><td class="column_5">1703</td><td class="column_5">5.31</td><td class="column_5">1543</td><td class="column_5">1337</td><td class="column_5">628</td><td class="column_5">3938</td><td class="column_5">6.27</td><td class="column_5">225</td><td class="column_5">952</td><td class="column_5 green">3.57</td><td class="column_5">2548</td><td class="column_5">3.22</td><td class="column_5">2643</td><td class="column_5 green">3.45</td><td class="column_5">6173</td><td class="column_5">3.11</td><td class="column_5">2312</td><td class="column_5">5498</td><td class="column_5">3455</td><td class="column_5">3841</td><td class="column_5">1943</td><td class="column_5">1963</td><td class="column_6"> 2444 </td></tr>
+<tr><td class="column_0"><a id=0013 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-625-SoC-Benchmarks-and-Specs.175991.0.html" target="_blank" style="text-decoration: none;">Snapdragon 625</a></td><td class="column_5">230</td><td class="column_5">85</td><td class="column_5">6.99</td><td class="column_5">166</td><td class="column_5">6.62</td><td class="column_5">1675</td><td class="column_5">347</td><td class="column_5">10.57</td><td class="column_5">916</td><td class="column_5">11.13</td><td class="column_5">1225</td><td class="column_5">781</td><td class="column_5">629</td><td class="column_5">1898</td><td class="column_5">15.32</td><td class="column_5">588</td><td class="column_5">715</td><td class="column_5">7.97</td><td class="column_5">2633</td><td class="column_5">9.76</td><td class="column_5">1651</td><td class="column_5">5.47</td><td class="column_5">4844</td><td class="column_5">4.16</td><td class="column_5">1868</td><td class="column_5">6149</td><td class="column_5">5986</td><td class="column_5">2748</td><td class="column_5">1825</td><td class="column_5">1828</td><td class="column_6"> 2312 </td></tr>
+<tr><td class="column_0"><a id=0008 href="https://www.notebookcheck.net/Mediatek-Helio-P23-MT6763T-SoC-Benchmarks-and-Specs.273148.0.html" target="_blank" style="text-decoration: none;">Mediatek Helio P22</a></td><td class="column_5">432</td><td class="column_5">155</td><td class="column_5">6.77</td><td class="column_5">239</td><td class="column_5 green">6.6</td><td class="column_5">2100</td><td class="column_5">557</td><td class="column_5">5.31</td><td class="column_5">1316</td><td class="column_5">5.2</td><td class="column_5">1418</td><td class="column_5">1126</td><td class="column_5">628</td><td class="column_5">2581</td><td class="column_5 green">5.56</td><td class="column_5">742</td><td class="column_5">1183</td><td class="column_5">3.78</td><td class="column_5">3060</td><td class="column_5">4.31</td><td class="column_5">2448</td><td class="column_5 green">3.45</td><td class="column_5">7267</td><td class="column_5">3.11</td><td class="column_5">1966</td><td class="column_5">6547</td><td class="column_5">7072</td><td class="column_5">3524</td><td class="column_5">2603</td><td class="column_5">2200</td><td class="column_6"> 1850 </td></tr>
+<tr><td class="column_0"><a id=0012 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-430-SoC-Benchmarks-and-Specs.185278.0.html" target="_blank" style="text-decoration: none;">Snapdragon 430</a></td><td class="column_5">354</td><td class="column_5">656</td><td class="column_5 green">6.73</td><td class="column_5">1058</td><td class="column_5 green">6.6</td><td class="column_5">2943</td><td class="column_5">1934</td><td class="column_5 green">5.19</td><td class="column_5">6337</td><td class="column_5">5.31</td><td class="column_5">1739</td><td class="column_5">3640</td><td class="column_5">628</td><td class="column_5">8140</td><td class="column_5">6.27</td><td class="column_5">757</td><td class="column_5">1746</td><td class="column_5 green">3.57</td><td class="column_5">5009</td><td class="column_5">3.22</td><td class="column_5">4422</td><td class="column_5 green">3.45</td><td class="column_5">10963</td><td class="column_5">3.11</td><td class="column_5">2614</td><td class="column_5">8849</td><td class="column_5">9839</td><td class="column_5">8589</td><td class="column_5">4097</td><td class="column_5">4052</td><td class="column_6"> 1251 </td></tr>
+
+  		</table>
+</div>
+
+<div id="footnote">
+	<p> <sup2>1</sup2> &nbsp;-&nbsp; This SoC provides acceleration support for both float and quantized AI models ( via <a href="https://developer.android.com/ndk/guides/neuralnetworks/" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">NNAPI</a> )</p>
+	<p> <sup2>2</sup2> &nbsp;-&nbsp; This SoC provides native acceleration support for float AI models ( via <a href="https://developer.android.com/ndk/guides/neuralnetworks/" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">NNAPI</a> )</p>
+	<p> <sup2>3</sup2> &nbsp;-&nbsp; This SoC provides native acceleration support for quantized AI models ( via <a href="https://developer.android.com/ndk/guides/neuralnetworks/" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">NNAPI</a> )</p>
+	<p> <sup2>4</sup2> &nbsp;-&nbsp; This SoC might be using unofficial / prototype hardware or drivers</p>
+	<p> <sup2>5</sup2> &nbsp;-&nbsp; These are the results of an early prototype. The results of the commercial SoC might be different</p>
+</div>
+
+<div id="about">
+	<div id="content">
+		<p >Copyright © 2019 by A.I.</p>
+		<p style="color: #ea1d6f">ETH Zurich, Switzerland</p>
+	</div>
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	function open_demo() {
+		document.getElementById('demos').style.display="block";
+		document.getElementById('demo-button').style.display="none";
+	}
+	function close_demo() {
+		document.getElementById('demos').style.display="none";
+		document.getElementById('demo-button').style.display="block";
+	}
+</script>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("scoreTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 2; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+<script>
+function sortTableFloat(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("scoreTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 2; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (parseFloat(x.innerHTML) > parseFloat(y.innerHTML)) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (parseFloat(x.innerHTML) < parseFloat(y.innerHTML)) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+<script>
+function sortTableInt(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("scoreTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 2; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      
+      score_x = parseInt(x.innerHTML)
+      score_y = parseInt(y.innerHTML)
+      
+      if (dir == "asc") {
+      	if (score_x == 0) {
+      		score_x = 1000000;
+      	}
+        if (score_x > score_y && score_y != 0) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (score_x < score_y) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+
+</html>
