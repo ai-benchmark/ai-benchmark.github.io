@@ -852,15 +852,20 @@ nav .left_bar_samples li {
 	padding: 0vw;
 }
 
+hr {
+	margin-top: -3vw;
+	margin-bottom: 3vw;
+	color: rgba(239, 63, 113, 0.08);
+}
 
 #read_full_article {
-	margin-top: 1.2vw;
-	margin-bottom: 5.8vw;
-	height: 3.2vw;
+	margin-top: 2.2vw;
+	margin-bottom: 7.8vw;
+	height: 4.2vw;
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
-	line-height: 1.6vw;
+	line-height: 2.4vw;
 	background: white;
 }
 
@@ -916,10 +921,15 @@ nav .left_bar_samples li {
 	#read_full_article {
 		margin-top: 3.2vw;
 		margin-bottom: 10.2vw;
-		height: 5.2vw;
-		line-height: 3.2vw;
+		height: 7.2vw;
+		line-height: 5.2vw;
 	}
 
+	hr {
+		margin-top: -5vw;
+		margin-bottom: 5vw;
+	}
+	
 	#read_full_article p {
 		padding-top: 1.0vw;
 		font-size: 1.8vw;
@@ -956,6 +966,15 @@ nav .left_bar_samples li {
 #news .title2 {
     width: 100%;
     font-size: 1.4vw;
+    line-height: 2.4vw;
+    text-align: center;
+    letter-spacing: -0.007vw;
+    margin-bottom: 3vw;
+}
+
+#news .title3 {
+    width: 100%;
+    font-size: 1.6vw;
     line-height: 2.4vw;
     text-align: center;
     letter-spacing: -0.007vw;
@@ -1032,6 +1051,14 @@ nav .left_bar_samples li {
 	text-align: justify;
 	font-family: 'Open Sans', sans-serif;
 }
+
+#news .image_title {
+	width: 100%;
+	margin-left: 0%;
+	margin-top: 0vw;
+	margin-bottom: 2.6vw;
+}
+
 #news_review .image_title {
 	width: 100%;
 	margin-left: 0%;
@@ -1131,7 +1158,7 @@ nav .left_bar_samples li {
 		width: 89.5vw;
 		left: 0;
 		margin-left: 4vw;
-		font-size: 1.07vw;4
+		font-size: 1.07vw;
 		line-height: 1.6vw;
 	}
 	
@@ -1148,6 +1175,15 @@ nav .left_bar_samples li {
 	    letter-spacing: -0.012vw;
 	    margin-bottom: 4.8vw;
 	}
+	
+	#news .title3 {
+	    width: 100%;
+	    font-size: 2.5vw;
+	    line-height: 3.0vw;
+	    text-align: center;
+	    letter-spacing: -0.012vw;
+	    margin-bottom: 4.8vw;
+	}
 
 	#news .paragraph_title {
 		margin-top: 4.8vw;
@@ -1159,10 +1195,10 @@ nav .left_bar_samples li {
 	#news .paragraph {
 		margin-top: 3.2vw;
 		margin-bottom: 3.2vw;
-		font-size: 1.566vw;
+		font-size: 1.77vw;
 		font-weight: 300;
 		letter-spacing: 0.012vw;
-		line-height: 2.2vw;
+		line-height: 3.1vw;
 	}
 	
 	#news .meta {
@@ -1204,6 +1240,10 @@ nav .left_bar_samples li {
 		margin-left: 4vw;
 		font-size: 1.07vw;
 		line-height: 1.6vw;
+	}
+	
+	#news .image_title {
+		margin-bottom: 5.2vw;
 	}
 	
 	#news_review .image_title {
