@@ -45,7 +45,7 @@ sup2 {
 	vertical-align: super;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 	body {
 	    background-image: url(assets/img/2L_texture_blank.jpg);
 	}
@@ -198,7 +198,7 @@ nav .left_bar_samples li {
 	background-size: 112% auto;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	nav {
 		visibility: hidden;
@@ -225,7 +225,7 @@ nav .left_bar_samples li {
 	display:none;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	#title .title_image {
 		display:none;
@@ -343,7 +343,7 @@ nav .left_bar_samples li {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 	#abstract {
 		margin-top: 9.0vw;
 		width: 90vw;
@@ -518,7 +518,7 @@ nav .left_bar_samples li {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	#ranking_short {
 		margin-top: 11.6vw;
@@ -676,7 +676,7 @@ nav .left_bar_samples li {
 	background-color: rgba(0, 0, 255, 0.04);
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
   
 	#ranking {
 		margin-top: 14vw;
@@ -789,7 +789,7 @@ nav .left_bar_samples li {
 	line-height: 0.94vw;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 	#footnote {
 		width: 90vw;
 		margin-top: 6vw;
@@ -884,7 +884,7 @@ hr {
 	padding: 0vw;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	#news_link {
 		margin-top: 6.4vw;
@@ -1151,7 +1151,7 @@ hr {
 	font-size: 0.94vw;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	#news {
 		margin-top: 11.5vw;
@@ -1532,7 +1532,7 @@ hr {
 	font-size: 0.94vw;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	#tests .mode {
 		font-size: 1.47vw;
@@ -1746,7 +1746,7 @@ hr {
 	line-height: 200%;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 	#about {
 		margin-top: 4.78vw;
 		font-size: 1.48vw;
@@ -1847,7 +1847,7 @@ hr {
 	font-size: 0.94vw;"	
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
   
 	#faq {
 		position: relative;
@@ -1927,7 +1927,7 @@ hr {
   width: 17.5vw;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 	.cd-image-container {
 		margin: 1.3vw;
 		width: 24.5vw;
