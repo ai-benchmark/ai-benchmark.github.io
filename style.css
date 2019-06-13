@@ -488,7 +488,7 @@ nav .left_bar_samples li {
 #ranking_short .line {
 	float:left;
     width: 100%;
-    height: 0.1vw;
+    height: 0.13vw;
     padding: 0.012vw;
     background: linear-gradient(to right, rgba(23,142,210, 0.4), #ea1d6f);
     margin-top: 0.32vw;
@@ -498,7 +498,7 @@ nav .left_bar_samples li {
 
 #ranking_short .results-info {
 	text-align: center;
-	margin-left: 7.10vw;
+	margin-left: 8.0vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
 	padding-top: 1.3vw;
@@ -588,7 +588,7 @@ nav .left_bar_samples li {
 	#ranking_short .results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: 8.13vw;
+		margin-left: 9.22vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
