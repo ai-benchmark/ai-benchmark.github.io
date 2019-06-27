@@ -685,8 +685,10 @@ nav .left_bar_samples li {
 }
 
 #ranking .ranking_links {
-	text-decoration: underline;
-	text-decoration-style: dotted;
+	text-decoration: none;
+	text-decoration-style: none;
+	border-bottom: 1px dashed rgb(234, 29, 111);
+	text-decoration-skip-ink: none;
 	color: rgb(234, 29, 111);
 	font-size: 1.02vw;
 }
@@ -861,7 +863,7 @@ nav .left_bar_samples li {
 
 #news_link {
 	position: fixed;
-	margin-top: 4.26vw;
+	margin-top: 4.2vw;
 	height: 3.2vw;
 	width: 100%;
 	overflow: hidden;
