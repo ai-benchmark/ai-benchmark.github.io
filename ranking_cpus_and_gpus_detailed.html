@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/modernizr.js"></script>
+    <meta name="viewport" content="width=device-width">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: none;">
+
+<nav>
+	<ul class="left_bar">
+		<a href="index.html"> <img src="assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a href="https://play.google.com/store/apps/details?id=org.benchmark.demo" target="_blank"> <img style="width: 6.8vw; margin-top: 1.07vw; position: fixed; margin-left: -8.5vw;" src="assets/img/google_play.png"> </a>
+		<a href="https://arxiv.org/pdf/1810.01109.pdf" > <li style="color: #e94f70; font-size: 0.94vw;"> Research <img src="assets/img/goto.png"> </li></a>
+		<a href="about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+	
+	<div id="news_link">
+		<a href="news_2019_02_05_february_updates.html"><p>
+			Chipsets: &nbsp;Snapdragon 855, &nbsp;MediaTek P90, &nbsp;Kirin 980 &nbsp;or&nbsp; Exynos 9820 &nbsp;—&nbsp; who rules the game? &nbsp; <img src="assets/img/goto_white.png">
+		</p></a>
+	</div>
+
+	
+</nav>
+
+<div id="nav_mobile">
+	<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="https://arxiv.org/pdf/1810.01109.pdf" > <li style="color: #e94f70; font-size: 1.57vw; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="assets/img/goto.png"> </li></a>
+	</ul>
+		
+	<div id="news_link">
+		<a href="news_2019_02_05_february_updates.html"><p>
+			Chipsets: &nbsp;Snapdragon 855, &nbsp;MediaTek P90, &nbsp;Kirin 980 &nbsp;or&nbsp; Exynos 9820 &nbsp;—&nbsp; who rules the game? &nbsp;<img src="assets/img/goto_white.png">
+		</p></a>
+	</div>
+
+		
+</div>
+
+<p style="margin-bottom: -1.2vw;"></p>
+<div id="ranking">
+	
+	 <table id="scoreTable" class="detailed_table" style="width: 150%;">
+		<colgroup>
+			<col class="" />
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="" /><col class="inference" /><col class="training"/>
+			<col class="inference" />
+			<col class="" />
+		</colgroup>
+  		<tr>
+	  		<th colspan="1" scope="colgroup" class="highlight_t">Network</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">MobileNet-V2</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">Inception-V3</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">Inception-V4</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">Inc-ResNet-V2</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">ResNet-V2-50</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">ResNet-V2-152</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">VGG-16</th>
+	  		<th colspan="3" scope="colgroup" class="highlight_t">SRCNN 9-5-5</th>
+	  		<th colspan="3" scope="colgroup" class="highlight_t">VGG-19 Super-Res</th>
+	  		<th colspan="3" scope="colgroup" class="highlight_t">ResNet-SRGAN</th>
+	  		<th colspan="3" scope="colgroup" class="highlight_t">ResNet-DPED</th>
+	  		<th colspan="3" scope="colgroup" class="highlight_t">U-Net</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">Nvidia-SPADE</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">ICNet</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">PSPNet</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">DeepLab</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">Pixel-RNN</th>
+	  		<th colspan="2" scope="colgroup" class="highlight_t">LSTM</th>
+	  		<th colspan="1" scope="colgroup" class="highlight_t">GNMT</th>
+	  		<th rowspan="4" class="highlight_t">AI-Score</th>
+  		</tr>
+  		<tr>
+  			<th class="highlight_l">Resolution / Input Size</th>
+  			<th class="highlight_l">224</th> <th class="highlight_l">224</th>
+  			<th class="highlight_l">346</th> <th class="highlight_l">346</th>
+  			<th class="highlight_l">346</th> <th class="highlight_l">346</th>
+  			<th class="highlight_l">346</th> <th class="highlight_l">346</th>
+  			<th class="highlight_l">346</th> <th class="highlight_l">346</th>
+  			<th class="highlight_l">256</th> <th class="highlight_l">256</th>
+  			<th class="highlight_l">224</th> <th class="highlight_l">224</th>
+  			<th class="highlight_l">512</th> <th class="highlight_l">1536</th> <th class="highlight_l">512</th>
+  			<th class="highlight_l">256</th> <th class="highlight_l">1024</th> <th class="highlight_l">224</th>
+  			<th class="highlight_l">512</th> <th class="highlight_l">1536</th> <th class="highlight_l">512</th>
+  			<th class="highlight_l">256</th> <th class="highlight_l">1024</th> <th class="highlight_l">128</th>
+  			<th class="highlight_l">512</th> <th class="highlight_l">1024</th> <th class="highlight_l">256</th>
+  			<th class="highlight_l">128</th> <th class="highlight_l">128</th>
+  			<th class="highlight_l">1024</th> <th class="highlight_l">1024</th>
+  			<th class="highlight_l">720</th> <th class="highlight_l">512</th>
+  			<th class="highlight_l">512</th> <th class="highlight_l">384</th>
+  			<th class="highlight_l">64</th> <th class="highlight_l">64</th>
+  			<th class="highlight_l">1024</th> <th class="highlight_l">1024</th>
+  			<th class="highlight_l">20</th>
+  		</tr>
+  		<tr>
+  			<th class="highlight_l">Batch Size</th>
+  			<th class="highlight_l">50</th> <th class="highlight_l">50</th>
+  			<th class="highlight_l">20</th> <th class="highlight_l">20</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">8</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">20</th> <th class="highlight_l">3</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">1</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">1</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">1</th> <th class="highlight_l">5</th>
+  			<th class="highlight_l">10</th> <th class="highlight_l">1</th> <th class="highlight_l">15</th>
+  			<th class="highlight_l">4</th> <th class="highlight_l">1</th> <th class="highlight_l">4</th>
+  			<th class="highlight_l">5</th> <th class="highlight_l">1</th>
+  			<th class="highlight_l">5</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">5</th> <th class="highlight_l">1</th>
+  			<th class="highlight_l">2</th> <th class="highlight_l">1</th>
+  			<th class="highlight_l">50</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">100</th> <th class="highlight_l">10</th>
+  			<th class="highlight_l">1</th>
+  		</tr>
+  		<tr>
+  			<th onclick="sortTable(0)" class="highlight_b", style="width: 8.8%">Model</th>
+   			<th onclick="sortTableInt(1)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(2)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(3)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(4)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(5)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(6)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(7)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(8)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(9)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(10)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(11)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(12)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(13)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(14)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+
+   			<th onclick="sortTableInt(15)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th><th onclick="sortTableInt(16)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(17)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(18)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th><th onclick="sortTableInt(19)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(20)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(21)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th><th onclick="sortTableInt(22)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(23)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(24)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th><th onclick="sortTableInt(25)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(26)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(27)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th><th onclick="sortTableInt(28)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(29)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+
+   			<th onclick="sortTableInt(30)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(31)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(32)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(33)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(34)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(35)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(36)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(37)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(38)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(39)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(40)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th> <th onclick="sortTableInt(41)" class="highlight_b", style="width: 2.1%">train, <br> ms</th>
+   			<th onclick="sortTableInt(42)" class="highlight_b", style="width: 2.1%">inf, <br> ms</th>
+  		</tr>
+</tr>
+
+<tr><td></td></tr>
+
+<tr><td class="column_0"><a id=0001 href="https://www.notebookcheck.net/NVIDIA-GeForce-GTX-1080-Ti-Desktop.199810.0.html" target="_blank" style="text-decoration: none;">GeForce GTX 1080 Ti</a></td><td class="column_5">57</td><td class="column_5">268</td><td class="column_5">87</td><td class="column_5">273</td><td class="column_5">79</td><td class="column_5">289</td><td class="column_5">88</td><td class="column_5">328</td><td class="column_5">51</td><td class="column_5">175</td><td class="column_5">67</td><td class="column_5">269</td><td class="column_5">111</td><td class="column_5">191</td><td class="column_5">98</td><td class="column_5">90</td><td class="column_5">252</td><td class="column_5">112</td><td class="column_5">159</td><td class="column_5">268</td><td class="column_5">112</td><td class="column_5">100</td><td class="column_5">169</td><td class="column_5">131</td><td class="column_5">212</td><td class="column_5">193</td><td class="column_5">217</td><td class="column_5">214</td><td class="column_5">235</td><td class="column_5">109</td><td class="column_5">198</td><td class="column_5">189</td><td class="column_5">587</td><td class="column_5">472</td><td class="column_5">208</td><td class="column_5">123</td><td class="column_5">188</td><td class="column_5">666</td><td class="column_5">1711</td><td class="column_5">561</td><td class="column_5">728</td><td class="column_5">200</td><td class="column_6"> 20425 </td></tr>
+<tr><td class="column_0"><a id=0017 href="https://www.techpowerup.com/gpu-specs/nvidia-titan-xp-collectors-edition-galactic-empire.b6439" target="_blank" style="text-decoration: none;">TITAN Xp CE</a></td><td class="column_5">47</td><td class="column_5">345</td><td class="column_5">70</td><td class="column_5">313</td><td class="column_5">65</td><td class="column_5">322</td><td class="column_5">82</td><td class="column_5">351</td><td class="column_5">45</td><td class="column_5">213</td><td class="column_5">55</td><td class="column_5">292</td><td class="column_5">101</td><td class="column_5">170</td><td class="column_5">87</td><td class="column_5">74</td><td class="column_5">267</td><td class="column_5">98</td><td class="column_5">145</td><td class="column_5">242</td><td class="column_5">119</td><td class="column_5">94</td><td class="column_5">162</td><td class="column_5">132</td><td class="column_5">190</td><td class="column_5">181</td><td class="column_5">212</td><td class="column_5">190</td><td class="column_5">220</td><td class="column_5">100</td><td class="column_5">176</td><td class="column_5">267</td><td class="column_5">932</td><td class="column_5">426</td><td class="column_5">258</td><td class="column_5">112</td><td class="column_5">238</td><td class="column_5">843</td><td class="column_5">1944</td><td class="column_5">818</td><td class="column_5">848</td><td class="column_5">183</td><td class="column_6"> 20103 </td></tr>
+<tr><td class="column_0"><a id=0002 href="https://www.techpowerup.com/gpu-specs/geforce-gtx-titan-x.c2632" target="_blank" style="text-decoration: none;">GeForce GTX TITAN X</a></td><td class="column_5">73</td><td class="column_5">496</td><td class="column_5">98</td><td class="column_5">418</td><td class="column_5">99</td><td class="column_5">439</td><td class="column_5">130</td><td class="column_5">470</td><td class="column_5">67</td><td class="column_5">253</td><td class="column_5">88</td><td class="column_5">367</td><td class="column_5">168</td><td class="column_5">263</td><td class="column_5">168</td><td class="column_5">134</td><td class="column_5">435</td><td class="column_5">161</td><td class="column_5">266</td><td class="column_5">419</td><td class="column_5">192</td><td class="column_5">144</td><td class="column_5">269</td><td class="column_5">244</td><td class="column_5">354</td><td class="column_5">314</td><td class="column_5">397</td><td class="column_5">352</td><td class="column_5">384</td><td class="column_5">185</td><td class="column_5">280</td><td class="column_5">264</td><td class="column_5">817</td><td class="column_5">743</td><td class="column_5">344</td><td class="column_5">208</td><td class="column_5">340</td><td class="column_5">857</td><td class="column_5">1641</td><td class="column_5">856</td><td class="column_5">1011</td><td class="column_5">212</td><td class="column_6"> 13718 </td></tr>
+<tr><td class="column_0"><a id=0018 href="https://www.techpowerup.com/gpu-specs/tesla-k40c.c2505" target="_blank" style="text-decoration: none;">Tesla K40c</a></td><td class="column_5">106</td><td class="column_5">621</td><td class="column_5">263</td><td class="column_5">903</td><td class="column_5">259</td><td class="column_5">954</td><td class="column_5">323</td><td class="column_5">1037</td><td class="column_5">163</td><td class="column_5">520</td><td class="column_5">231</td><td class="column_5">844</td><td class="column_5">350</td><td class="column_5">461</td><td class="column_5">401</td><td class="column_5">373</td><td class="column_5">1018</td><td class="column_5">613</td><td class="column_5">1094</td><td class="column_5">1228</td><td class="column_5">526</td><td class="column_5">474</td><td class="column_5">753</td><td class="column_5">584</td><td class="column_5">1030</td><td class="column_5">613</td><td class="column_5">1140</td><td class="column_5">1133</td><td class="column_5">965</td><td class="column_5">474</td><td class="column_5">600</td><td class="column_5">447</td><td class="column_5">1189</td><td class="column_5">2167</td><td class="column_5">721</td><td class="column_5">495</td><td class="column_5">636</td><td class="column_5">1272</td><td class="column_5">2154</td><td class="column_5">1470</td><td class="column_5">2478</td><td class="column_5">311</td><td class="column_6"> 6136 </td></tr>
+<tr><td class="column_0"><a id=0016 href="https://www.notebookcheck.net/NVIDIA-Quadro-M2000M.151581.0.html" target="_blank" style="text-decoration: none;">Quadro M2000M</a></td><td class="column_5">201</td><td class="column_5">1320</td><td class="column_5">386</td><td class="column_5">1527</td><td class="column_5">395</td><td class="column_5">1607</td><td class="column_5">481</td><td class="column_5">1529</td><td class="column_5">261</td><td class="column_5">930</td><td class="column_5">354</td><td class="column_5">1342</td><td class="column_5">581</td><td class="column_5">810</td><td class="column_5">598</td><td class="column_5">542</td><td class="column_5">1664</td><td class="column_5">847</td><td class="column_5">1354</td><td class="column_5">2189</td><td class="column_5">712</td><td class="column_5">640</td><td class="column_5">1102</td><td class="column_5">867</td><td class="column_5">1554</td><td class="column_5">1258</td><td class="column_5">1684</td><td class="column_5">1651</td><td class="column_5">1545</td><td class="column_5">811</td><td class="column_5">1146</td><td class="column_5">652</td><td class="column_5">1542</td><td class="column_5">3325</td><td class="column_5">1229</td><td class="column_5">877</td><td class="column_5">1014</td><td class="column_5">1622</td><td class="column_5">1740</td><td class="column_5">2131</td><td class="column_5">2832</td><td class="column_5">558</td><td class="column_6"> 3966 </td></tr>
+<tr><td class="column_0"><a id=0015 href="https://ark.intel.com/content/www/us/en/ark/products/64594/intel-xeon-processor-e5-2620-15m-cache-2-00-ghz-7-20-gt-s-intel-qpi.html" target="_blank" style="text-decoration: none;">Intel Xeon E5-2620 v4 x 2</a></td><td class="column_5">366</td><td class="column_5">1602</td><td class="column_5">593</td><td class="column_5">3099</td><td class="column_5">519</td><td class="column_5">2877</td><td class="column_5">568</td><td class="column_5">2624</td><td class="column_5">408</td><td class="column_5">2221</td><td class="column_5">553</td><td class="column_5">2951</td><td class="column_5">846</td><td class="column_5">1766</td><td class="column_5">852</td><td class="column_5">754</td><td class="column_5">11695</td><td class="column_5">1395</td><td class="column_5">2188</td><td class="column_5">11740</td><td class="column_5">2774</td><td class="column_5">2456</td><td class="column_5">6087</td><td class="column_5">1778</td><td class="column_5">2969</td><td class="column_5">5683</td><td class="column_5">3364</td><td class="column_5">3737</td><td class="column_5">4816</td><td class="column_5">1056</td><td class="column_5">1477</td><td class="column_5">2198</td><td class="column_5">5456</td><td class="column_5">7303</td><td class="column_5">3402</td><td class="column_5">1681</td><td class="column_5">2118</td><td class="column_5">1987</td><td class="column_5">1413</td><td class="column_5">3087</td><td class="column_5">4622</td><td class="column_5">4055</td><td class="column_6"> 1841 </td></tr>
+<tr><td class="column_0"><a id=0006 href="https://ark.intel.com/content/www/us/en/ark/products/88195/intel-core-i7-6700k-processor-8m-cache-up-to-4-20-ghz.html" target="_blank" style="text-decoration: none;">Intel Core i7-6700K</a></td><td class="column_5">460</td><td class="column_5">2386</td><td class="column_5">891</td><td class="column_5">4820</td><td class="column_5">894</td><td class="column_5">4586</td><td class="column_5">1198</td><td class="column_5">4268</td><td class="column_5">760</td><td class="column_5">3072</td><td class="column_5">1045</td><td class="column_5">4529</td><td class="column_5">1680</td><td class="column_5">1752</td><td class="column_5">1577</td><td class="column_5">1424</td><td class="column_5">12045</td><td class="column_5">2633</td><td class="column_5">4216</td><td class="column_5">10388</td><td class="column_5">3173</td><td class="column_5">2849</td><td class="column_5">5572</td><td class="column_5">3271</td><td class="column_5">4999</td><td class="column_5">6429</td><td class="column_5">6038</td><td class="column_5">5960</td><td class="column_5">5992</td><td class="column_5">2183</td><td class="column_5">2318</td><td class="column_5">1624</td><td class="column_5">4016</td><td class="column_5">10705</td><td class="column_5">4221</td><td class="column_5">2485</td><td class="column_5">2949</td><td class="column_5">1990</td><td class="column_5">1144</td><td class="column_5">3872</td><td class="column_5">10332</td><td class="column_5">1592</td><td class="column_6"> 1354 </td></tr>
+<tr><td class="column_0"><a id=0005 href="https://ark.intel.com/content/www/us/en/ark/products/75123/intel-core-i7-4770k-processor-8m-cache-up-to-3-90-ghz.html" target="_blank" style="text-decoration: none;">Intel Core i7-4770K</a></td><td class="column_5">523</td><td class="column_5">2689</td><td class="column_5">1046</td><td class="column_5">5795</td><td class="column_5">1065</td><td class="column_5">5553</td><td class="column_5">1283</td><td class="column_5">4939</td><td class="column_5">828</td><td class="column_5">3539</td><td class="column_5">1169</td><td class="column_5">5371</td><td class="column_5">1921</td><td class="column_5">1909</td><td class="column_5">1854</td><td class="column_5">1671</td><td class="column_5">14878</td><td class="column_5">3110</td><td class="column_5">4997</td><td class="column_5">12564</td><td class="column_5">3645</td><td class="column_5">3269</td><td class="column_5">6726</td><td class="column_5">3739</td><td class="column_5">5870</td><td class="column_5">7668</td><td class="column_5">6858</td><td class="column_5">6872</td><td class="column_5">7025</td><td class="column_5">2491</td><td class="column_5">2826</td><td class="column_5">1920</td><td class="column_5">4593</td><td class="column_5">12649</td><td class="column_5">5214</td><td class="column_5">2917</td><td class="column_5">3544</td><td class="column_5">2377</td><td class="column_5">1487</td><td class="column_5">4911</td><td class="column_5">13021</td><td class="column_5">1814</td><td class="column_6"> 1152 </td></tr>
+<tr><td class="column_0"><a id=0006 href="https://ark.intel.com/content/www/us/en/ark/products/88195/intel-core-i7-6700k-processor-8m-cache-up-to-4-20-ghz.html" target="_blank" style="text-decoration: none;">Intel Core i7-6700K</a></td><td class="column_5">820</td><td class="column_5">3486</td><td class="column_5">1942</td><td class="column_5">7009</td><td class="column_5">1893</td><td class="column_5">6736</td><td class="column_5">2198</td><td class="column_5">6091</td><td class="column_5">1320</td><td class="column_5">5081</td><td class="column_5">1807</td><td class="column_5">7372</td><td class="column_5">3438</td><td class="column_5">2220</td><td class="column_5">4006</td><td class="column_5">3594</td><td class="column_5">15230</td><td class="column_5">6939</td><td class="column_5">11141</td><td class="column_5">17254</td><td class="column_5">5652</td><td class="column_5">5089</td><td class="column_5">7990</td><td class="column_5">7280</td><td class="column_5">10286</td><td class="column_5">9319</td><td class="column_5">11291</td><td class="column_5">10372</td><td class="column_5">9662</td><td class="column_5">4533</td><td class="column_5">3712</td><td class="column_5">2608</td><td class="column_5">6214</td><td class="column_5">19817</td><td class="column_5">6680</td><td class="column_5">4698</td><td class="column_5">4398</td><td class="column_5">5805</td><td class="column_5">2832</td><td class="column_5">7748</td><td class="column_5">12601</td><td class="column_5">1641</td><td class="column_6"> 790 </td></tr>
+<tr><td class="column_0"><a id=0006 href="https://ark.intel.com/content/www/us/en/ark/products/88195/intel-core-i7-6700k-processor-8m-cache-up-to-4-20-ghz.html" target="_blank" style="text-decoration: none;">Intel Core i7-6700K</a></td><td class="column_5">860</td><td class="column_5">5183</td><td class="column_5">1255</td><td class="column_5">7301</td><td class="column_5">1353</td><td class="column_5">7080</td><td class="column_5">2075</td><td class="column_5">6522</td><td class="column_5">1247</td><td class="column_5">6843</td><td class="column_5">1406</td><td class="column_5">8372</td><td class="column_5">1635</td><td class="column_5">1768</td><td class="column_5">2263</td><td class="column_5">1704</td><td class="column_5">5865</td><td class="column_5">1966</td><td class="column_5">3102</td><td class="column_5">11513</td><td class="column_5">3892</td><td class="column_5">3372</td><td class="column_5">8256</td><td class="column_5">5954</td><td class="column_5">132048</td><td class="column_5">437788</td><td class="column_5">285493</td><td class="column_5">9339</td><td class="column_5">25885</td><td class="column_5">4916</td><td class="column_5">4140</td><td class="column_5">2517</td><td class="column_5">5699</td><td class="column_5">11719</td><td class="column_5">6319</td><td class="column_5">4096</td><td class="column_5">4726</td><td class="column_5">4916</td><td class="column_5">5468</td><td class="column_5">6912</td><td class="column_5">9988</td><td class="column_5">1592</td><td class="column_6"> 711 </td></tr>
+<tr><td class="column_0"><a id=0012 href="https://ark.intel.com/content/www/us/en/ark/products/89608/intel-xeon-processor-e3-1505m-v5-8m-cache-2-80-ghz.html" target="_blank" style="text-decoration: none;">Intel Xeon E3-1505M v5</a></td><td class="column_5">785</td><td class="column_5">8480</td><td class="column_5">1802</td><td class="column_5">11472</td><td class="column_5">1946</td><td class="column_5">11223</td><td class="column_5">2262</td><td class="column_5">9819</td><td class="column_5">1387</td><td class="column_5">7841</td><td class="column_5">2065</td><td class="column_5">11757</td><td class="column_5">3411</td><td class="column_5">2528</td><td class="column_5">2976</td><td class="column_5">2698</td><td class="column_5">17235</td><td class="column_5">5299</td><td class="column_5">8574</td><td class="column_5">17934</td><td class="column_5">9043</td><td class="column_5">7972</td><td class="column_5">13394</td><td class="column_5">7145</td><td class="column_5">11145</td><td class="column_5">11277</td><td class="column_5">13829</td><td class="column_5">13738</td><td class="column_5">12021</td><td class="column_5">4438</td><td class="column_5">5225</td><td class="column_5">2882</td><td class="column_5">6435</td><td class="column_5">20635</td><td class="column_5">10825</td><td class="column_5">4816</td><td class="column_5">7406</td><td class="column_5">4973</td><td class="column_5">9659</td><td class="column_5">17296</td><td class="column_5">24096</td><td class="column_5">1627</td><td class="column_6"> 612 </td></tr>
+<tr><td class="column_0"><a id=0012 href="https://ark.intel.com/content/www/us/en/ark/products/89608/intel-xeon-processor-e3-1505m-v5-8m-cache-2-80-ghz.html" target="_blank" style="text-decoration: none;">Intel Xeon E3-1505M v5</a></td><td class="column_5">731</td><td class="column_5">8106</td><td class="column_5">1729</td><td class="column_5">11400</td><td class="column_5">1937</td><td class="column_5">11099</td><td class="column_5">2253</td><td class="column_5">9836</td><td class="column_5">1380</td><td class="column_5">7781</td><td class="column_5">2049</td><td class="column_5">11700</td><td class="column_5">3355</td><td class="column_5">2481</td><td class="column_5">3078</td><td class="column_5">2791</td><td class="column_5">17304</td><td class="column_5">5425</td><td class="column_5">8707</td><td class="column_5">17966</td><td class="column_5">8759</td><td class="column_5">7785</td><td class="column_5">13133</td><td class="column_5">7087</td><td class="column_5">11054</td><td class="column_5">10970</td><td class="column_5">13850</td><td class="column_5">13703</td><td class="column_5">12083</td><td class="column_5">4541</td><td class="column_5">5365</td><td class="column_5">2816</td><td class="column_5">6485</td><td class="column_5">20792</td><td class="column_5">11238</td><td class="column_5">4734</td><td class="column_5">9074</td><td class="column_5">4942</td><td class="column_5">9758</td><td class="column_5">21914</td><td class="column_5">25901</td><td class="column_5">1602</td><td class="column_6"> 607 </td></tr>
+<tr><td class="column_0"><a id=0004 href="https://ark.intel.com/content/www/us/en/ark/products/52214/intel-core-i7-2600k-processor-8m-cache-up-to-3-80-ghz.html" target="_blank" style="text-decoration: none;">Intel Core i7-2600K</a></td><td class="column_5">804</td><td class="column_5">3629</td><td class="column_5">2705</td><td class="column_5">10987</td><td class="column_5">2823</td><td class="column_5">11058</td><td class="column_5">3236</td><td class="column_5">9862</td><td class="column_5">1886</td><td class="column_5">6781</td><td class="column_5">2971</td><td class="column_5">10750</td><td class="column_5">5824</td><td class="column_5">3236</td><td class="column_5">4029</td><td class="column_5">4151</td><td class="column_5">25684</td><td class="column_5">8215</td><td class="column_5">13659</td><td class="column_5">25910</td><td class="column_5">7453</td><td class="column_5">7239</td><td class="column_5">12663</td><td class="column_5">8264</td><td class="column_5">12056</td><td class="column_5">12934</td><td class="column_5">17197</td><td class="column_5">17347</td><td class="column_5">15906</td><td class="column_5">7008</td><td class="column_5">5751</td><td class="column_5">3313</td><td class="column_5">7576</td><td class="column_5">36618</td><td class="column_5">13453</td><td class="column_5">7412</td><td class="column_5">7446</td><td class="column_5">3081</td><td class="column_5">1884</td><td class="column_5">11429</td><td class="column_5">23280</td><td class="column_5">2438</td><td class="column_6"> 566 </td></tr>
+<tr><td class="column_0"><a id=0006 href="https://ark.intel.com/content/www/us/en/ark/products/88195/intel-core-i7-6700k-processor-8m-cache-up-to-4-20-ghz.html" target="_blank" style="text-decoration: none;">Intel Core i7-6700K</a></td><td class="column_5">2280</td><td class="column_5">5843</td><td class="column_5">4142</td><td class="column_5">11928</td><td class="column_5">4048</td><td class="column_5">11656</td><td class="column_5">4281</td><td class="column_5">10006</td><td class="column_5">2781</td><td class="column_5">8463</td><td class="column_5">4117</td><td class="column_5">12503</td><td class="column_5">6266</td><td class="column_5">3129</td><td class="column_5">6892</td><td class="column_5">6216</td><td class="column_5">20001</td><td class="column_5">11560</td><td class="column_5">18621</td><td class="column_5">27274</td><td class="column_5">9036</td><td class="column_5">8165</td><td class="column_5">12577</td><td class="column_5">11582</td><td class="column_5">17929</td><td class="column_5">13197</td><td class="column_5">20569</td><td class="column_5">20117</td><td class="column_5">15867</td><td class="column_5">8265</td><td class="column_5">5603</td><td class="column_5">3655</td><td class="column_5">8374</td><td class="column_5">41101</td><td class="column_5">12234</td><td class="column_5">9608</td><td class="column_5">7802</td><td class="column_5">6436</td><td class="column_5">3539</td><td class="column_5">11536</td><td class="column_5">13324</td><td class="column_5">1801</td><td class="column_6"> 486 </td></tr>
+<tr><td class="column_0"><a id=0000 href="https://www.notebookcheck.net/NVIDIA-GeForce-710M.84746.0.html" target="_blank" style="text-decoration: none;">GeForce GT 710</a></td><td class="column_5">1178</td><td class="column_5">0</td><td class="column_5">2738</td><td class="column_5">0</td><td class="column_5">2686</td><td class="column_5">0</td><td class="column_5">3351</td><td class="column_5">0</td><td class="column_5">1783</td><td class="column_5">0</td><td class="column_5">2545</td><td class="column_5">0</td><td class="column_5">4138</td><td class="column_5">0</td><td class="column_5">4308</td><td class="column_5">3973</td><td class="column_5">0</td><td class="column_5">7836</td><td class="column_5">14178</td><td class="column_5">0</td><td class="column_5">6157</td><td class="column_5">5642</td><td class="column_5">0</td><td class="column_5">7217</td><td class="column_5">12806</td><td class="column_5">0</td><td class="column_5">14850</td><td class="column_5">136502</td><td class="column_5">0</td><td class="column_5">6505</td><td class="column_5">0</td><td class="column_5">3692</td><td class="column_5">0</td><td class="column_5">23558</td><td class="column_5">0</td><td class="column_5">6032</td><td class="column_5">0</td><td class="column_5">6448</td><td class="column_5">0</td><td class="column_5">11676</td><td class="column_5">0</td><td class="column_5">2368</td><td class="column_6"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 470 <sup2>1</sup2></a></td></tr>
+<tr><td class="column_0"><a id=0012 href="https://ark.intel.com/content/www/us/en/ark/products/89608/intel-xeon-processor-e3-1505m-v5-8m-cache-2-80-ghz.html" target="_blank" style="text-decoration: none;">Intel Xeon E3-1505M v5</a></td><td class="column_5">1129</td><td class="column_5">11468</td><td class="column_5">3529</td><td class="column_5">18486</td><td class="column_5">3948</td><td class="column_5">16676</td><td class="column_5">4216</td><td class="column_5">14538</td><td class="column_5">2362</td><td class="column_5">12617</td><td class="column_5">3392</td><td class="column_5">17602</td><td class="column_5">6385</td><td class="column_5">3404</td><td class="column_5">11358</td><td class="column_5">10184</td><td class="column_5">31777</td><td class="column_5">15758</td><td class="column_5">25395</td><td class="column_5">33141</td><td class="column_5">15187</td><td class="column_5">13068</td><td class="column_5">18762</td><td class="column_5">14113</td><td class="column_5">22560</td><td class="column_5">15811</td><td class="column_5">22002</td><td class="column_5">22091</td><td class="column_5">17382</td><td class="column_5">7426</td><td class="column_5">7006</td><td class="column_5">4974</td><td class="column_5">11649</td><td class="column_5">35594</td><td class="column_5">16001</td><td class="column_5">7590</td><td class="column_5">10425</td><td class="column_5">5469</td><td class="column_5">10305</td><td class="column_5">15882</td><td class="column_5">25682</td><td class="column_5">1646</td><td class="column_6"> 378 </td></tr>
+<tr><td class="column_0"><a id=0011 href="https://ark.intel.com/content/www/us/en/ark/products/37150/intel-core-i7-950-processor-8m-cache-3-06-ghz-4-80-gt-s-intel-qpi.html" target="_blank" style="text-decoration: none;">Intel Core i7-950</a></td><td class="column_5">4312</td><td class="column_5">10808</td><td class="column_5">6960</td><td class="column_5">20022</td><td class="column_5">6662</td><td class="column_5">19188</td><td class="column_5">6830</td><td class="column_5">16283</td><td class="column_5">4606</td><td class="column_5">12911</td><td class="column_5">6674</td><td class="column_5">19184</td><td class="column_5">9256</td><td class="column_5">4504</td><td class="column_5">12395</td><td class="column_5">11185</td><td class="column_5">36360</td><td class="column_5">19682</td><td class="column_5">31495</td><td class="column_5">44472</td><td class="column_5">15046</td><td class="column_5">13555</td><td class="column_5">20906</td><td class="column_5">20643</td><td class="column_5">32106</td><td class="column_5">23555</td><td class="column_5">32510</td><td class="column_5">31825</td><td class="column_5">25236</td><td class="column_5">12434</td><td class="column_5">8898</td><td class="column_5">6199</td><td class="column_5">13733</td><td class="column_5">61895</td><td class="column_5">18565</td><td class="column_5">14980</td><td class="column_5">12301</td><td class="column_5">14423</td><td class="column_5">7015</td><td class="column_5">19004</td><td class="column_5">22379</td><td class="column_5">2891</td><td class="column_6"> 293 </td></tr>
+<tr><td class="column_0"><a id=0010 href="https://ark.intel.com/content/www/us/en/ark/products/41447/intel-core-i7-930-processor-8m-cache-2-80-ghz-4-80-gt-s-intel-qpi.html" target="_blank" style="text-decoration: none;">Intel Core i7-930</a></td><td class="column_5">4054</td><td class="column_5">9722</td><td class="column_5">7099</td><td class="column_5">20276</td><td class="column_5">6881</td><td class="column_5">19706</td><td class="column_5">7253</td><td class="column_5">17103</td><td class="column_5">4680</td><td class="column_5">13048</td><td class="column_5">6910</td><td class="column_5">19802</td><td class="column_5">10191</td><td class="column_5">5032</td><td class="column_5">13545</td><td class="column_5">10797</td><td class="column_5">41110</td><td class="column_5">19499</td><td class="column_5">31207</td><td class="column_5">45903</td><td class="column_5">14968</td><td class="column_5">13485</td><td class="column_5">21472</td><td class="column_5">19125</td><td class="column_5">30016</td><td class="column_5">23179</td><td class="column_5">33049</td><td class="column_5">32569</td><td class="column_5">26250</td><td class="column_5">13243</td><td class="column_5">9269</td><td class="column_5">6301</td><td class="column_5">14267</td><td class="column_5">66967</td><td class="column_5">19655</td><td class="column_5">15947</td><td class="column_5">12817</td><td class="column_5">11211</td><td class="column_5">6346</td><td class="column_5">19462</td><td class="column_5">23467</td><td class="column_5">3071</td><td class="column_6"> 288 </td></tr>
+<tr><td class="column_0"><a id=0003 href="https://ark.intel.com/content/www/us/en/ark/products/71259/intel-core-i5-3437u-processor-3m-cache-up-to-2-90-ghz.html" target="_blank" style="text-decoration: none;">Intel Core i5-3437U</a></td><td class="column_5">1949</td><td class="column_5">17278</td><td class="column_5">7779</td><td class="column_5">34501</td><td class="column_5">8424</td><td class="column_5">35347</td><td class="column_5">9380</td><td class="column_5">32152</td><td class="column_5">6556</td><td class="column_5">26190</td><td class="column_5">8686</td><td class="column_5">38389</td><td class="column_5">15090</td><td class="column_5">7799</td><td class="column_5">10495</td><td class="column_5">9426</td><td class="column_5">52089</td><td class="column_5">20743</td><td class="column_5">34150</td><td class="column_5">60793</td><td class="column_5">22761</td><td class="column_5">20471</td><td class="column_5">35662</td><td class="column_5">21614</td><td class="column_5">36640</td><td class="column_5">32338</td><td class="column_5">60136</td><td class="column_5">57770</td><td class="column_5">43588</td><td class="column_5">19146</td><td class="column_5">15946</td><td class="column_5">7635</td><td class="column_5">18280</td><td class="column_5">121327</td><td class="column_5">53655</td><td class="column_5">19122</td><td class="column_5">37061</td><td class="column_5">9873</td><td class="column_5">14500</td><td class="column_5">33772</td><td class="column_5">64785</td><td class="column_5">2757</td><td class="column_6"> 190 </td></tr>
+
+
+  		</table>
+</div>
+
+<div id="footnote">
+	<p> <sup2>1</sup2> &nbsp;-&nbsp; The final AI Score for this device was estimated based on its inference score </p>
+	<p> <sup2>2</sup2> &nbsp;-&nbsp; The final AI Score for this device was estimated based on its training score </p>
+	<p> <sup2>3</sup2> &nbsp;-&nbsp; This device might be using unofficial / prototype hardware or drivers</p>
+	<p> <sup2>4</sup2> &nbsp;-&nbsp; These are the results of an early prototype. The results of the commercial device might be different</p>
+</div>
+
+<div id="about" style="width: 155.2%">
+	<div id="content" style="height: 2vw;"></div>
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	function open_demo() {
+		document.getElementById('demos').style.display="block";
+		document.getElementById('demo-button').style.display="none";
+	}
+	function close_demo() {
+		document.getElementById('demos').style.display="none";
+		document.getElementById('demo-button').style.display="block";
+	}
+</script>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("scoreTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 5; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+<script>
+function sortTableFloat(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("scoreTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 5; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      if (dir == "asc") {
+        if (parseFloat(x.innerHTML) > parseFloat(y.innerHTML)) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (parseFloat(x.innerHTML) < parseFloat(y.innerHTML)) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+<script>
+function sortTableInt(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("scoreTable");
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 5; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      
+      score_x = parseInt(x.innerHTML)
+      score_y = parseInt(y.innerHTML)
+      
+      if (dir == "asc") {
+      	if (score_x == 0) {
+      		score_x = 1000000;
+      	}
+        if (score_x > score_y && score_y != 0) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (score_x < score_y) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+
+</html>
