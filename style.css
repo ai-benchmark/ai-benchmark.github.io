@@ -1806,6 +1806,12 @@ hr {
 	line-height: 200%;
 }
 
+#about-prolonged {
+	width: 155.2%;
+	background-color: rgba(0, 0, 0, 0);
+	overflow: hidden;
+}
+
 @media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 	#about {
 		margin-top: 4.78vw;
