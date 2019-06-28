@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i	" rel="stylesheet"> 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script src="js/modernizr.js"></script>
     <meta name="viewport" content="width=device-width">
@@ -22,16 +23,16 @@
     
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: none;">
 
 <nav>
 	<ul class="left_bar">
 		<a href="index.html"> <img src="assets/img/splash.png"> </a>
 	</ul>
 	<ul class="middle_bar">
-		<a href="#title"> <li> BENCHMARK </li></a>
+		<a href="index.html"> <li> BENCHMARK </li></a>
 		<a href="ranking.html"> <li> RANKING </li></a>
-		<a href="news.html"> <li style="background-color: rgba(233,79,112, 0.85); margin-right: -0.25vw; margin-left: -0.25vw;"> NEWS </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
 		<a href="tests.html"> <li> AI-TESTS </li></a>
 	</ul>
 	<ul class="right_bar">
@@ -39,100 +40,140 @@
 		<a href="https://arxiv.org/pdf/1810.01109.pdf" > <li style="color: #e94f70; font-size: 0.94vw;"> Research <img src="assets/img/goto.png"> </li></a>
 		<a href="about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
 	</ul>
-	
 </nav>
 
 <div id="nav_mobile">
 	<ul class="middle_bar">
 		<a href="index.html"> <li> BENCHMARK </li></a>
 		<a href="ranking.html"> <li> RANKING </li></a>
-		<a href="news.html"> <li style="background-color: rgba(233,79,112, 0.85); "> NEWS </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
 		<a href="tests.html"> <li> AI-TESTS </li></a>
 		<a href="https://arxiv.org/pdf/1810.01109.pdf" > <li style="color: #e94f70; font-size: 1.57vw; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="assets/img/goto.png"> </li></a>
 	</ul>
-</div>
-
-<div id="title">
-	<div class="title_image"> <img  src="assets/img/title-ai.png"> </div>
-	<div class="mobile_image"> <img src="assets/img/title-ai-star.png"> </div>
-</div>
-
-<div id="abstract">
-	<div>
-		<div class="description">
-		    	<p class="class_1">Face Recognition </p>
-		    	<p class="class_2">Image Classification</p>
-		    	<p class="class_3">Image Enhancement...</p>
-				<div class="class_4">
-				
-					<p> Is your <span class="class_5">smartphone</span> capable of running the latest <span class="class_5">Deep Neural Networks</span> to perform these AI-based tasks?
-			    		Is it fast enough? </p>	
-			    	<p style="margin-top: 1.8vw;"> Run <span class="class_5">AI Benchmark</span> to test <span class="class_5">several key AI tasks</span> on your phone and check its performance!</p>
-		    	
-		    	</div>
-		    	
-		    	<a href="tests.html"><button class="algo-info">LEARN MORE ABOUT THE TASKS</button></a>
-		    	
-		</div>
-		<div class="google_play"><a href="https://play.google.com/store/apps/details?id=org.benchmark.demo"><img style="width: 100%" src="assets/img/app_screen.png"></a></div>
-	</div>
 	
 </div>
 
-<div id="ranking_short">
+<div id="news">
 
-	<div class="title">Phone Ranking</div>
-	
-<div class="item"><div class="name">Huawei Nova 5</div><div class="processor">HiSilicon Kirin 810</div><div class="ram">6GB RAM</div><div class="score">33863</div></br><div class="line" style="width: 88.00%;"></div></div>
-<div class="item"><div class="name">Asus Zenfone 6</div><div class="processor">Snapdragon 855</div><div class="ram">8GB RAM</div><div class="score">27410</div></br><div class="line" style="width: 71.23%;"></div></div>
-<div class="item"><div class="name">OnePlus 7 Pro</div><div class="processor">Snapdragon 855</div><div class="ram">12GB RAM</div><div class="score">25720</div></br><div class="line" style="width: 66.84%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy S10+</div><div class="processor">Snapdragon 855</div><div class="ram">8GB RAM</div><div class="score">25087</div></br><div class="line" style="width: 65.19%;"></div></div>
-<div class="item"><div class="name">Xiaomi Mi 9 Explorer</div><div class="processor">Snapdragon 855</div><div class="ram">12GB RAM</div><div class="score">24241</div></br><div class="line" style="width: 63.00%;"></div></div>
-<div class="item"><div class="name">Huawei P30 Pro</div><div class="processor">HiSilicon Kirin 980</div><div class="ram">8GB RAM</div><div class="score">23874</div></br><div class="line" style="width: 62.04%;"></div></div>
-<div class="item"><div class="name">LG G8 ThinQ</div><div class="processor">Snapdragon 855</div><div class="ram">6GB RAM</div><div class="score">23499</div></br><div class="line" style="width: 61.07%;"></div></div>
-<div class="item"><div class="name">Huawei Mate 20 Pro</div><div class="processor">HiSilicon Kirin 980</div><div class="ram">6GB RAM</div><div class="score">21125</div></br><div class="line" style="width: 54.90%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy S9+</div><div class="processor">Snapdragon 845</div><div class="ram">6GB RAM</div><div class="score">18885</div></br><div class="line" style="width: 49.08%;"></div></div>
-<div class="item"><div class="name">vivo NEX Dual Display</div><div class="processor">Snapdragon 845</div><div class="ram">10GB RAM</div><div class="score">18710</div></br><div class="line" style="width: 48.62%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy Note9</div><div class="processor">Snapdragon 845</div><div class="ram">6GB RAM</div><div class="score">18509</div></br><div class="line" style="width: 48.10%;"></div></div>
-<div class="item"><div class="name">Asus Zenfone 5z</div><div class="processor">Snapdragon 845</div><div class="ram">6GB RAM</div><div class="score">16450</div></br><div class="line" style="width: 42.75%;"></div></div>
-<div class="item"><div class="name">OnePlus 6T</div><div class="processor">Snapdragon 845</div><div class="ram">8GB RAM</div><div class="score">14054</div></br><div class="line" style="width: 36.52%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy A70</div><div class="processor">Snapdragon 675</div><div class="ram">6GB RAM</div><div class="score">10246</div></br><div class="line" style="width: 26.63%;"></div></div>
-<div class="item"><div class="name">Huawei Mate 10 Pro</div><div class="processor">HiSilicon Kirin 970</div><div class="ram">6GB RAM</div><div class="score">9064</div></br><div class="line" style="width: 23.55%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy S10e</div><div class="processor">Exynos 9820 Octa</div><div class="ram">6GB RAM</div><div class="score">8977</div></br><div class="line" style="width: 23.33%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy S10+</div><div class="processor">Exynos 9820 Octa</div><div class="ram">8GB RAM</div><div class="score">8919</div></br><div class="line" style="width: 23.18%;"></div></div>
-<div class="item"><div class="name">Huawei Honor View 10</div><div class="processor">HiSilicon Kirin 970</div><div class="ram">6GB RAM</div><div class="score">8732</div></br><div class="line" style="width: 22.69%;"></div></div>
-<div class="item"><div class="name">Google Pixel 3 XL</div><div class="processor">Snapdragon 845</div><div class="ram">4GB RAM</div><div class="score">7999</div></br><div class="line" style="width: 20.79%;"></div></div>
-<div class="item"><div class="name">Google Pixel 3</div><div class="processor">Snapdragon 845</div><div class="ram">4GB RAM</div><div class="score">7977</div></br><div class="line" style="width: 20.73%;"></div></div>
-<div class="item"><div class="name">Xiaomi Pocophone F1</div><div class="processor">Snapdragon 845</div><div class="ram">6GB RAM</div><div class="score">7557</div></br><div class="line" style="width: 19.64%;"></div></div>
-<div class="item"><div class="name">vivo V15</div><div class="processor">Mediatek Helio P70</div><div class="ram">6GB RAM</div><div class="score">7101</div></br><div class="line" style="width: 18.45%;"></div></div>
-<div class="item"><div class="name">Meizu Note 9</div><div class="processor">Snapdragon 675</div><div class="ram">4GB RAM</div><div class="score">7075</div></br><div class="line" style="width: 18.39%;"></div></div>
-<div class="item"><div class="name">vivo V15 Pro</div><div class="processor">Snapdragon 675</div><div class="ram">6GB RAM</div><div class="score">6687</div></br><div class="line" style="width: 17.38%;"></div></div>
-<div class="item"><div class="name">Xiaomi Mi 9 SE</div><div class="processor">Snapdragon 712</div><div class="ram">6GB RAM</div><div class="score">6556</div></br><div class="line" style="width: 17.04%;"></div></div>
-<div class="item"><div class="name">vivo X27 Pro</div><div class="processor">Snapdragon 710</div><div class="ram">8GB RAM</div><div class="score">6474</div></br><div class="line" style="width: 16.82%;"></div></div>
-<div class="item"><div class="name">Oppo Reno</div><div class="processor">Snapdragon 710</div><div class="ram">8GB RAM</div><div class="score">6354</div></br><div class="line" style="width: 16.51%;"></div></div>
-<div class="item"><div class="name">Realme 3</div><div class="processor">Mediatek Helio P70</div><div class="ram">4GB RAM</div><div class="score">6330</div></br><div class="line" style="width: 16.45%;"></div></div>
-<div class="item"><div class="name">Oppo F11 Pro</div><div class="processor">Mediatek Helio P70</div><div class="ram">6GB RAM</div><div class="score">6301</div></br><div class="line" style="width: 16.37%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy Note9</div><div class="processor">Exynos 9810 Octa</div><div class="ram">6GB RAM</div><div class="score">6239</div></br><div class="line" style="width: 16.21%;"></div></div>
-<div class="item"><div class="name">Nokia X7</div><div class="processor">Snapdragon 710</div><div class="ram">4GB RAM</div><div class="score">6119</div></br><div class="line" style="width: 15.90%;"></div></div>
-<div class="item"><div class="name">Lenovo Z5s</div><div class="processor">Snapdragon 710</div><div class="ram">6GB RAM</div><div class="score">6060</div></br><div class="line" style="width: 15.75%;"></div></div>
-<div class="item"><div class="name">Motorola One Vision</div><div class="processor">Exynos 9609</div><div class="ram">4GB RAM</div><div class="score">5669</div></br><div class="line" style="width: 14.73%;"></div></div>
-<div class="item"><div class="name">Sony Xperia XZ3</div><div class="processor">Snapdragon 845</div><div class="ram">4GB RAM</div><div class="score">5503</div></br><div class="line" style="width: 14.30%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy S9+</div><div class="processor">Exynos 9810 Octa</div><div class="ram">6GB RAM</div><div class="score">5441</div></br><div class="line" style="width: 14.14%;"></div></div>
-<div class="item"><div class="name">Samsung Galaxy A50</div><div class="processor">Exynos 9610</div><div class="ram">6GB RAM</div><div class="score">5399</div></br><div class="line" style="width: 14.03%;"></div></div>
-<div class="item"><div class="name">Nokia 9 PureView</div><div class="processor">Snapdragon 845</div><div class="ram">6GB RAM</div><div class="score">5223</div></br><div class="line" style="width: 13.57%;"></div></div>
-<div class="item"><div class="name">HTC U11</div><div class="processor">Snapdragon 835</div><div class="ram">6GB RAM</div><div class="score">5039</div></br><div class="line" style="width: 13.09%;"></div></div>
-<div class="item"><div class="name">Essential Phone</div><div class="processor">Snapdragon 835</div><div class="ram">4GB RAM</div><div class="score">5009</div></br><div class="line" style="width: 13.02%;"></div></div>
-<div class="item"><div class="name">Google Pixel 2</div><div class="processor">Snapdragon 835</div><div class="ram">4GB RAM</div><div class="score">4859</div></br><div class="line" style="width: 12.63%;"></div></div>
-<div class="item"><div class="name">Google Pixel 2 XL</div><div class="processor">Snapdragon 835</div><div class="ram">4GB RAM</div><div class="score">4851</div></br><div class="line" style="width: 12.61%;"></div></div>
+<h1 class="title3" style="word-spacing: 0.2vw;"> <span style="color: #ea1d6f;"> AI Benchmark for Windows, Linux and macOS: &nbsp;<span style="color: #178ed2;">Let the AI Games Begin...</span></h1>
 
-<div><a href="ranking.html"><button class="results-info">VIEW FULL RATING</button></a></div>
+<h1 class="paragraph">While Machine Learning is already a mature field, for many years it was lacking a professional, accurate and lightweight tool for measuring AI performance of various hardware used for training and inference with ML algorithms. Today we are making a step forward towards standardizing the benchmarking of AI-related silicon, and present a new standard for all-round performance evaluation of hardware platforms capable of running machine and deep learning models.
+</h1>
+
+<a href="ranking_cpus_and_gpus.html"><img style="width: 100%; margin-top: 0vw; margin-bottom: 1.2vw;" src="assets/img/ai_benchmark_for_desktops.png"></a>
+
+<h1 class="paragraph_title" style="word-spacing: 0.2vw;"> Measuring AI Performance of Desktop CPUs and GPUs </h1>
+
+<h1 class="paragraph">AI Benchmark Alpha is an open source python library for evaluating AI performance of various hardware platforms, including CPUs, GPUs and TPUs. The benchmark is relying on TensorFlow machine learning library, and is providing a lightweight and accurate solution for assessing inference and training speed for key Deep Learning models. AI Benchmark is currently distributed as a <a href="https://pypi.org/project/ai-benchmark/" target="_blank" class="blue_link_underlined">Python pip package</a> and can be downloaded to any system running Windows, Linux or macOS.</h1>
+
+<h1 class="paragraph">In total, AI Benchmark consists of <span style="font-weight: 400;">42 tests</span> and <span style="font-weight: 400;">19 sections</span> provided below: </br></br>
+
+<span class="item-list">
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 1:</span> <span style="color: #ea1d6f;">MobileNet-V2</span>,&nbsp; <span style="color: #178ed2;"> Classification</span>,&nbsp; <a href="https://arxiv.org/pdf/1704.04861.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 2:</span> <span style="color: #ea1d6f;">Inception-V3</span>,&nbsp; <span style="color: #178ed2;"> Classification</span>,&nbsp; <a href="https://arxiv.org/pdf/1512.00567.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 3:</span> <span style="color: #ea1d6f;">Inception-V4</span>,&nbsp; <span style="color: #178ed2;"> Classification</span>,&nbsp; <a href="https://arxiv.org/pdf/1602.07261.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 4:</span> <span style="color: #ea1d6f;">Inception-ResNet-V2</span>,&nbsp; <span style="color: #178ed2;"> Classification</span>,&nbsp; <a href="https://arxiv.org/pdf/1603.05027.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 5:</span> <span style="color: #ea1d6f;">ResNet-V2-50</span>,&nbsp; <span style="color: #178ed2;"> Classification</span>,&nbsp; <a href="https://arxiv.org/pdf/1603.05027.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 6:</span> <span style="color: #ea1d6f;">ResNet-V2-152</span>,&nbsp; <span style="color: #178ed2;"> Classification</span>,&nbsp; <a href="https://arxiv.org/pdf/1603.05027.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 7:</span> <span style="color: #ea1d6f;">VGG-16</span>,&nbsp; <span style="color: #178ed2;"> Classification</span>,&nbsp; <a href="https://arxiv.org/pdf/1409.1556.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 8:</span> <span style="color: #ea1d6f;">SRCNN 9-5-5</span>,&nbsp; <span style="color: #178ed2;"> Image-to-Image Mapping</span>,&nbsp; <a href="https://arxiv.org/pdf/1501.00092.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 9:</span> <span style="color: #ea1d6f;">VGG-19</span>,&nbsp; <span style="color: #178ed2;"> Image-to-Image Mapping</span>,&nbsp; <a href="https://arxiv.org/pdf/1511.04587.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 10:</span> <span style="color: #ea1d6f;">ResNet-SRGAN</span>,&nbsp; <span style="color: #178ed2;"> Image-to-Image Mapping</span>,&nbsp; <a href="https://arxiv.org/pdf/1609.04802.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 11:</span> <span style="color: #ea1d6f;">ResNet-DPED</span>,&nbsp; <span style="color: #178ed2;"> Image-to-Image Mapping</span>,&nbsp; <a href="http://people.ee.ethz.ch/~ihnatova/index.html" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 12:</span> <span style="color: #ea1d6f;">U-Net</span>,&nbsp; <span style="color: #178ed2;"> Image-to-Image Mapping</span>,&nbsp; <a href="https://arxiv.org/pdf/1505.04597.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 13:</span> <span style="color: #ea1d6f;">Nvidia-SPADE</span>,&nbsp; <span style="color: #178ed2;"> Image-to-Image Mapping</span>,&nbsp; <a href="https://arxiv.org/pdf/1903.07291.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 14:</span> <span style="color: #ea1d6f;">ICNet</span>,&nbsp; <span style="color: #178ed2;"> Image Segmentation</span>,&nbsp; <a href="https://arxiv.org/pdf/1704.08545.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 15:</span> <span style="color: #ea1d6f;">PSPNet</span>,&nbsp; <span style="color: #178ed2;"> Image Segmentation</span>,&nbsp; <a href="https://arxiv.org/pdf/1612.01105.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 16:</span> <span style="color: #ea1d6f;">DeepLab</span>,&nbsp; <span style="color: #178ed2;"> Image Segmentation</span>,&nbsp; <a href="https://arxiv.org/pdf/1502.02734.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 17:</span> <span style="color: #ea1d6f;">Pixel-RNN</span>,&nbsp; <span style="color: #178ed2;"> Image Inpainting</span>,&nbsp; <a href="https://arxiv.org/pdf/1601.06759.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 18:</span> <span style="color: #ea1d6f;">LSTM</span>,&nbsp; <span style="color: #178ed2;"> Sentence Sentiment Analysis</span>,&nbsp; <a href="https://www.bioinf.jku.at/publications/older/2604.pdf" target="_blank" class="red_link">[paper]</a></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;	">Section 19:</span> <span style="color: #ea1d6f;">GNMT</span>,&nbsp; <span style="color: #178ed2;"> Text Translation</span>,&nbsp; <a href="https://arxiv.org/pdf/1609.08144.pdf" target="_blank" class="red_link">[paper]</a></br>
+</br>
+
+The tests are covering all major Deep Learning tasks and architectures, and are therefore useful for researchers, developers, hardware vendors and end-users running AI applications on their devices. Additional information about setup for each test (input and batch sizes, test modes) can be found on the <a href="ranking_cpus_and_gpus_detailed.html" target="_blank" class="red_link_underlined">ranking page.</a></h1>
+
+<h1 class="paragraph_title" style="word-spacing: 0.2vw;"> Installation Instructions - Short Guide</h1> 
+
+<h1 class="paragraph">For those who are familiar with Deep Learning and Tensorflow:</br></br>
+
+<span class="item-list">
+<span class="item">1.&nbsp;</span> Install <a href="https://www.python.org/downloads/" target="_blank" class="blue_link_underlined">Python</a> and <a href="https://www.tensorflow.org/install/pip" target="_blank" class="blue_link_underlined">Tensorflow.</a></br>
+<span class="item">2.&nbsp;</span> Install AI Benchmark with <a href="https://pypi.org/project/ai-benchmark/" target="_blank" class="blue_link_underlined">pip:</a>&nbsp; <span class="bash_code">pip install ai-benchmark</span></br>
+<span class="item">3.&nbsp;</span> Use the following python code to run the benchmark:</br>
+
+<div class="python_code">
+	<span style="color: rgb(23, 142, 210);">from</span> ai_benchmark <span style="color: rgb(23, 142, 210);">import</span> <span style="color: rgb(234, 29, 111);">AIBenchmark</span></br>
+	results = <span style="color: rgb(234, 29, 111);">AIBenchmark()</span><span style="color:rgb(255, 100, 100);">.run()</span>
+</div>
+
+<span class="item">Or, on Linux systems you can simply type <span class="bash_code">ai-benchmark</span> in the command line to start the tests.</br></span>
+</span></br>
+
+That's it, time to see the results!&nbsp; More information about library settings can be found <a href="https://pypi.org/project/ai-benchmark/" target="_blank" class="red_link_underlined">here.</a>
+</h1>
+
+<h1 class="paragraph_title" style="word-spacing: 0.2vw;"> Installation Instructions - Detailed Guide</h1> 
+
+<h1 class="paragraph">
+<span class="item-list">
+<span class="item">1.&nbsp;</span> Download and install Python from <a href="https://www.python.org/downloads/" target="_blank" class="blue_link_underlined">python.org</a></br>
+<span class="item"></span> If you are running Windows - add Python to the Windows Path using <a href="https://geek-university.com/python/add-python-to-the-windows-path/" target="_blank" class="blue_link_underlined">these instructions.</a></br>
+<span class="item">2.&nbsp;</span> Install TensorFlow machine learning library:</br>
+<span class="item">2.1.&nbsp;</span> If you want <span style="font-weight: 400;">do not have Nvidia / AMD GPUs,</span> run <span class="bash_code">pip install tensorflow</span> from the command line.</br>
+<span class="item">2.2.&nbsp;</span> If you want to check the performance of <span style="font-weight: 400;">Nvidia graphic cards:</span></br>
+<span class="item">2.2.1.&nbsp;</span> Download and install <span style="font-weight: 400;">CUDA</span> from <a href="https://developer.nvidia.com/cuda-downloads" target="_blank" class="blue_link_underlined">Nvidia website.</a></br>
+<span class="item">2.2.2.&nbsp;</span> <a href="https://developer.nvidia.com/cudnn" target="_blank" class="blue_link_underlined">Download</a> and <a href="https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html" target="_blank" class="blue_link_underlined">install</a> <span style="font-weight: 400;">cuDNN.</span></br>
+<span class="item">2.2.3.&nbsp;</span> Run <span class="bash_code">pip install tensorflow-gpu</span> from the command line.</br>
+<span class="item">2.3.&nbsp;</span> If you want to check the performance of <span style="font-weight: 400;">AMD graphic cards:</span>&nbsp; follow <a href="https://gpuopen.com/rocm-tensorflow-1-8-release/" target="_blank" class="blue_link_underlined">these instructions.</a></br>
+<span class="item">3.&nbsp;</span> Run <span class="bash_code">pip install ai-benchmark</span> from the command line.</br>
+<span class="item">4.&nbsp;</span> Type <span class="bash_code">python</span> in the command line and run the following commands in the opened console:</br>
+
+<div class="python_code">
+	<span style="color: rgb(23, 142, 210);">from</span> ai_benchmark <span style="color: rgb(23, 142, 210);">import</span> <span style="color: rgb(234, 29, 111);">AIBenchmark</span></br>
+	results = <span style="color: rgb(234, 29, 111);">AIBenchmark()</span><span style="color:rgb(255, 100, 100);">.run()</span>
+</div>
+
+<span class="item">Or, on Linux systems you can simply type <span class="bash_code">ai-benchmark</span> in the command line to start the tests.</br></span>
+</span></br>
+</h1>
+
+<h1 class="paragraph_title"> Public Ranking </h1>
+
+<h1 class="paragraph">On any system with TensorFlow framework, installing and running the benchmark takes just a couple of minutes, making it easy to assess the performance of various hardware configurations and software builds. By introducing a global ranking, we are targeting the following goals:</br></br>
+
+<span class="item-list">
+<span class="item">1.&nbsp;</span>&nbsp; Establishing an open standard for measuring the performance of AI-related hardware</br>
+<span class="item">2.&nbsp;</span>&nbsp; Showing the relative speed of various hardware used for training / inference with Deep Learning</br>
+<span class="item">3.&nbsp;</span>&nbsp; Showing the speed of training / inference for all major AI models on different hardware platforms</br>
+<span class="item">4.&nbsp;</span>&nbsp; Comparing the performance of different drivers / configs, software platforms and framework builds</br>
+<span class="item">5.&nbsp;</span>&nbsp; Connecting the dots between <a href="ranking.html" class="red_link_underlined">mobile</a> and conventional Deep Learning</br>
+</span>
+
+</h1>
+
+<h1 class="paragraph">The current preliminary ranking is available <a href="ranking_cpus_and_gpus.html" class="red_link_underlined">here.</a> The ranking will be significantly updated in the next weeks.</h1>
+
+<h1 class="paragraph_title"> Contacts  </h1>
+
+<h1 class="paragraph">
+The next AI Benchmark release is now in development, and we are happy to hear any feedback regarding the current version and suggestions for its improvement. For any proposals or additional information please contact <a href="mailto:andrey@vision.ee.ethz.ch" style="text-decoration: none; color: rgb(51, 51, 51);">andrey@vision.ee.ethz.ch.</a>
+</h1>
+
+<h1 class="meta">
+	<p>28 June 2019 <span style="float: right;"><a href="mailto:andrey@vision.ee.ethz.ch" style="text-decoration: none; color: rgb(51, 51, 51);">Andrey Ignatov</a> | <a href="http://ai-benchmark.com" style="text-decoration: none;"><lh>AI Benchmark</lh><a></span></p>
+
+<div id="news_link_bottom">
+	<a href="news_2019_02_05_february_updates.html" style="text-decoration: none;"><p>
+		Chipsets: &nbsp;Snapdragon 855, &nbsp;MediaTek P90, &nbsp;Kirin 980 &nbsp;or&nbsp; Exynos 9820 &nbsp;—&nbsp; who rules the game? &nbsp; <img src="assets/img/goto_white.png">
+	</p></a>
+</div>
 
 </div>
 
 <div id="about">
 	<div id="content">
-		<p> Copyright © 2019 by A.I.</p>
-		<p style="color: #ea1d6f;">ETH Zurich, Switzerland</p>
+		<p >Copyright © 2019 by A.I.</p>
+		<p style="color: #ea1d6f">ETH Zurich, Switzerland</p>
 	</div>
 </div>
 

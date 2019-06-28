@@ -1178,6 +1178,46 @@ hr {
 	text-decoration-style: dotted;
 }
 
+#news .red_link {
+	text-decoration: none;
+	text-decoration-style: none;
+	color: rgba(234, 29, 111);
+}
+
+#news .red_link_underlined {
+	text-decoration: none;
+	text-decoration-style: none;
+	border-bottom: 1px dashed rgb(234, 29, 111);
+	text-decoration-skip-ink: none;
+	color: rgb(234, 29, 111);
+}
+
+#news .bash_code{
+	background-color: rgb(241, 243, 244);
+	color: rgb(255, 100, 100);
+	padding-right: 0.4vw;
+	padding-left: 0.4vw;
+	border-radius: 0.2vw;
+}
+
+#news .python_code{
+	margin-top: 0.4vw;
+	margin-bottom: 0.4vw;
+	margin-left: 2vw;
+	padding: 0.4vw;
+	padding-left: 1.2vw;
+	border-radius: 0.4vw;
+	background-color: rgb(241, 243, 244);
+}
+
+#news .blue_link_underlined {
+	text-decoration: none;
+	text-decoration-style: none;
+	border-bottom: 1px dashed rgb(23, 142, 210);
+	text-decoration-skip-ink: none;
+	color: rgb(23, 142, 210);
+}
+
 #news_review .meta {
 	margin-top: 3.2vw;
 	margin-bottom: 0.7vw;
@@ -1276,7 +1316,7 @@ hr {
 	}
 	
 	#news .item-list {
-		line-height: 2.9vw;
+		line-height: 3.4vw;
 	}
 	
 	#news mode {
@@ -1286,6 +1326,20 @@ hr {
 	
 	#news .item {
 		margin-left: 2.4vw;
+	}
+	
+	#news .bash_code{
+		padding-right: 0.6vw;
+		padding-left: 0.6vw;
+		border-radius: 0.32vw;
+	}
+
+	#news .python_code{
+		margin-top: 0.8vw;
+		margin-bottom: 0.8vw;
+		padding: 0.7vw;
+		padding-left: 2.7vw;
+		border-radius: 0.7vw;
 	}
 
 	#news .test_ids {
