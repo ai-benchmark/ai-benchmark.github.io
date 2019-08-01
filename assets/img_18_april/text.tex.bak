@@ -1,0 +1,7 @@
+So, 
+
+Snapdragon 730: 3 times lower AI performance, slightly slower CPU but somewhat better GPU.
+Helio P90: 40\% lower AI performance, slightly slower CPU and the same GPU.
+Kirin 810: slightly faster float AI performance and much slower quantized inference, comparable CPU and somewhat faster GPU.
+Exynos 9610: was not used in the above comparison due to very poor results - 7 times lower AI performance, much slower CPU, much slower GPU.
+
