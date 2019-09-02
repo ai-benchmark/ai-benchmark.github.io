@@ -815,6 +815,10 @@ nav .left_bar_samples li {
 	border-radius: 0.2vw;
 }
 
+#ranking .red_color {
+	color: rgba(255, 0, 102, 0.57);
+}
+
 #ranking .yellow {
 	background: rgba(255, 214, 102, 0.18);
 	border-radius: 0.2vw;
