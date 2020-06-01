@@ -55,22 +55,22 @@
 
 <div id="tests">
 
-<p class="abstract">The benchmark consists of <span style="color: #ea1d6f;">21 Computer Vision and AI Tests</span> performed by Neural Networks running on your smartphone. It is measuring <span style="color: #178ed2;">over 50 different aspects</span> of AI performance, including the speed, accuracy, initialization time, etc. Considered Neural Networks comprise a comprehensive range of architectures allowing to assess the performance and limits of various approaches used to solve different AI tasks. A detailed description of <span style="color: #ea1d6f;">11 Benchmark Sections</span> is provided below.</p>
+<p class="abstract">The benchmark consists of <span style="color: #ea1d6f;">46 AI and Computer Vision tests</span> performed by neural networks running on your smartphone. It measures <span style="color: #178ed2;">over 100 different aspects</span> of AI performance, including the speed, accuracy, initialization time, etc. Considered neural networks comprise a comprehensive range of architectures allowing to assess the performance and limits of various approaches used to solve different AI tasks. A detailed description of the <span style="color: #ea1d6f;">14 benchmark sections</span> is provided below.</p>
 
 <!------------------------------ Task 1 ----------------------------->
 
 <div class="task">
 
-	<img class="img_style_left_1" src="assets/img/screen_1.jpg">
+	<img class="img_style_left_1" src="assets/img/screen_1.png">
 	
 	<p class="title_class_1"><span class="title_class_task">Section 1:</span> &nbsp; <span class="title_class_name">Object Recognition / Classification 
 	</p>
-	<p class="desc_class_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">MobileNet - V2 &nbsp; | &nbsp; <span class="mode">CPU + NPU + DSP</p>
+	<p class="desc_class_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">MobileNet - V2 &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
 	<p class="desc_class_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">224 x 224 px</p>
 	<p class="desc_class_2"><span class="desc_class_name">Accuracy on ImageNet:</span> &nbsp; <span class="desc_class_value">71.9 %</p>
 	<p class="desc_class_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1801.04381.pdf" target="_blank">paper</a> / <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/mobilenet_v2.py" target="_blank">code</a></p>
 
-	<p class="desc_class_4"> A very small yet already powerful neural network that is able to recognize 1000 different object classes based on a single photo with an accuracy of ~72%. After quantization its size is less than 4Mb, which together with its low RAM consumption allows to lanch it on almost any currently existing smartphone.</p>
+	<p class="desc_class_4"> A very small yet already powerful neural network that is able to recognize 1000 different object classes based on a single photo with an accuracy of ~72%. After quantization, its size is less than 4Mb, which together with its low RAM consumption allows to lanch it on almost any currently existing smartphone.</p>
 
 </div>
 
@@ -78,15 +78,15 @@
 
 <div class="task">
 
-	<img class="img_style_right_1" src="assets/img/screen_2.jpg">
+	<img class="img_style_right_1" src="assets/img/screen_2.png">
 	
 	<p class="title_class_l_1"><span class="title_class_task">Section 2:</span> &nbsp; <span class="title_class_name">Object Recognition / Classification </p>
-	<p class="desc_class_l_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">Inception - V3 &nbsp; | &nbsp; <span class="mode">CPU + NPU + DSP</p>
+	<p class="desc_class_l_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">Inception - V3 &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
 	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">346 x 346 px</p>
 	<p class="desc_class_l_2"><span class="desc_class_name">Accuracy on ImageNet:</span> &nbsp; <span class="desc_class_value">78.0 %</p>
 	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1512.00567.pdf" target="_blank">paper</a> / <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v3.py" target="_blank">code</a></p>
 
-	<p class="desc_class_l_4"> A different approach for the same task: now significantly more accurate, but at the expense of 4x larger size and tough computational requirements. As a clear bonus - can process images of higher resolutions, which allows more accurate recognition and smaller object detection.</p>
+	<p class="desc_class_l_4"> A different approach for the same task: now significantly more accurate, but at the expense of 6x larger size and tough computational requirements. As a clear bonus &mdash; can process images of higher resolutions, which allows more accurate recognition and smaller object detection.</p>
 
 </div>
 
@@ -94,15 +94,15 @@
 
 <div class="task">
 
-	<img class="img_style_left_2" src="assets/img/screen_3.jpg">
+	<img class="img_style_left_2" src="assets/img/screen_3.png">
 	
 	<p class="title_class_1"><span class="title_class_task">Section 3:</span> &nbsp; <span class="title_class_name">Face Recognition </p>
-	<p class="desc_class_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">Inception ResNet V1 &nbsp; | &nbsp; <span class="mode">CPU + NPU + DSP</p>
+	<p class="desc_class_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">MobileNet - V3&nbsp; Large-M &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
 	<p class="desc_class_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">512 x 512 px</p>
-	<p class="desc_class_2"><span class="desc_class_name">LFW Score:</span> &nbsp; <span class="desc_class_value">0.987</p>
-	<p class="desc_class_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1503.03832.pdf" target="_blank">paper</a> / <a href="https://github.com/davidsandberg/facenet/blob/master/src/models/inception_resnet_v1.py" target="_blank">code</a></p>
+	<p class="desc_class_2"><span class="desc_class_name">Accuracy on ImageNet:</span> &nbsp; <span class="desc_class_value">72.2 %</p>
+	<p class="desc_class_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1905.02244.pdf" target="_blank">paper</a> / <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/mobilenet_v3.py" target="_blank">code</a></p>
 
-	<p class="desc_class_4_2"> This task probably doesn't need an introduction: based on the face photo you want to identify the person. This is done in the following way: for each face image, a neural network produces a small feature vector of size 128 that encodes the face and is invariant to its scaling, shifts and rotations. Then this vector is used to retrieve the most similar vector (and the respective identity) from your database that contains the same information about hundreds or millions of people. </p>
+	<p class="desc_class_4_2"> This task probably doesn't need an introduction: based on the face photo you want to identify the person. This is done in the following way: for each face image, a neural network produces a small feature vector that encodes the face and is invariant to its scaling, shifts and rotations. Then this vector is used to retrieve the most similar vector (and the respective identity) from your database that contains the same information about hundreds or millions of people. </p>
 
 </div>
 
@@ -110,15 +110,15 @@
 
 <div class="task">
 
-	<img class="img_style_right_1" src="assets/img/screen_10.jpg">
+	<img class="img_style_right_1" src="assets/img/screen_4.png">
 	
-	<p class="title_class_l_1"><span class="title_class_task">Section 4:</span> &nbsp; <span class="title_class_name">Playing Atari Games </p>
-	<p class="desc_class_l_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">LSTM RNN &nbsp; | &nbsp; <span class="mode">CPU only</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">84 x 84 px</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Average Total Reward:</span> &nbsp; <span class="desc_class_value">168</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1312.5602v1.pdf" target="_blank">paper</a> / <a href="https://github.com/ppyht2/tf-a2c" target="_blank">code</a> / <a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/recurrent_network.py" target="_blank">code</a></p>
+	<p class="title_class_l_1"><span class="title_class_task">Section 4:</span> &nbsp; <span class="title_class_name">Object Recognition / Classification </p>
+	<p class="desc_class_l_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">MobileNet - V2 &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">224 x 224 px</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Number of Models:</span> &nbsp; <span class="desc_class_value">1, 2, 4 and 8</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1801.04381.pdf" target="_blank">paper</a> / <a href="https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/mobilenet_v2.py" target="_blank">code</a></p>
 
-	<p class="desc_class_l_4"> AI playing computer games like human... Why not? Originally proposed by DeepMind, this network is learning to play Atari games by interacting with their environment and observing the resulting rewards. And it's more than successful: <span style="font-weight: bold;">168</span> vs. <span style="font-weight: bold;">31</span> points got by a professional human player in Breakout game: &nbsp;AI wins! </p>
+	<p class="desc_class_l_4"> What happens when several programs try to run their AI models at the same time on your device? Will it be able to accelerate all of them? To answer this question, we are running <span style="font-weight: bold;">up to 8</span> floating-point and quantized neural networks <span style="font-weight: bold;">in parallel</span> on your phone's NPU and DSP, measuring the resulting inference time for each AI model.</p>
 
 </div>
 
@@ -126,22 +126,16 @@
 
 <div class="task">
 
-	<figure class="cd-image-container image_style_3">
-		<img src="assets/img/screen_4a.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Blurred</span>
-		<div class="cd-resize-img">
-			<img src="assets/img/screen_4b.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">Restored</span>
-		</div>
-		<span class="cd-handle cd-first"></span>
-	</figure>
+	<img class="img_style_left_1" src="assets/img/screen_5.png">
 	
-	<p class="title_class_1_3"><span class="title_class_task">Section 5:</span> &nbsp; <span class="title_class_name">Image Deblurring</p>
-	<p class="desc_class_1_3"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">SRCNN 9-5-5 &nbsp; | &nbsp; <span class="mode">DSP + NPU + GPU</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">384 x 384 px</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Set-5 Score (x3):</span> &nbsp; <span class="desc_class_value">32.75 dB</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1501.00092.pdf" target="_blank">paper</a> / <a href="http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html" target="_blank">code</a></p>
-	<p class="desc_class_4_3"> Remember taking blurry photos using your phone camera? So, this is the task: make them sharp again. In the simplest case, this kind of distortions is modeled by applying a Gaussian blur to uncorrupted images, and then trying to restore them back using a neural network. In  this task, blur is removed by one of the oldest, simplest and lightest neural networks - by SRCNN with only 3 convolutional layers, though in this case it still shows quite satisfactory results. </p>
+	<p class="title_class_1"><span class="title_class_task">Section 5:</span> &nbsp; <span class="title_class_name">Optical Character Recognition 
+	</p>
+	<p class="desc_class_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">CRNN / Bi-LSTM &nbsp; | &nbsp; <span class="mode">FP16&nbsp; + &nbsp;FP32</p>
+	<p class="desc_class_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">64 x 200 px</p>
+	<p class="desc_class_2"><span class="desc_class_name">IC13 Score:</span> &nbsp; <span class="desc_class_value">86.7 %</p>
+	<p class="desc_class_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1507.05717.pdf" target="_blank">paper</a> / <a href="https://github.com/Belval/CRNN" target="_blank">code</a></p>
+
+	<p class="desc_class_4"> A very standard task performed by a very standard end-to-end trained LSTM-based CRNN model. This neural network consists of two parts: the first one is a well-knows <span style="font-weight: bold;">ResNet-18</span> network that is used here to generate deep features for the input data, while the second one, <span style="font-weight: bold;">Bidirectional Dynamic RNN</span>, is taking these features as an input and predicts the actual words / letters on the image.</p>
 
 </div>
 
@@ -150,11 +144,11 @@
 <div class="task">
 
 	<figure class="cd-image-container img_style_right_2" >
-		<img src="assets/img/screen_5a.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Zoomed</span>
+		<img src="assets/img/screen_6a.png" alt="Original Image">
+		<span class="cd-image-label" data-type="original">Blurred</span>
 		
 		<div class="cd-resize-img">
-			<img src="assets/img/screen_5b.jpg" alt="Modified Image">
+			<img src="assets/img/screen_6b.png" alt="Modified Image">
 			<span class="cd-image-label" data-type="modified">Restored</span>
 		</div>
 		
@@ -162,12 +156,12 @@
 	</figure>
 	
 	
-	<p class="title_class_l_1"><span class="title_class_task">Section 6:</span> &nbsp; <span class="title_class_name">Image Super-Resolution </p>
-	<p class="desc_class_l_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">VGG - 19 &nbsp; | &nbsp; <span class="mode">DSP + NPU + GPU</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">256 x 256 px</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Set-5 Score (x3):</span> &nbsp; <span class="desc_class_value">33.66 dB</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1511.04587.pdf" target="_blank">paper</a> / <a href="https://github.com/Jongchan/tensorflow-vdsr" target="_blank">code</a></p>
-	<p class="desc_class_l_4_2"> Have you ever zoomed you photos? Remember artifacts, lack of details and sharpness? Then you know this task from your own experience: make zoomed photos look as good as the original images. In this case, the network is trained to do an equivalent task: to restore the original photo given its downscaled (e.g. by factor of 4) version. Here we consider a deep VGG-19 network with 19 layers. While its performance is currently not amazing and it is not able to reconstruct high-frequency components, it is still an ideal solution for paintings and drawings: it makes them sharp but smooth. </p>
+	<p class="title_class_l_1"><span class="title_class_task">Section 6:</span> &nbsp; <span class="title_class_name">Image Deblurring </p>
+	<p class="desc_class_l_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">PyNET - Mini &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">96 x 96 px</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">ZRR Score:</span> &nbsp; <span class="desc_class_value">21.19 dB</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/2002.05509.pdf" target="_blank">paper</a> / <a href="https://github.com/aiff22/pynet" target="_blank">code</a></p>
+	<p class="desc_class_l_4_2"> Remember taking blurry photos using your phone camera? So, this is the task: make them sharp again. In the simplest case, this kind of distortions is modeled by applying a Gaussian blur to uncorrupted images, and then trying to restore them back with a neural network. In this task, blur is removed by a recently presented PyNET model that is processing each input image in parallel <span style="font-weight: bold;">at three different scales</span> and is utilizing all available NPU / DSP computational resources. </p>
 
 </div>
 
@@ -175,22 +169,22 @@
 
 <div class="task">
 
-	<figure class="cd-image-container image_style_5">
-		<img src="assets/img/screen_6a.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Zoomed</span>
+	<figure class="cd-image-container image_style_3">
+		<img src="assets/img/screen_7a.png" alt="Original Image">
+		<span class="cd-image-label" data-type="original">Original</span>
 		<div class="cd-resize-img">
-			<img src="assets/img/screen_6b.jpg" alt="Modified Image">
+			<img src="assets/img/screen_7b.png" alt="Modified Image">
 			<span class="cd-image-label" data-type="modified">Restored</span>
 		</div>
 		<span class="cd-handle cd-first"></span>
 	</figure>
 	
 	<p class="title_class_1_3"><span class="title_class_task">Section 7:</span> &nbsp; <span class="title_class_name">Image Super-Resolution</p>
-	<p class="desc_class_1_3"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">SRGAN &nbsp; | &nbsp; <span class="mode">CPU x 2</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">512 x 512 px</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Set-5 Score (x4):</span> &nbsp; <span class="desc_class_value">29.40 dB</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1609.04802.pdf" target="_blank">paper</a> / <a href="https://github.com/tensorlayer/srgan" target="_blank">code</a></p>
-	<p class="desc_class_4_3"> The same task, but with new tricks: what if we train our neural network using... another neural network? Yes, two network performing two tasks: network A is trying to solve the same super-resolution problem as above, but network B observes its results, tries to find there some drawbacks and then penalizes network A. Sounds cool? In fact it is cool: while this approach has its own issues, the produced results are often looking really amazing. </p>
+	<p class="desc_class_1_3"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">VGG - 19 &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">256 x 256 px</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">Set-5 Score (x3):</span> &nbsp; <span class="desc_class_value">33.66 dB</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1511.04587.pdf" target="_blank">paper</a> / <a href="https://github.com/Jongchan/tensorflow-vdsr" target="_blank">code</a></p>
+	<p class="desc_class_4_3"> Have you ever zoomed you photos? Remember artifacts, lack of details and sharpness? Then you know this task from your own experience: make zoomed photos look as good as the original images. In this case, the network is trained to do an equivalent task: to restore the original photo given its downscaled (e.g., by factor of 4) version. Here we consider a deep VGG-19 model with 19 layers. While its performance isn't that amazing as it is unable to recover high-frequency components, it is still an ideal solution for paintings and drawings: it makes them sharp but smooth.</p>
 
 </div>
 
@@ -198,89 +192,128 @@
 
 <div class="task">
 
-	<figure class="cd-image-container" style="float: right; margin-right: -0.1vw;">
-		<img src="assets/img/screen_11a.jpg" alt="Original Image">
+	<figure class="cd-image-container img_style_right_2" >
+		<img src="assets/img/screen_8a.png" alt="Original Image">
 		<span class="cd-image-label" data-type="original">Original</span>
 		
 		<div class="cd-resize-img">
-			<img src="assets/img/screen_11b.jpg" alt="Modified Image">
+			<img src="assets/img/screen_8b.png" alt="Modified Image">
+			<span class="cd-image-label" data-type="modified">Restored</span>
+		</div>
+		
+		<span class="cd-handle cd-first"></span>
+	</figure>
+	
+	
+	<p class="title_class_l_1"><span class="title_class_task">Section 8:</span> &nbsp; <span class="title_class_name">Image Super-Resolution </p>
+	<p class="desc_class_l_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">SRGAN &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">512 x 512 px</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Set-5 Score (x3):</span> &nbsp; <span class="desc_class_value">29.40 dB</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1609.04802.pdf" target="_blank">paper</a> / <a href="https://github.com/tensorlayer/srgan" target="_blank">code</a></p>
+	<p class="desc_class_l_4_2"> The same task, but with new tricks: what if we train our neural network using... another neural network? Yes, two network performing two tasks: network A is trying to solve the same super-resolution problem as above, while network B observes its results, tries to find there some drawbacks and then penalizes network A. Sounds cool? In fact, it is cool: while this approach used by the SRGAN model has its own issues, the produced results are often looking really amazing. </p>
+
+</div>
+
+<!------------------------------ Task 9 ----------------------------->
+
+<div class="task">
+
+	<figure class="cd-image-container image_style_3">
+		<img src="assets/img/screen_9a.png" alt="Original Image">
+		<span class="cd-image-label" data-type="original">Original</span>
+		<div class="cd-resize-img">
+			<img src="assets/img/screen_9b.png" alt="Modified Image">
 			<span class="cd-image-label" data-type="modified">Bokeh</span>
 		</div>
-		
 		<span class="cd-handle cd-first"></span>
 	</figure>
 	
-	
-	<p class="title_class_l_1"><span class="title_class_task">Section 8:</span> &nbsp; <span class="title_class_name">Bokeh Simulation </p>
-	<p class="desc_class_l_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">U-Net &nbsp; | &nbsp; <span class="mode">CPU only</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">128 x 128 px</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">DIC-HeLa (IoU):</span> &nbsp; <span class="desc_class_value">0.7756</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1505.04597.pdf" target="_blank">paper</a> / <a href="https://github.com/zhixuhao/unet/blob/master/model.py" target="_blank">code</a></p>
-	<p class="desc_class_l_4_2"> Probably the most well-known and popular AI task on smartphones - blurring the background like high-end DSLRs: just select Portrait Mode in your camera to see how it works on your device. In this section, a large U-Net CNN capable of doing heavy image processing is used to simulate bokeh effect without the need of multiple cameras: after being pre-trained, it can be applied to any image to add an artistic blur. Not always flawlessly, but quite impressive.</p>
+	<p class="title_class_1_3"><span class="title_class_task">Section 9:</span> &nbsp; <span class="title_class_name">Bokeh Simulation</p>
+	<p class="desc_class_1_3"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">U-Net &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">384 x 384 px</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">ISBI (IoU):</span> &nbsp; <span class="desc_class_value">0.9203</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1505.04597.pdf" target="_blank">paper</a> / <a href="https://github.com/zhixuhao/unet/blob/master/model.py" target="_blank">code</a></p>
+	<p class="desc_class_4_3"> Probably one of the most well-known and popular AI task on smartphones — blurring the background like on high-end DSLRs: just select the Portrait Mode in the camera app to see how it works on your Android or iOS device. In this section, a relatively large U-Net convolutional neural network capable of doing heavy image processing is used to render bokeh effect without the need of multiple cameras: after being pre-trained, it can add an artistic blur to arbitrary images. Not always flawlessly, but still quite impressive. </p>
 
 </div>
 
-<!------------------------------ Task 9 ----------------------------->
+<!------------------------------ Tasks 10-11 ----------------------------->
 
 <div class="task">
 
-	<figure class="cd-image-container" style="float: left; margin-left: -0.2vw;">
-		<img src="assets/img/screen_7a.jpg" alt="Original Image">
+	<figure class="cd-image-container img_style_right_2">
+		<img src="assets/img/screen_10a.png" alt="Original Image">
 		<span class="cd-image-label" data-type="original">Original</span>
+		
 		<div class="cd-resize-img">
-			<img src="assets/img/screen_7b.jpg" alt="Modified Image">
+			<img src="assets/img/screen_10b.png" alt="Modified Image">
 			<span class="cd-image-label" data-type="modified">Segmented</span>
 		</div>
+		
 		<span class="cd-handle cd-first"></span>
 	</figure>
 	
-	<p class="title_class_1_3"><span class="title_class_task">Section 9:</span> &nbsp; <span class="title_class_name">Semantic Segmentation</p>
-	<p class="desc_class_1_3"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">ICNet, 2X parallel &nbsp; | &nbsp; <span class="mode">NPU + GPU</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">768 x 1152 px</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">CityScapes (mIoU):</span> &nbsp; <span class="desc_class_value">69.5 %</p>
-	<p class="desc_class_2_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1704.08545.pdf" target="_blank">paper</a> / <a href="https://github.com/hszhao/ICNet" target="_blank">code</a></p>
-	<p class="desc_class_4_3"> Running Self-Driving algorithm on your phone? Yes, that's possible too, at least you can perform a substantial part of this task &ndash; detect 19 categories of objects (e.g. car, pedestrian, road, sky, etc.) based on the photo from the camera mounted inside the car. In the right image you can see the results of such pixel-size segmentation (each color correpsonds to each object class) for a quite recent ICNet network designed specifically for low-performance devices.</p>
+	
+	<p class="title_class_l_1"><span class="title_class_task">Sections 10-11:</span> &nbsp; <span class="title_class_name">Semantic Segmentation </p>
+	<p class="desc_class_l_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">DeepLab-V3+ &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">513 x 513 px</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">CityScapes (mIoU):</span> &nbsp; <span class="desc_class_value">82.1 %</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1802.02611.pdf" target="_blank">paper</a> / <a href="https://github.com/tensorflow/models/tree/master/research/deeplab" target="_blank">code</a></p>
+	<p class="desc_class_l_4_2"> Running Self-Driving algorithm on your phone? Yes, that's possible too, at least you can perform a substantial part of this task &mdash; detect 19 categories of objects (e.g. car, pedestrian, road, sky, etc.) based on the photo from the camera mounted inside the car. On the right image, one can see the results of such pixel-size semantic segmentation (each color correpsonds to each object class) for a very popular DeepLab-V3+ network designed specifically for low-power devices. </p>
 
 </div>
 
-<!------------------------------ Task 10 ----------------------------->
+<!------------------------------ Task 12 ----------------------------->
 
 <div class="task">
 
-	<figure class="cd-image-container image_style_4">
-		<img src="assets/img/screen_8a.jpg" alt="Original Image">
+	<figure class="cd-image-container image_style_3">
+		<img src="assets/img/screen_11a.png" alt="Original Image">
 		<span class="cd-image-label" data-type="original">Original</span>
-		
 		<div class="cd-resize-img">
-			<img src="assets/img/screen_8b.jpg" alt="Modified Image">
+			<img src="assets/img/screen_11b.png" alt="Modified Image">
 			<span class="cd-image-label" data-type="modified">Enhanced</span>
 		</div>
-		
 		<span class="cd-handle cd-first"></span>
 	</figure>
 	
-	
-	<p class="title_class_l_1"><span class="title_class_task">Section 10:</span> &nbsp; <span class="title_class_name">Photo Enhancement</p>
-	<p class="desc_class_l_1_2"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">ResNet - 12 &nbsp; | &nbsp; <span class="mode">NPU + GPU</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">128 x 192 px</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">DPED PSNR i-Score:</span> &nbsp; <span class="desc_class_value">18.11 dB</p>
-	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="http://people.ee.ethz.ch/~ihnatova/index.html" target="_blank">paper</a> / <a href="http://people.ee.ethz.ch/~ihnatova/wespe.html" target="_blank">paper</a> / <a href="https://github.com/aiff22/dped" target="_blank">code</a></p>
-	<p class="desc_class_l_4_2"> Still struggling when looking at photos from your old phone? This can be fixed: a properly trained neural network can make photos even from an ancient iPhone 3GS looking nice and up-to-date. To do this, it observes and learns how to transform photos from a low-quality device into the same photos from a DSLR camera. Of course there are some obvious limits for this magic (e.g. the network should be retrained for each new phone model), but the resulting images are looking quite good, especially for old devices.</p>
+	<p class="title_class_1_3"><span class="title_class_task">Section 12:</span> &nbsp; <span class="title_class_name">Photo Enhancement</p>
+	<p class="desc_class_1_3"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">DPED-ResNet &nbsp; | &nbsp; <span class="mode">INT8&nbsp; + &nbsp;FP16</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">128 x 192 px</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">DPED PSNR i-Score:</span> &nbsp; <span class="desc_class_value">18.11 dB</p>
+	<p class="desc_class_2_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="http://people.ee.ethz.ch/~ihnatova/index.html" target="_blank">paper</a> / <a href="http://people.ee.ethz.ch/~ihnatova/wespe.html" target="_blank">paper</a> / <a href="https://github.com/aiff22/dped" target="_blank">code</a></p>
+	<p class="desc_class_4_3"> Struggling when looking at photos from your old phone? This can be fixed: a properly trained neural network can make photos even from an ancient iPhone 3GS device looking nice and up-to-date. To achieve this, it observes and learns how to transform photos from a low-quality device into the same photos from a high-end DSLR camera. Of course, there are some obvious limitations for this magic (e.g., the network should be retrained for each new phone model), but the resulting images are looking quite good, especially for old devices.</p>
 
 </div>
 
-<!------------------------------ Task 9 ----------------------------->
+<!------------------------------ Task 13 ----------------------------->
 
-<div class="task" style="margin-bottom: 1.2vw;">
+<div class="task">
 
-	<img class="img_style_left_3" src="assets/img/screen_9.jpg">
-	<p class="title_class_1"><span class="title_class_task">Section 11:</span> &nbsp; <span class="title_class_name">Memory Limits</p>
-	<p class="desc_class_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">SRCNN 9-5-5 &nbsp; | &nbsp; <span class="mode">NPU + GPU</p>	
+	<img class="img_style_right_1" src="assets/img/screen_13.png">
+	
+	<p class="title_class_l_1"><span class="title_class_task">Section 13:</span> &nbsp; <span class="title_class_name">Text Completion </p>
+	<p class="desc_class_l_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">Static RNN / LSTM &nbsp; | &nbsp; <span class="mode">FP16</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Embeddings Size:</span> &nbsp; <span class="desc_class_value">32 x 500</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Layers &nbsp;|&nbsp; LSTM Units:</span> &nbsp; <span class="desc_class_value">4 &nbsp;|&nbsp; 512</p>
+	<p class="desc_class_l_2"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://www.bioinf.jku.at/publications/older/2604.pdf" target="_blank">paper</a> / <a href="https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/recurrent_network.py" target="_blank">code</a></p>
+
+	<p class="desc_class_l_4"> Yet another standard deep learning problem on smartphones &mdash; providing text suggestions based on what the user types. In this task, we consider a variation of this NLP task: a simple static LSTM model learns to fill in the gaps in the text using sentence semantics inferred from the provided <span style="font-weight: bold;">Word2vec</span> word embeddings.</p>
+
+</div>
+
+<!------------------------------ Task 14 ----------------------------->
+
+<div class="task">
+
+	<img class="img_style_left_1" src="assets/img/screen_14.png">
+	
+	<p class="title_class_1"><span class="title_class_task">Section 14:</span> &nbsp; <span class="title_class_name">Memory Limits </p>
+	<p class="desc_class_1"><span class="desc_class_name">Neural Network:</span> &nbsp; <span class="desc_class_value">SRCNN 9-5-5 &nbsp; | &nbsp; <span class="mode">FP16</p>
 	<p class="desc_class_2"><span class="desc_class_name">Image Resolution:</span> &nbsp; <span class="desc_class_value">4 MP</p>
 	<p class="desc_class_2"><span class="desc_class_name"># Parameters:</span> &nbsp; <span class="desc_class_value">69.162</p>
 	<p class="desc_class_3"><span class="desc_class_name">Paper & Code Links:</span> &nbsp; <span class="desc_class_value"><a href="https://arxiv.org/pdf/1501.00092.pdf" target="_blank">paper</a> / <a href="http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html" target="_blank">code</a></p>
-	<p class="desc_class_4"> You should already recognize it from section 5: SRCNN, one of the lightest and simplest neural networks... But even it can bring the majority of phones to their knees while handling high-resolution photos: to process HD-images the phone should generally have at least 6GB of RAM. This test is aimed at finding the limits of your device: how large images can it handle with this simplest network? </p>
-
+	<p class="desc_class_4"> SRCNN is one of the oldest, simplest and lightest neural networks that consists of only 3 convolutional layers. However, even it can bring the majority of phones to their knees while handling high-resolution photos: to process HD-images the phone should generally have at least 4GB of RAM. This test is aimed at finding the limits of your device: how big images can it handle with this simplest network? </p>
 </div>
 
 </div>
