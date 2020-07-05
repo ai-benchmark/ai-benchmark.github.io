@@ -600,6 +600,20 @@ nav .left_bar_samples li {
 	
 }
 
+#ranking-excel {
+	margin-top: 8.6vw;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
 #ranking {
 	position: relative;
 	/*margin-top: 8vw;*/
@@ -626,9 +640,9 @@ nav .left_bar_samples li {
 }
 
 #ranking .results-proto {
-	width: 87.6vw;
+	width: 91.6vw;
 	float: left;
-	margin-left: 6.335vw;
+	margin-left: 4.335vw;
 	padding-top: 0.8vw;
 	padding-bottom: 0.7vw;
 	margin-top: -1.2vw;
@@ -652,9 +666,9 @@ nav .left_bar_samples li {
 }
 
 #ranking table {
-	width: 88vw;
+	width: 92vw;
 	margin-bottom: 4vw;
-	margin-left: 6.2vw;
+	margin-left: 4.2vw;
 	font-size: 0.8vw;
 }
 
@@ -701,6 +715,10 @@ nav .left_bar_samples li {
   
 	#ranking {
 		margin-top: 14vw;
+	}
+	
+	#ranking-excel {
+		margin-top: 13vw;
 	}
 	
 	#ranking .right_bar {
@@ -754,12 +772,16 @@ nav .left_bar_samples li {
 }
 
 #ranking table .column_0 { text-align: left; padding-left: 0.7vw; text-decoration: none;}
-#ranking table .column_1 { text-align: center; font-size: 0.76vw; }
+#ranking table .column_1 { text-align: center; font-size: 0.7vw; }
 #ranking table .column_2 { text-align: left; font-size: 0.66vw; }
+#ranking table .column_2a { text-align: center; font-size: 0.66vw; }
+#ranking table .column_2b { text-align: center; font-size: 0.66vw; }
 #ranking table .column_3 { text-align: center; }
 #ranking table .column_4 { text-align: center; }
-#ranking table .column_5 { text-align: center; }
+#ranking table .column_5 { text-align: center;}
 #ranking table .column_5_proto { text-align: center; background: rgba(255, 0, 102, 0.02);}
+#ranking table .column_5s { text-align: center; font-size: 0.7vw;}
+#ranking table .column_5s_proto { text-align: center; font-size: 0.7vw; background: rgba(255, 0, 102, 0.02);}
 #ranking table .column_6 { text-align: center; }
 
 #ranking table .highlight {
