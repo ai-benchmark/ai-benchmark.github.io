@@ -175,8 +175,8 @@ nav .left_bar_samples li {
 #nav_mobile li {
     display: inline-block;
     padding: 2.4vw;
-    padding-right: 4vw;
-    padding-left: 4vw;
+    padding-right: 2.8vw;
+    padding-left: 2.8vw;
 }
 
 #nav_mobile li:hover {
@@ -660,6 +660,19 @@ nav .left_bar_samples li {
 	cursor: pointer;
 }
 
+#ranking .join-forum {
+	word-spacing: 0.06vw;
+	text-decoration-style: dotted;
+	margin-top: -1.6vw;
+	margin-bottom: 2.8vw;
+	font-size: 0.84vw;
+	font-style: italic;
+	letter-spacing: 0.04vw;
+	opacity: 0.84;
+	color: rgba(23, 142, 210, 1.0);
+	cursor: pointer;
+}
+
 #ranking .results-detailed {
 	width: 93.9vw;
 	margin-left: 3.02vw;
@@ -738,6 +751,19 @@ nav .left_bar_samples li {
 		padding-bottom: 1.0vw;
 		margin-left: 2.24vw;  	
   	}
+  	
+  	#ranking .join-forum {
+		word-spacing: 0.06vw;
+		text-decoration-style: dotted;
+		margin-top: -0.4vw;
+		margin-bottom: 3.6vw;
+		font-size: 1.2vw;
+		font-style: italic;
+		letter-spacing: 0.04vw;
+		opacity: 0.84;
+		color: rgba(23, 142, 210, 1.0);
+		cursor: pointer;
+	}
   	
   	#ranking .results-detailed {
 		width: 93.9vw;
@@ -908,6 +934,34 @@ nav .left_bar_samples li {
 	background: rgba(239, 63, 113, 0.72);
 }
 
+#forum_link {
+	position: fixed;
+	margin-top: 7.4vw;
+	height: 2.4vw;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	line-height: 1.6vw;
+	background: white;
+	
+}
+
+#forum_link p {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 0.4vw;
+	font-size: 1.2vw;
+	color: white;
+	background: rgba(239, 63, 113, 0.4);
+	word-spacing: 0.15vw;
+	font-size: 0.84vw;
+}
+
+#ranking .after-forum-margin {
+	margin-top: 12vw;
+}
+
 #news_link img {
 	height: 0.8vw;
 	padding: 0vw;
@@ -982,6 +1036,21 @@ hr {
 	#news_link p {
 		padding-top: 1.0vw;
 		font-size: 1.8vw;
+	}
+	
+	#forum_link {
+		margin-top: 11.6vw;
+		height: 4.2vw;
+		line-height: 3.2vw;
+	}
+
+	#forum_link p {
+		padding-top: 0.5vw;
+		font-size: 1.24vw;
+	}
+	
+	#ranking .after-forum-margin {
+		margin-top: 18vw
 	}
 	
 	#news_link img {
@@ -1900,6 +1969,263 @@ hr {
 		font-size: 1.68vw;
 	}
 }
+
+/* ----------------------------------------------------------- RESEARCH STYLE ----------------------------------------------------------- */
+
+#research {
+	position: relative;
+	margin-top: 6.0vw;
+	width: 70vw;
+	margin-left: 15vw;
+	overflow: hidden;
+	font-size: 1.07vw;
+	line-height: 1.6vw;
+	text-align: justify;
+}
+
+#research .paper {
+	display: inline-block;
+	padding-top: 0.0vw;
+	padding-bottom: 0vw;
+	margin: 2vw;
+	width: 66vw;
+	font-size: 0.9vw;
+	color: #178ed2;
+	box-shadow: 0.2vw 0.2vw 0.4vw rgba(255, 111, 0, 0.0), 0 0 1vw grey, 0 0 0.5vw grey;
+	border-radius: 0.5vw;
+	overflow: hidden;
+}
+
+#research .paper img {
+	width: 30%;
+	float: left;
+	padding-right: 1.0vw;
+}
+
+#research .paper .title {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.75);
+	font-size: 1.29vw;
+	padding-top: 1.0vw;
+	padding-bottom: 1.0vw;
+	font-weight: bold;
+	color: rgb(233, 79, 112);
+	margin-bottom: 0vw;
+}
+
+#research .paper .authors {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.75);
+	font-size: 0.8vw;
+	padding-top: 0.4vw;
+	padding-bottom: 1.0vw;
+	color: white;
+	margin-bottom: 0vw;
+}
+
+#research .paper .abstract {
+	text-align: justify;
+	padding: 1.2vw;
+	font-size: 0.94vw;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#research .paper hr {
+	color: #f5f6f7;
+}
+
+#research .paper:hover {
+	box-shadow: 0.4vw 0.4vw 0.8vw rgba(255, 111, 0, 0.0), 0 0 1.2vw grey, 0 0 1.2vw grey;
+}
+
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
+
+	#research {
+		margin-top: 9.0vw;
+		width: 100vw;
+		margin-left: 0vw;
+		line-height: 2.2vw;
+	}
+
+	#research .paper {
+		margin: 2vw;
+		margin-left: 4vw;
+		width: 92%;
+	}
+
+	#research .paper img {
+		padding-right: 1.0vw;
+	}
+
+	#research .paper .title {
+		font-size: 1.84vw;
+		padding-top: 1.0vw;
+		padding-bottom: 1.0vw;
+		margin-bottom: 0vw;
+	}
+
+	#research .paper .authors {
+		font-size: 1.1vw;
+		padding-top: 0.6vw;
+		padding-bottom: 1.4vw;
+		color: white;
+		margin-bottom: 0vw;
+	}
+
+	#research .paper .abstract {
+		padding: 1.6vw;
+		font-size: 1.4vw;
+		line-height: 2.12vw;
+	}
+
+}
+
+/* ----------------------------------------------------------- DOWNLOAD STYLE ----------------------------------------------------------- */
+
+#download {
+	position: relative;
+	margin-top: 6.0vw;
+	width: 78vw;
+	margin-left: 11vw;
+	overflow: hidden;
+	font-size: 1.07vw;
+	line-height: 1.4vw;
+	text-align: justify;
+}
+
+#download .download-item {
+	display: inline-block;
+	padding-top: 0.0vw;
+	padding-bottom: 0vw;
+	margin: 2vw;
+	width: 34vw;
+	font-size: 0.9vw;
+	color: #178ed2;
+	box-shadow: 0.2vw 0.2vw 0.4vw rgba(255, 111, 0, 0.0), 0 0 1vw grey, 0 0 0.5vw grey;
+	border-radius: 0.5vw;
+	overflow: hidden;
+}
+
+#download .download-item img {
+	width: 36%;
+	float: left;
+}
+
+#download .download-item .download-info {
+	width: 64%;
+	float: right;
+}
+
+#download .download-item .download-info .title {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 1.4vw;
+	padding-top: 1.0vw;
+	padding-bottom: 1.0vw;
+	font-weight: bold;
+	color: rgb(233, 79, 112);
+	margin-bottom: 0vw;
+}
+
+#download .download-item .download-info .version {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 0.8vw;
+	padding-top: 0.4vw;
+	padding-bottom: 1.0vw;
+	font-weight: bold;
+	color: rgb(23, 142, 210);
+	margin-bottom: 0vw;
+}
+
+#download .download-item .download-info .abstract {
+	text-align: justify;
+	padding: 1.2vw;
+	font-size: 0.84vw;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#download .download-item .download-info a {
+	color: #178ed2;
+	text-decoration-style: dotted;
+}
+
+#download .download-item .download-info .download-1 {
+	height: 2vw;
+	text-align: center;
+	font-size: 0.8vw;
+	padding-top: 0.4vw;
+	padding-bottom: 0.4vw;
+}
+
+#download .download-item .download-info .download-2 {
+	height: 1.2vw;
+	text-align: center;
+	font-size: 0.8vw;
+	padding-top: 0.8vw;
+}
+
+#download .paper hr {
+	color: #f5f6f7;
+}
+
+#download .paper:hover {
+	box-shadow: 0.4vw 0.4vw 0.8vw rgba(255, 111, 0, 0.0), 0 0 1.2vw grey, 0 0 1.2vw grey;
+}
+
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+	#download {
+		margin-top: 9.0vw;
+		width: 100vw;
+		margin-left: 0vw;
+		text-align: justify;
+	}
+
+	#download .download-item {
+		margin: 4vw;
+		margin-left: 6vw;
+		width: 88vw;
+		box-shadow: 0.2vw 0.2vw 0.4vw rgba(255, 111, 0, 0.0), 0 0 2vw grey, 0 0 2vw grey;
+		border-radius: 1.0vw;
+	}
+
+	#download .download-item .download-info .title {
+		font-size: 3.2vw;
+		padding-top: 4.6vw;
+		padding-bottom: 4.2vw;
+	}
+
+	#download .download-item .download-info .version {
+		font-size: 2.2vw;
+		padding-top: 1.4vw;
+		padding-bottom: 3.2vw;
+	}
+
+	#download .download-item .download-info .abstract {
+		text-align: justify;
+		padding: 3.2vw;
+		padding-bottom: 4.2vw;
+		font-size: 2.1vw;
+		line-height: 3.2vw;
+	}
+
+	#download .download-item .download-info .download-1 {
+		height: 6vw;
+		font-size: 2.2vw;
+		padding-top: 1.2vw;
+	}
+
+	#download .download-item .download-info .download-2 {
+		height: 6vw;
+		font-size: 2.1vw;
+		padding-top: 2.2vw;
+	}
+
+}
+
+/* ----------------------------------------------------------- ABOUT STYLE ----------------------------------------------------------- */
+
 
 #about {
 	position: relative;

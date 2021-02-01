@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/modernizr.js"></script>
+    <meta name="viewport" content="width=device-width">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: None;">
+
+<nav>
+	<ul class="left_bar">
+		<a href="index.html"> <img src="assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+	
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="news.html"> <li style="background-color: rgba(233,79,112, 0.85); margin-right: -0.25vw; margin-left: -0.25vw;"> NEWS </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+
+	</ul>
+	<ul class="right_bar">
+		<a href="download.html"> <img style="width: 7.5vw; margin-top: 1.07vw; position: fixed; margin-left: -9.5vw;" src="assets/img/download.png"> </a>
+		<a href="research.html"> <li style="color: #e94f70; font-size: 0.8vw; font-weight: 600;"> RESEARCH &nbsp; <img src="assets/img/goto.png"> </li></a>
+		<a href="about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+</nav>
+
+<div id="nav_mobile">
+	<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="research.html" > <li style="color: #e94f70; font-size: 1.57vw; font-weight: 600; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="assets/img/goto.png"> </li></a>
+		<a href="download.html"> <img style="width: 11.2vw; padding-left: 3.6vw; vertical-align: middle;" src="assets/img/download.png"> </a>
+	</ul>
+</div>
+
+<div id="research">
+
+	<a href="https://arxiv.org/pdf/1910.06663.pdf" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/ai_benchmark_2019.png">
+			<p class="title"> AI Benchmark:&nbsp; All About Deep Learning on Smartphones in 2019 </p>
+			<p class="authors"> Andrey Ignatov, Radu Timofte, Andrei Kulik, Seungsoo Yang, Ke Wang, Felix Baum, Max Wu, Lirong Xu, Luc Van Gool</p>
+			<p class="abstract"> The performance of mobile AI accelerators has been evolving rapidly in the past two years, nearly doubling with each new generation of SoCs. The current 4th generation of mobile NPUs is already approaching the results of CUDA-compatible Nvidia graphics cards presented not long ago, which together with the increased capabilities of mobile deep learning frameworks makes it possible to run complex and deep AI models on mobile devices. In this paper, we evaluate the performance and compare the results of all chipsets from Qualcomm, HiSilicon, Samsung, MediaTek and Unisoc that are providing hardware acceleration for AI inference. We also discuss the recent changes in the Android ML pipeline and provide an overview of the deployment of deep learning models on mobile devices. All numerical results provided in this paper can be found and are regularly updated on the official project website.</p>
+		</div>
+	</a>
+	
+	<a href="https://arxiv.org/pdf/1810.01109.pdf" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/ai_benchmark_2018.png">
+			<p class="title"> AI Benchmark: Running Deep Neural Networks on Android Smartphones </p>
+			<p class="authors"> Andrey Ignatov, Radu Timofte, William Chou, Ke Wang, Max Wu, Tim Hartley, Luc Van Gool</p>
+			<p class="abstract"> Over the last years, the computational power of mobile devices such as smartphones and tablets has grown dramatically, reaching the level of desktop computers available not long ago. While standard smartphone apps are no longer a problem for them, there is still a group of tasks that can easily challenge even high-end devices, namely running artificial intelligence algorithms. In this paper, we present a study of the current state of deep learning in the Android ecosystem and describe available frameworks, programming models and the limitations of running AI on smartphones. We give an overview of the hardware acceleration resources available on four main mobile chipset platforms: Qualcomm, HiSilicon, MediaTek and Samsung. Additionally, we present the real-world performance results of different mobile SoCs collected with AI Benchmark that are covering all main existing hardware configurations.</p>
+		</div>
+	</a>
+	
+	<a href="https://ai-benchmark.com/workshops/mai/2021/" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/mai_2021.jpg">
+			<p class="title"> Mobile AI Workshop & Challenges 2021 @ CVPR </p>
+			<p class="authors"> Andrey Ignatov, Radu Timofte, et al.</p>
+			<p class="abstract">  Over the past years, mobile AI-based applications are becoming more and more ubiquitous. Various deep learning models can now be found on any mobile device, starting from smartphones running portrait segmentation, image enhancement, face recognition and natural language processing models, to smart-TV boards coming with sophisticated image super-resolution algorithms. The performance of mobile NPUs and DSPs is also increasing dramatically, making it possible to run complex deep learning models and to achieve fast runtime in the majority of tasks.
+			While many research works targeted at efficient deep learning models have been proposed recently, the evaluation of the obtained solutions is usually happening on desktop CPUs and GPUs, making it nearly impossible to estimate the actual inference time and memory consumption on real mobile hardware. To address this problem, we introduce the first Mobile AI Workshop, where all deep learning solutions are developed for and evaluated on mobile devices. </p>
+		</div>
+	</a>
+	
+	<a href="https://ai-benchmark.com/workshops/pirm/2018/challenge" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/pirm_2018.png">
+			<p class="title"> PIRM Challenge on Perceptual Image Enhancementon Smartphones 2018 @ ECCV </p>
+			<p class="authors"> Andrey Ignatov and Radu Timofte</p>
+			<p class="abstract">  More layers, more filters, deeper architectures - sounds like a standard recipe for achieving top results in various AI competitions. Deep ResNets and VGGs, Pix2pix-style CNNs of size half a gigabyte. But should we always need a cluster of GPUs to process even small HD-resolution images? How about light, fast and efficient intelligent solutions? This challenge is aimed exactly at the above problem, thus all provided solutions will be tested on smartphones to ensure their efficiency. In this competition, we are targeting two conventional Computer Vision tasks: Image Super-resolution and Image Enhancement, that are tightly bound to these devices. While there exists lots of works and papers that are dealing with these problems, they are generally proposing the algorithms which runtime and computational requirements are enormous even for high-end desktops, not to mention mobile phones. Therefore, here we are using a different metric - instead of assessing solution's performance solely based on PSNR/SSIM scores, in this challenge the general rule is to maximize its accuracy per runtime while meeting some additional requirements.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://people.ee.ethz.ch/~ihnatova/pynet.html" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/replacing_isp_2020.png">
+			<p class="title"> Replacing Mobile Camera ISP with a Single Deep Learning Model </p>
+			<p class="authors"> Andrey Ignatov, Luc Van Gool, Radu Timofte</p>
+			<p class="abstract"> As the popularity of mobile photography is growing constantly, lots of efforts are being invested now into building complex hand-crafted camera ISP solutions. In this work, we demonstrate that even the most sophisticated ISP pipelines can be replaced with a single end-to-end deep learning model trained without any prior knowledge about the sensor and optics used in a particular device. For this, we present PyNET, a novel pyramidal CNN architecture designed for fine-grained image restoration that implicitly learns to perform all ISP steps such as image demosaicing, denoising, white balancing, color and contrast correction, demoireing, etc. The model is trained to convert RAW Bayer data obtained directly from mobile camera sensor into photos captured with a professional high-end DSLR camera, making the solution independent of any particular mobile ISP implementation. To validate the proposed approach on the real data, we collected a large-scale dataset consisting of 10K full-resolution RAW-RGB image pairs captured in the wild with the Huawei P20 cameraphone (12.3 MP Sony Exmor IMX380 sensor) and Canon 5D Mark IV DSLR. The experiments demonstrate that the proposed solution can easily get to the level of the embedded P20's ISP pipeline that, unlike our approach, is combining the data from two (RGB + B/W) camera sensors. The dataset, pre-trained models and codes used in this paper are provided on the project website.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://people.ee.ethz.ch/~ihnatova/pynet-bokeh.html" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/rendering_bokeh_2020.png">
+			<p class="title"> Rendering Natural Camera Bokeh Effect with Deep Learning </p>
+			<p class="authors"> Andrey Ignatov, Jagruti Patel, Radu Timofte</p>
+			<p class="abstract"> Bokeh is an important artistic effect used to highlight the main object of interest on the photo by blurring all out-of-focus areas. While DSLR and system camera lenses can render this effect naturally, mobile cameras are unable to produce shallow depth-of-field photos due to a very small aperture diameter of their optics. Unlike the current solutions simulating bokeh by applying Gaussian blur to image background, in this paper we propose to learn a realistic shallow focus technique directly from the photos produced by DSLR cameras. For this, we present a large-scale bokeh dataset consisting of 5K shallow / wide depth-of-field image pairs captured using the Canon 7D DSLR with 50mm f/1.8 lenses. We use these images to train a deep learning model to reproduce a natural bokeh effect based on a single narrow-aperture image. The experimental results show that the proposed approach is able to render a plausible non-uniform bokeh even in case of complex input data with multiple objects. The dataset, pre-trained models and codes are provided on the project website.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://people.ee.ethz.ch/~ihnatova/index.html" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/dped_2017.png">
+			<p class="title"> DSLR-Quality Photos on Mobile Devices with Deep CNNs </p>
+			<p class="authors"> Andrey Ignatov, Nikolay Kobyshev, Radu Timofte, Kenneth Vanhoey, Luc Van Gool </p>
+			<p class="abstract"> Despite a rapid rise in the quality of built-in smartphone cameras, their physical limitations - small sensor size, compact lenses and the lack of specific hardware, - impede them to achieve the quality results of DSLR cameras. In this work we present an end-to-end deep learning approach that bridges this gap by translating ordinary photos into DSLR-quality images. We propose learning the translation function using a residual convolutional neural network that improves both color rendition and image sharpness. Since the standard mean squared loss is not well suited for measuring perceptual image quality, we introduce a composite perceptual error function that combines content, color and texture losses. The first two losses are defined analytically, while the texture loss is learned in an adversarial fashion. We also present DPED, a large-scale dataset that consists of real photos captured from three different phones and one high-end reflex camera. Our quantitative and qualitative assessments reveal that the enhanced image quality is comparable to that of DSLR-taken photos, while the methodology is generalized to any type of digital camera.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://people.ee.ethz.ch/~ihnatova/wespe.html" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/wespe_2017.png">
+			<p class="title">  WESPE: Weakly Supervised Photo Enhancer for Digital Cameras </p>
+			<p class="authors"> Andrey Ignatov, Nikolay Kobyshev, Radu Timofte, Kenneth Vanhoey, Luc Van Gool </p>
+			<p class="abstract"> Low-end and compact mobile cameras demonstrate limited photo quality mainly due to space, hardware and budget constraints. In this work, we propose a deep learning solution that translates photos taken by cameras with limited capabilities into DSLR-quality photos automatically. We tackle this problem by introducing a weakly supervised photo enhancer (WESPE) - a novel image-to-image GAN-based architecture. The proposed model is trained by weakly supervised learning: unlike previous works, there is no need for strong supervision in the form of a large annotated dataset of aligned original/enhanced photo pairs. The sole requirement is two distinct datasets: one from the source camera, and one composed of arbitrary high-quality images - the visual content they exhibit may be unrelated. Hence, our solution is repeatable for any camera: collecting the data and training can be achieved in a couple of hours. Our experiments on the DPED, Kitti and Cityscapes datasets as well as on photos from several generations of smartphones demonstrate that WESPE produces comparable qualitative results with state-of-the-art strongly supervised methods.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://arxiv.org/pdf/1810.01641.pdf" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/pirm_2018_report.png">
+			<p class="title">  PIRM Challenge on Perceptual Image Enhancement on Smartphones: Report </p>
+			<p class="authors"> Andrey Ignatov, Radu Timofte, et. al. </p>
+			<p class="abstract"> This paper reviews the first challenge on efficient perceptual image enhancement with the focus on deploying deep learning models on smartphones. The challenge consisted of two tracks. In the first one, participants were solving the classical image super-resolution problem with a bicubic downscaling factor of 4. The second track was aimed at real-world photo enhancement, and the goal was to map low-quality photos from the iPhone 3GS device to the same photos captured with a DSLR camera. The target metric used in this challenge combined the runtime, PSNR scores and solutions' perceptual results measured in the user study. To ensure the efficiency of the submitted models, we additionally measured their runtime and memory requirements on Android smartphones. The proposed solutions significantly improved baseline results defining the state-of-the-art for image enhancement on smartphones.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://arxiv.org/pdf/2011.04994.pdf" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/aim_2020_isp.png">
+			<p class="title">  AIM 2020 Challenge on Learned Image Signal Processing Pipeline </p>
+			<p class="authors"> Andrey Ignatov, Radu Timofte, et. al. </p>
+			<p class="abstract"> This paper reviews the second AIM learned ISP challenge and provides the description of the proposed solutions and results. The participating teams were solving a real-world RAW-to-RGB mapping problem, where to goal was to map the original low-quality RAW images captured by the Huawei P20 device to the same photos obtained with the Canon 5D DSLR camera. The considered task embraced a number of complex computer vision subtasks, such as image demosaicing, denoising, white balancing, color and contrast correction, demoireing, etc. The target metric used in this challenge combined fidelity scores (PSNR and SSIM) with solutions' perceptual results measured in a user study. The proposed solutions significantly improved the baseline results, defining the state-of-the-art for practical image signal processing pipeline modeling.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://arxiv.org/pdf/2011.04988.pdf" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/aim_2020_bokeh.png">
+			<p class="title">  AIM 2020 Challenge on Rendering Realistic Bokeh </p>
+			<p class="authors"> Andrey Ignatov, Radu Timofte, et. al. </p>
+			<p class="abstract"> This paper reviews the second AIM realistic bokeh effect rendering challenge and provides the description of the proposed solutions and results. The participating teams were solving a real-world bokeh simulation problem, where the goal was to learn a realistic shallow focus technique using a large-scale EBB! bokeh dataset consisting of 5K shallow / wide depth-of-field image pairs captured using the Canon 7D DSLR camera. The participants had to render bokeh effect based on only one single frame without any additional data from other cameras or sensors. The target metric used in this challenge combined the runtime and the perceptual quality of the solutions measured in the user study. To ensure the efficiency of the submitted models, we measured their runtime on standard desktop CPUs as well as were running the models on smartphone GPUs. The proposed solutions significantly improved the baseline results, defining the state-of-the-art for practical bokeh effect rendering problem.
+ </p>
+		</div>
+	</a>
+	
+	<a href="https://people.ee.ethz.ch/~timofter/publications/Ignatov-ICCVW-2019c.pdf" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/aim_2019_isp.png">
+			<p class="title">  AIM 2019 Challenge on RAW to RGB Mapping: Methods and Results </p>
+			<p class="authors"> Andrey Ignatov, Radu Timofte, et. al. </p>
+			<p class="abstract"> This paper reviews the first AIM challenge on mapping camera RAW to RGB images with the focus on proposed solutions and results. The participating teams were solving a real-world photo enhancement problem, where the goal was to map the original low-quality RAW images from the Huawei P20 device to the same photos captured with the Canon 5D DSLR camera. The considered problem embraced a number of computer vision subtasks, such as image demosaicing, denoising, gamma correction, image resolution and sharpness enhancement, etc. The target metric used in this challenge combined fidelity scores (PSNR and SSIM) with solutions' perceptual results measured in a user study. The proposed solutions significantly improved baseline results, defining the state-of-the-art for RAW to RGB image restoration.
+ </p>
+		</div>
+	</a>
+	
+	<a href="http://people.ee.ethz.ch/~timofter/publications/Ignatov-ICCVW-2019b.pdf" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/aim_2019_bokeh.png">
+			<p class="title">  AIM 2019 Challenge on Bokeh Effect Synthesis: Methods and Results </p>
+			<p class="authors"> Andrey Ignatov, Jagruti Patel, Radu Timofte, et. al. </p>
+			<p class="abstract"> This paper reviews the first AIM challenge on bokeh effect synthesis with the focus on proposed solutions and results. The participating teams were solving a real-world image-to-image mapping problem, where the goal was to map standard narrow-aperture photos to the same photos captured with a shallow depth-of-field by the Canon 70D DSLR camera. In this task, the participants had to restore bokeh effect based on only one single frame without any additional data from other cameras or sensors. The target metric used in this challenge combined fidelity scores (PSNR and SSIM) with solutions' perceptual results measured in a user study. The proposed solutions significantly improved baseline results, defining the state-of-the-art for practical bokeh effect simulation.
+ </p>
+		</div>
+	</a>
+
+	<a href="https://www.sciencedirect.com/science/article/abs/pii/S1568494617305665" target="_blank">
+		<div class="paper">			
+			<img src="assets/img/research/human_activity_2018.png">
+			<p class="title">  Real-Time Human Activity Recognition from Accelerometer Data Using Convolutional Neural Networks </p>
+			<p class="authors"> Andrey Ignatov </p>
+			<p class="abstract"> With a widespread of various sensors embedded in mobile devices, the analysis of human daily activities becomes more common and straightforward. This task now arises in a range of applications such as healthcare monitoring, fitness tracking or user-adaptive systems, where a general model capable of instantaneous activity recognition of an arbitrary user is needed. In this paper, we present a user-independent deep learning-based approach for online human activity classification. We propose using Convolutional Neural Networks for local feature extraction together with simple statistical features that preserve information about the global form of time series. Furthermore, we investigate the impact of time series length on the recognition accuracy and limit it up to 1 s that makes possible continuous real-time activity classification. The accuracy of the proposed approach is evaluated on two commonly used WISDM and UCI datasets that contain labeled accelerometer data from 36 and 30 users respectively, and in cross-dataset experiment. The results show that the proposed model demonstrates state-of-the-art performance while requiring low computational cost and no manual feature engineering.
+ </p>
+		</div>
+	</a>
+
+	
+</div>
+
+<div id="about">
+	<div id="content">
+		<p >Copyright © 2021 by A.I.</p>
+		<p style="color: #ea1d6f">ETH Zurich, Switzerland</p>
+	</div>
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
