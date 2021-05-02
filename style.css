@@ -887,6 +887,11 @@ nav .left_bar_samples li {
 	border-radius: 0.2vw;
 }
 
+#ranking .nightly {
+	background-image: linear-gradient(to bottom right, rgba(0, 204, 255, 0.08), rgba(255, 0, 102, 0.07));
+	border-radius: 0.2vw;
+}
+
 #ranking th {
 	cursor: pointer;
 }
