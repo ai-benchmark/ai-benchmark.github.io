@@ -20,6 +20,7 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-118781498-1');
+	  
 	</script>
     
 </head>
@@ -31,13 +32,15 @@
 		<a href="index.html"> <img src="assets/img/splash.png"> </a>
 	</ul>
 	<ul class="middle_bar">
+		<a href="#live"> <li style="color: rgb(238, 0, 106);"> LIVE <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg>
+</li></a>
+		<a href="#schedule"> <li> SCHEDULE </li></a>
+		<a href="#organizers"> <li> ORGANIZERS </li></a>
 		<a href="#challenges"> <li> CHALLENGES </li></a>
 		<a href="#papers"> <li> PAPERS </li></a>
-		<a href="#organizers"> <li> ORGANIZERS </li></a>
 		<a href="#dates"> <li> DATES </li></a>
-		<a href="#tutorial"> <li> TUTORIAL </li></a>
+		<!--a href="#tutorial"> <li> TUTORIAL </li></a-->
 		<a href="#runtime"> <li> RUNTIME </li></a>
-		<a href="#schedule"> <li> SCHEDULE </li></a>
 		<a href="#contacts"> <li> CONTACTS </li></a>
 	</ul>
 	<ul class="right_bar">
@@ -45,7 +48,7 @@
 	</ul>
 </nav>
 
-<img src="assets/img/mai_logo_final_text.jpg" style="width: 100%; margin-top: 4.0vw;">
+<img src="assets/img/mai_logo_final_time.jpg" style="width: 100%; margin-top: 4.0vw;">
 
 <div id="workshop">
 
@@ -61,6 +64,549 @@
 		</p>
 	</div>
 <div>
+
+<div id="organizers">
+	<p class="title"> ORGANIZERS </p>	
+
+	<img style="width: 100%;" src="assets/organizers/organizers.png"></td><td><span class="grey">
+
+</div>
+
+<div id="live">
+	<p class="title"> LIVE </p>	
+	<!--iframe style="width: 50vw; height: 28.125vw;" src="https://youtu.be/tdpmvy2Cab0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+	
+	<iframe style="width: 50vw; height: 28.125vw;" src="https://www.youtube.com/embed/tdpmvy2Cab0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>></iframe>
+
+</div>
+
+<div id="schedule">
+	<p class="title"> SCHEDULE </p>	
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";' src="assets/speakers/andrey.jpg">
+			<a href="https://vision.ee.ethz.ch/" target="_blank"><img style="margin-top: 0.7vw; width: 75%" src="assets/organizers/eth-zurich.png"></a>
+			<!--a href="https://ai-benchmark.com/" target="_blank"><img style="margin-top: 0.7vw; width: 100%" src="assets/organizers/ai_witchlabs.png"></a-->
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw;  line-height: 1.4vw;">Deep Learning on Smartphones, an In-Depth-Dive:&nbsp; <span style="font-weight: 500;">Frameworks and SDKs, Hardware Acceleration with NPUs and GPUs, Models Deployment, Performance and Power Consumption Analysis</span></p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">07:00 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";'>Andrey Ignatov</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">AI Benchmark Project Lead, ETH Zurich</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-andrey"> <span style="font-weight: 600;">Biography:</span> Andrey Ignatov is the project lead of the AI Benchmark initiative targeted at performance evaluation of mobile, IoT and desktop hardware at ETH Zurich, Switzerland. His PhD research was aimed at designing efficient image processing models for smartphone NPUs / DSPs and developing the next-generation deep learning based mobile camera ISP solution. He is the lecturer on Deep Learning for Smartphones course at ETH Zurich and the main author of the AI Benchmark papers describing the current state of deep learning and AI hardware acceleration on mobile devices. He is a co-founder of the AI Witchlabs and co-organizer of the NTIRE and AIM events. His main line of research is focused on image restoration and automatic image quality enhancement, adaptation of AI applications for mobile devices and benchmarking machine learning hardware.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> In this tutorial, we will cover all basic concepts, steps and optimizations required for efficient AI inference on mobile devices. First, you will get to know how to run any NN model on your own smartphone in less than 5 minutes. Next, we will review all components needed to convert and run TensorFlow or PyTorch neural networks on Android and iOS smartphones, as well as discuss the key optimizations required for fast ML inference on the edge devices. In the second part of the talk, you will get an overview of the performance of all mobile processors with AI accelerators released in the past five years. We will additionally discuss the power consumption of the latest high-end smartphone SoCs, answering the question of why NPUs and DSPs are so critical for on-device inference.</p>
+		</div>
+
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-allen").style.display="inline-block";' src="assets/speakers/Dr_Allen_Lu.jpg">
+			<a href="https://www.mediatek.com/" target="_blank"><img style="margin-top: 0.7vw; width: 80%" src="assets/organizers/mediatek.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw;">Edge AI Technology – from Development to Deployment</p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">08:20 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-allen").style.display="inline-block";'>Dr. Allen Lu</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Senior Director, Computing and AI Technology Group at MediaTek</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-allen"> <span style="font-weight: 600;">Biography:</span> Dr. Lu is the Senior Director of Computing and Artificial intelligence Technology Group at MediaTek. He is responsible for the ML/DL algorithm/tool development for mobile phone, camera, tablet, and TV products. The application covers video and image object detection, picture quality enhancement, noise reduction, etc.</br></br>
+Prior to MediaTek, Dr. Lu served as the General Manager of Video IoT (iVoT) Business Unit at Novatek. He was responsible for business and technology planning and execution.  iVoT is the leader in dash cam market over years. In 2017, iVoT developed the first SoC integrating deep learning accelerator with 4K-resolution ISP (image signal processing) and video codec for surveillance camera. The SoC replaced the discrete solution and achieve a commercial success.</br></br>
+Prior to Novatek, Dr. Lu funded Afatek, a fabless company developing RF, digital modulator, and demodulator chips. Afatek developed the first silicon integrating RF front-end with demodulator for digital TV in 2006, and subsequently developed the first silicon integrating RF front-end with multi-standard modulator for surveillance application. Afatek was acquired by iTE in 2008.</br></br>
+Dr. Lu worked in Silicon Valley from 1997-2002. He joined the Excess Bandwidth Corp. funded by Stanford professors specializing in signal processing. He was responsible for the communication front-end and circuit-design. The start-up delivered the best performance symmetrical high speed DSL (SHDSL) modem prototype in six months. They subsequently developed integrated chipset for SHDSL modem in twelve months. Excess Bandwidth Corp. was acquired by Virata Corp (now Conexant) in 2000. Dr. Lu was a member of technical staff at Hewlett Packard prior to Excess Bandwidth.</br></br>
+Dr. Lu received his M.S. and Ph.D. in Electrical Engineering from Stanford University. He led two projects in WDM MAN and LAN testbed development funded by Sprint and ARPA. He published more than 30 papers in the optical communication and photonic switching fields.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> This presentation will share Mediatek’s experience in 5G+edge AI technology development and deployment. We use smart phone as an example to illustrate the edge AI technology evolution, from feature extraction for face unlock, to image / instance segmentation for video bokeh, to pixel-level AI algorithm for image and video noise reduction and super resolution. The picture and video quality are significantly better than the conventional method in the low light and high dynamic range photo scenarios. While the state of the art 5G+AI SoC packs tens of billions of transistors on a single centimeter by centimeter silicon chip for this achievement, the SoC complexity increases over time with a higher slope than the Moore’s law can offer. We will discuss the technology improvement to bridge this gap. It’s the combination of process improvement, HW architecture improvement, and SW/algorithm complexity reduction to enable new edge AI applications and enrich our digital life experience. </p>
+		</div>
+
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="https://arxiv.org/pdf/2105.07809.pdf" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_raw.jpg">
+				<p class="title"> Learned Smartphone ISP Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">08:50 Pacific Time</span> &nbsp; ┈ &nbsp; Min-Hung Chen, Senior AI Engineer, MediaTek Inc. <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 15%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 40%; text-align: left; padding-left: 0.8vw;"><span class="grey">Evaluation Platform:</span> <br> MediaTek Dimensity 1000+ APU</td>
+								<td style="width: 20%;"><span class="grey">Powered by:</span></td>
+								<td style="width: 25%;"><img style="width: 50%;" src="assets/organizers/mediatek.png"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+		
+	<div class="accepted-paper" style="margin-bottom: 3.2vw;">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">09:05 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">CSANet: High Speed Channel Spatial Attention Network for Mobile ISP</span> </span></p></br>
+			<p class="authors">Ming-Chun Hsyu, Chih-Wei Liu, Chao-Hung Chen, Chao-Wei Chen, Wen-Chia Tsai</p></br>
+			<p class="affiliation">☉ &nbsp;Industrial Technology Research Institute & National Yang Ming Chiao Tung University, Taiwan</p></br>
+		</div>
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-gilberto").style.display="inline-block";' src="assets/speakers/Gilberto_Rodriguez.jpg">
+			<a href="https://www.imaginationtech.com/" target="_blank"><img style="margin-top: 0.7vw;" src="assets/organizers/imagination.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw;">Imagination Technologies Approach to Overcame the Challenges of Deploying AI in Mobile</p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">09:10 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-gilberto").style.display="inline-block";'>Gilberto Rodriguez</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Director of AI Product Management at Imagination Technologies</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-gilberto"> <span style="font-weight: 600;">Biography:</span> Expert in embedded solutions for telecommunications, video processing and artificial intelligence. Co-founded start-ups and lead teams of more than 70 engineers distributed worldwide. 20 years of experience leading global teams and organizations, Executive MBA from London Business School and MEng in Telecommunications.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> Mobile devices are nowadays very powerful heterogeneous engines, but they still have limitations of what you can achieve of them. With a growing number of applications using AI as part of their solution and the concerns about privacy of data, having efficient hardware and tools for deploying AI is the only path to success in the field. In this workshop, I will explain some of the techniques that can be used to optimise Neural Networks for a better deployment and how Imagination Technologies develops efficient hardware architectures for mobile devices. </p>
+		</div>
+
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="https://arxiv.org/pdf/2105.08629.pdf" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_denoising.jpg">
+				<p class="title"> Smartphone Image Denoising Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">09:40 Pacific Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 15%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 40%; text-align: left; padding-left: 0.8vw;"><span class="grey">Evaluation Platform:</span> <br> Exynos 2100, Mali-G78 GPU</td>
+								<td style="width: 20%;"><span class="grey">Powered by:</span></td>
+								<td style="width: 25%;"><img style="width: 40%;" src="assets/organizers/samsung.png"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-jihoon").style.display="inline-block";' src="assets/speakers/jihoonbang_profile.jpg">
+			<a href="https://www.samsung.com/semiconductor/minisite/exynos/" target="_blank"><img style="margin-top: 0.7vw; width: 70%;" src="assets/organizers/samsung.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw; line-height: 1.4vw;">Samsung Exynos Mobile NPUs and SDK: Hardware Design, Performance, Models Deployment and Efficient Inference </p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">09:50 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-jihoon").style.display="inline-block";'>Jihoon Bang</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">NPU and DSP Software Development Management at Samsung SLSI</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-jihoon"> <span style="font-weight: 600;">Biography:</span> Jihoon Bang had worked for Harman international and Nvidia before he joined Samsung SLSI division in 2018 to manage NPU and DSP software. He has Electrical Engineering BS and MS degree from Seoul National University in Korea, and Software Engineering MS degree from Carnegie Mellon University in the US.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> Samsung Exynos NPUs are now being widely used in numerous mobile, IoT and autonomous driving systems. This talk will provide an overview of their hardware design as well as the full software NN stack used for efficient models deployment. It will show how to perform models profiling and optimization with the Exynos Tools allowing to achieve the best performance on Exynos-based devices. Finally, several real-world applications that are using Samsung NPUs will be presented, and the future mobile NN development directions and challenges will be discussed.</p>
+		</div>
+
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:20 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Low Bandwidth Video-Chat Compression using Deep Generative Models</span> </span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Maxime Oquab, Pierre Stock, Oran Gafni, Daniel Haziza, Tao Xu, Peizhao Zhang, Onur Celebi, Yana Hassony, Patrick Labatut, Bobo Bose-Kolanu, Thibault Peyronel, Camille Couprie</p></br>
+			<p class="affiliation">☉ &nbsp;Facebook & INRIA, France</p></br>
+		</div>
+	</div>
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:30 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">AsymmNet: Towards Ultralight Convolution Neural Networks Using Asymmetrical Bottlenecks</span> </span></p></br>
+			<p class="authors">Haojin Yang, Zhen Shen, Yucheng Zhao</p></br>
+			<p class="affiliation">☉ &nbsp;Alibaba Cloud & Hasso Plattner Institute & ByteDance</p></br>
+		</div>
+	</div>
+	<div class="accepted-paper" style="margin-bottom: 2.0vw;">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:35 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Pseudo-IoU: Improving Label Assignment in Anchor-Free Object Detection</span> </span></p></br>
+			<p class="authors">Jiachen Li, Bowen Cheng, Rogerio Feris, Jinjun Xiong, Thomas S. Huang, Wen-Mei Hwu, Humphrey Shi</p></br>
+			<p class="affiliation">☉ &nbsp;UIUC & MIT-IBM Watson AI Lab & IBM T.J. Watson Research Center & NVIDIA & University of Oregon & Picsart AI Research (PAIR)</p></br>
+		</div>
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer; margin-bottom: 0.4vw;" onClick='document.getElementById("bio-mika").style.display="inline-block";' src="assets/speakers/prze-profile-pic.jpeg">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-mika").style.display="inline-block";' src="assets/speakers/mika-sq-new.jpg">
+			<a href="https://developers.google.com/learn/topics/on-device-ml" target="_blank"><img style="margin-top: 0.7vw; width: 70%;" src="assets/organizers/google.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw; line-height: 1.4vw;">Android Neural Networks API - What's New and Best Practices </p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">10:40 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-mika").style.display="inline-block";'>Przemysław Szczepaniak</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Software Engineer at Google</span></p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">10:55 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-mika").style.display="inline-block";'>Mika Raento</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Software Engineer at Google</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-mika"> <span style="font-weight: 600;">Biography:</span> Przemysław Szczepaniak is a Tech Lead / Manager in Android ML Platform, focusing on making the Android Neural Networks API (NNAPI) updatable. He's been working on NNAPI since Android Pie.</br></br>
+			
+			Mika Raento works as a Staff Software Engineer at Google, co-leading Android ML Platform. From 2014 to 2018 he worked as a generalist consultant at McKinsey & Company, in McKinsey Digital, leaving as an Engagement Manager. From 2010 to 2013 Mika Raento was the VP of R&D at ZenRobotics Ltd, leading the development of the world's first waste-sorting robot. Before joining ZenRobotics, Mika worked at Google on the first versions of Google Latitude. He joined Google via the acquisition of Jaiku Ltd, where he created the Jaiku S60 mobile client. Mika has a PhD in Computer Science from the University of Helsinki and a MSc in the same from the University of Jyväskylä. He lives in Käpylä, Helsinki, Finland.
+			
+			</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> The Android Neural Networks API (NNAPI) was introduced in Android O-MR1, late 2017. NNAPI provides a standard hardware abstraction layer for ML accelerators on Android as part of the operating system, allowing accelerated computation over a graph of neural network layers. NNAPI has been successful in allowing access to previously hard-to-access hardware. However, its slow speed of evolution and lack of performance and correctness guarantees have made adoption by applications limited. In this talk we share recent advances for both of those problems. We'll describe how we are making NNAPI updatable outside Android OS releases through Google Play Services. We'll also talk about how to automatically deal with performance and correctness through a mini-benchmark embedded in TFLite models.</p>
+		</div>
+
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="https://arxiv.org/pdf/2105.07825.pdf" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_superres.jpg">
+				<p class="title"> Quantized Image Super-Resolution on NPUs Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">11:10 Pacific Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 15%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 40%; text-align: left; padding-left: 0.8vw;"><span class="grey">Evaluation Platform:</span> <br> Synaptics VS680 SoC, VeriSilicon NPU</td>
+								<td style="width: 20%;"><span class="grey">Powered by:</span></td>
+								<td style="width: 25%;"><img style="width: 50%;" src="assets/organizers/synaptics-rebrand-logo.png"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">11:20 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Extremely Lightweight Quantization Robust Single-Image Super Resolution for Mobile Devices</span> </span></p></br>
+			<p class="authors">Mustafa Ayazoglu</p></br>
+			<p class="affiliation">☉ &nbsp;Aselsan Research, Turkey</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper" style="margin-bottom: 2.0vw;">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">11:25 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Anchor-based Plain Net for Mobile Image Super-Resolution</span> </span></p></br>
+			<p class="authors">Zongcai Du, Jie Liu, Jie Tang, Gangshan Wu</p></br>
+			<p class="affiliation">☉ &nbsp;Nanjing Ubiversity, China</p></br>
+		</div>
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-abdel").style.display="inline-block";' src="assets/speakers/abdel.jpg">
+			<a href="https://www.synaptics.com/" target="_blank"><img style="margin-top: 0.7vw; width: 90%;" src="assets/organizers/synaptics-rebrand-logo.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw; line-height: 1.4vw;">AI on the Edge @Synaptics : HW and SW Products and Development </p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">11:30 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-abdel").style.display="inline-block";'>Abdel Younes</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Technical Director, Smart Home Solutions Architecture at Synaptics</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-abdel"> <span style="font-weight: 600;">Biography:</span> Abdel Younes is currently leading the AI/ML system architecture team at Synaptics and the development of the SyNAP framework that supports AI on Synaptics edge SoC. From Aerospace Research to AI, going through OpenSource, Deeply Embedded SW development and Multimedia, Abdel Younes has 20+ years of experience leading projects and teams in various industries. He received his MS in Telecommunications and Electronics and his Ph.D. in Signal Processing and Telecommunication from the French Civil Aviation Academy (ENAC).</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> New AI-at-the-edge processors with improved efficiencies and flexibility are unleashing a huge opportunity to democratize computer vision broadly across all markets, enabling edge AI devices with small, low-cost, low-power cameras. Synaptics has embarked on a roadmap of edge-AI DNN processors targeted at a range of real-time computer vision and multimedia applications. In this talk, we will describe the hardware architecture used in Synaptics VideoSmart™ VS600 family with embedded built-in Neural Processor Unit and we will show how the SyNAP™ Software framework enables lightweight and optimized AI applications such as real-time Video SuperResolution upscaling.</p>
+		</div>
+
+	</div>
+	
+	<div class="accepted-paper" style="margin-top: 4vw; margin-bottom: 4vw;">
+	<hr></br>
+		<div class="block-1"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">12:00 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Break & Lunch</span> </span></p></br></br>
+		</div>
+	<hr>
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-emilia").style.display="inline-block";' src="assets/speakers/emilia_tantar.jpg">
+			<a href="https://www.synaptics.com/" target="_blank"><img style="margin-top: 0.7vw; width: 80%;" src="assets/organizers/huawei.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw; line-height: 1.4vw;">AI Deployment from Hardware to Software – Challenges and Opportunities </p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">12:30 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-emilia").style.display="inline-block";'>Emilia Tantar</span> &nbsp;  &nbsp; <span style="font-style: italic;"></span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-emilia"> <span style="font-weight: 600;">Biography:</span> TBA.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> AI has become a basic capability of consumer electronics and is continuously changing the user experience. Higher peak computing power and higher energy efficiency depend on the collaborative optimization of software and hardware.
+HUAWEI through the HiAI Foundation continuously provides leading solutions in key technologies such as NPU hardware architecture, heterogeneous computing framework, and quantitative search tools. Through a complete approach spanning from hardware to AI software modules will showcase a better intelligent experience for consumers on multiple devices.</p>
+		</div>
+
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="https://arxiv.org/pdf/2105.08826.pdf" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_video.jpg">
+				<p class="title"> Video Super-Resolution on Smartphone GPUs Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">13:00 Pacific Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 15%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 40%; text-align: left; padding-left: 0.8vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 865 SoC, Adreno 650 GPU</td>
+								<td style="width: 20%;"><span class="grey">Powered by:</span></td>
+								<td style="width: 25%;"><img style="width: 45%;" src="assets/organizers/oppo.png"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper" style="margin-bottom: 2.0vw;">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:10 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">EVSRNet：Efficient Video Super-Resolution with Neural Architecture Search</span> </span></p></br>
+			<p class="authors">Shaoli Liu, Chengjian Zheng, Kaidi Lu, Si Gao, Ning Wang, Bofei Wang, Diankai Zhang, Xiaofeng Zhang, Tianyu Xu</p></br>
+			<p class="affiliation">☉ &nbsp;ZTE Corporation, China</p></br>
+		</div>
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-jie-cai").style.display="inline-block";' src="assets/speakers/Jie_Cai.jpg">
+			<a href="https://www.oppo.com/" target="_blank"><img style="margin-top: 0.7vw; width: 70%;" src="assets/organizers/oppo.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw; line-height: 1.4vw;">Learning to See the World Clearer </p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">13:15 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-jie-cai").style.display="inline-block";'>Jie Cai</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Research Scientist at OPPO</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-jie-cai"> <span style="font-weight: 600;">Biography:</span> Jie Cai is the research scientist at OPPO US R&D. He received a Ph.D. degree in computer science and engineering from University of South Carolina in 2019. And he received a Master's degree in electrical and computer engineering from University of Illinois at Chicago in 2015. His research interests include computer vision and deep learning，with a focus on face analysis，image processing, and image/video recovery. He is working on developing novel algorithms for image/video enhancement and super-resolution for mobile devices. He also works to accelerate and compress deep learning models.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> Recent progress in video super-resolution has been remarkable. However, since most of the recent approaches are deep learning based, they are way too computationally intensive to be deployed on edge devices. Besides, it is still a challenge to recover real-world videos with a variety of degradations. In this talk, an approach for real-time video super-resolution on mobile devices is presented, wihch is able to deal with a wide range of degradations. In addiation, it achieves state-of-the-art performance on a public video super-resolution dataset and has been delivered to OPPO smartphones.</p>
+		</div>
+
+	</div>
+
+	<div class="talk-challenges">
+		<a href="https://arxiv.org/pdf/2105.08630.pdf" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_depth.jpg">
+				<p class="title"> Single-Image Depth Estimation on Mobile Devices Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">13:40 Pacific Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 15%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 40%; text-align: left; padding-left: 0.8vw;"><span class="grey">Evaluation Platform:</span> <br> Raspberry Pi 4, Broadcom BCM2711 SoC</td>
+								<td style="width: 20%;"><span class="grey">Powered by:</span></td>
+								<td style="width: 25%;"><img style="width: 45%;" src="assets/organizers/raspberry.png"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:50 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">A Simple Baseline for Fast and Accurate Depth Estimation on Mobile Devices</span> </span></p></br>
+			<p class="authors">Ziyu Zhang, Yicheng Wang, Zilong Huang, Guozhong Luo, Gang Yu, Bin Fu</p></br>
+			<p class="affiliation">☉ &nbsp;Tencent GY-Lab, China</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:00 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Knowledge Distillation for Fast and Accurate Monocular Depth Estimation on Mobile Devices</span> </span></p></br>
+			<p class="authors">Yiran Wang, Xingyi Li, Min Shi, Ke Xian, Zhiguo Cao</p></br>
+			<p class="affiliation">☉ &nbsp;Huazhong University of Science and Technology, China</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:05 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Real-time Monocular Depth Estimation with Sparse Supervision on Mobile</span> </span></p></br>
+			<p class="authors">Mehmet Kerim Yucel, Valia Dimaridou, Anastasios Drosou, Albert Saa-Garriga</p></br>
+			<p class="affiliation">☉ &nbsp;Samsung Research, UK & Information Technologies Institute, Greece</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper" style="margin-bottom: 2.0vw;">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:10 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Fast and Accurate Camera Scene Detection on Smartphones</span> </span></p></br>
+			<p class="authors">Sidharth Ramesh, Maximilian Giang, Ramithan Chandrapalan, Toni Tanner, Moritz Prussing, Radu Timofte, Andrey Ignatov</p></br>
+			<p class="affiliation">☉ &nbsp;ETH Zurich, Switzerland</p></br>
+		</div>
+	</div>
+
+	<div class="talk-challenges">
+		<a href="https://arxiv.org/pdf/2105.08819.pdf" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_scene.jpg">
+				<p class="title"> Quantized Camera Scene Detection on Smartphones Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">14:20 Pacific Time</span> &nbsp; ┈ &nbsp; Grigory Malivenko <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 15%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 40%; text-align: left; padding-left: 0.8vw;"><span class="grey">Evaluation Platform:</span> <br> Apple Bionic A11 SoC</td>
+								<td style="width: 20%;"><span class="grey">Powered by:</span></td>
+								<td style="width: 25%;"><img style="width: 50%;" src="assets/organizers/cvl.png"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper" style="margin-bottom: 2.0vw;">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:25 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">MobileHumanPose: Toward real-time 3D human pose estimation in mobile devices</span> </span></p></br>
+			<p class="authors">Sangbum Choi, Seokeon Choi, Changick Kim</p></br>
+			<p class="affiliation">☉ &nbsp;Korea Advanced Institute of Science and Technology, Republic of Korea</p></br>
+		</div>
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-felix").style.display="inline-block";' src="assets/speakers/Felix_Baum.jpg">
+			<a href="https://www.qualcomm.com/" target="_blank"><img style="margin-top: 0.7vw; width: 80%;" src="assets/organizers/qualcomm.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw; line-height: 1.4vw;">Hate it or Love it, Your SW Stack Defines Application Performance and Reach </p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">14:30 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-felix").style.display="inline-block";'>Felix Baum</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Director Product Management, Qualcomm Technologies</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-felix"> <span style="font-weight: 600;">Biography:</span> Felix Baum is responsible for AI Software Products at Qualcomm Technologies Inc. (QTI). Felix has spent 20+ years in the embedded industry, both as an embedded developer and as a product manager. He previously led QTI product management for the Hexagon Software supporting DSPs with scalar, vector and tensor accelerators for camera, video, machine learning and audio verticals. Prior to that, he led marketing and product management efforts for various real-time operating system technologies. His career began at NASA's Jet Propulsion Laboratory at the California Institute of Technology, designing flight software for various spacecraft and managing integration for a launch campaign of the GRACE mission. Felix holds a master's degree in computer science from the California State University at Northridge and a Master of Business Administration from the University of California at Los Angeles.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> Qualcomm has worked extensively on its state-of-the-art Qualcomm Neural Network and software stack including the Qualcomm Neural Processing SDK and the AI Model Efficiency Toolkit. By doing so Qualcomm has helped many developers take their applications to the next level with extreme efficiency and performance. In this talk, we will take you through some of the most common misconceptions related to software stacks and AI frameworks, and how these have a direct and indirect impact to application performance and reach. If you are interested in improving your application performance or even porting over to ML this talk is for you.</p>
+		</div>
+
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:00 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold; line-height: 1.6vw;">Do All MobileNets Quantize Poorly? Gaining Insights into the Effect of Quantization on Depthwise Separable Convolutional Networks Through the Eyes of Multi-scale Distributional Dynamics</span></span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw; margin-top: -0.6vw;">Stone Yun, Alexander Wong</p></br>
+			<p class="affiliation">☉ &nbsp;University of Waterloo & Waterloo Artificial Intelligence Institute, Canada</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:05 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Layer Importance Estimation with Imprinting for Neural Network Quantization</span></span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Hongyang Liu, Sara Elkerdawy, Nilanjan Ray, Mostafa Elhoushi</p></br>
+			<p class="affiliation">☉ &nbsp;University of Alberta & Huawei, Canada</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:10 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Computer Vision-based Assistance System for the Visually Impaired Using Mobile Edge AI</span> </span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Jagadish K. Mahendran, Daniel T. Barry, Anita K. Nivedha, Suchendra M. Bhandarkar</p></br>
+			<p class="affiliation">☉ &nbsp;Kutir Technologies Corporation, Canada & Denbar Robotics, USA & Molecular Forecaster Inc., Canada & University of Georgia, USA</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:15 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">RSCA: Real-time Segmentation-based Context-Aware Scene Text Detection</span> </span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Jiachen Li, Yuan Lin, Rongrong Liu, Chiu Man Ho, and Humphrey Shi</p></br>
+			<p class="affiliation">☉ &nbsp;InnoPeak Technology & UIUC & University of Oregon, USA</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:20 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Real-time analogue gauge transcription on mobile phone</span> </span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Ben Howells, James Charles, Roberto Cipolla</p></br>
+			<p class="affiliation">☉ &nbsp;University of Cambridge, UK</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:25 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Stacked Deep Multi-Scale Hierarchical Network for Fast Bokeh Effect Rendering</span> </span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Saikat Dutta, Sourya Dipta Das, Nisarg A. Shah, Anil Kumar Tiwari</p></br>
+			<p class="affiliation">☉ &nbsp;IIT Madras & Jadavpur University & IIT Jodhpur, India</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:30 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Filtering Empty Camera Trap Images in Embedded Systems</span> </span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Fagner Cunha, Eulanda M. dos Santos, Raimundo Barreto, Juan G. Colonna</p></br>
+			<p class="affiliation">☉ &nbsp;Federal University of Amazonas, Brazil</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:35 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">DeepShift: Towards Multiplication-Less Neural Networks</span></span></p></br>
+			<p class="authors" STYLE="line-height: 1.2vw;">Mostafa Elhoushi, Zihao Chen, Farhan Shafiq, Ye Henry Tian, Joey Yiwei Li</p></br>
+			<p class="affiliation">☉ &nbsp;Huawei Technologies & Universitiy of Toronto, Canada</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper" >
+		<div class="block-1"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:40 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Wrap Up & Closing</span> </span></p></br>
+		</div>
+	</div>
+
+		
+</div>
 
 <div id="challenges">
 	<p class="title"> CHALLENGES </p>
@@ -266,13 +812,6 @@
 	
 </div>
 
-<div id="organizers">
-	<p class="title"> ORGANIZERS </p>	
-
-	<img style="width: 100%;" src="assets/organizers/organizers.png"></td><td><span class="grey">
-
-</div>
-
 
 <div id="dates">
 	<p class="title"> TIMELINE</p>
@@ -291,7 +830,7 @@
 	        <tr><td>Final test data released </td><td>March 15</td></tr>
 	        <tr><td>Final models / recontruction results submission deadline </td><td>March 20</td></tr>
 	        <tr><td>Fact sheets / codes submission deadline </td><td>March 20</td></tr>
-	        <tr><td>Preliminary test results released to the participants </td><td><span style="color: rgb(23, 142, 210);">March 22</span></td></tr>
+	        <tr><td>Preliminary test results released to the participants </td><td>March 22</td></tr>
 	        <tr><td>Paper submission deadline <span style="color: rgb(234, 29, 111);">/ challenge papers only !</span> </td><td><span style="color: rgb(234, 29, 111);">April 4</span></td></tr>
 	    </tbody>
 	</table>
@@ -305,10 +844,10 @@
 	    </thead>
 	 	<tbody>
 	        <tr><td>Paper submission server online </td><td> January 15</span> </td></tr>
-	        <tr><td>Paper submission deadline </td><td><span style="color: rgb(234, 29, 111);">March 15</span></td></tr>
+	        <tr><td>Paper submission deadline </td><td>March 15</td></tr>
 	        <tr><td>Paper decision notification </td><td>April 5</td></tr>
 	        <tr><td>Camera ready deadline </td><td>April 15</td></tr>
-	        <tr><td>Workshop day </td><td>June 20</td></tr>
+	        <tr><td>Workshop day </td><td><span style="color: rgb(234, 29, 111);">June 20</span></td></tr>
 	    </tbody>
 	</table>
 	
@@ -350,11 +889,6 @@
 	
 </div>
 
-<div id="tutorial">
-	<p class="title"> DEEP LEARNING ON MOBILE DEVICES: TUTORIAL </p>
-	<p class="tba">[ TO BE ANNOUNCED ]</p>
-</div>
-
 <div id="runtime">
 	<p class="title"> RUNTIME VALIDATION </p>
 	<p class="description">
@@ -375,10 +909,10 @@
 	
 </div>
 
-<div id="schedule">
-	<p class="title"> SCHEDULE </p>	
+<!--div id="tutorial">
+	<p class="title"> DEEP LEARNING ON MOBILE DEVICES: TUTORIAL </p>
 	<p class="tba">[ TO BE ANNOUNCED ]</p>
-</div>
+</div-->
 
 <div id="contacts">
 	<p class="title">CONTACTS</p>

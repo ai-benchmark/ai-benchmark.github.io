@@ -340,6 +340,20 @@ nav .left_bar img {
 	margin-bottom: 3.2vw;
 }
 
+#live {
+	margin-top: 7vw;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+}
+
+#live .title {
+	text-align: center;
+	font-size: 2.2vw;
+	color: #178ed2;
+	margin-bottom: 3.2vw;
+}
+
 #dates {
 	margin-top: 7vw;
 	text-align: center;
@@ -477,7 +491,7 @@ nav .left_bar img {
 #schedule {
 	margin-top: 7vw;
 	text-align: center;
-	width: 60%;
+	width: 60vw;
 	margin-left: 20%;
 }
 
@@ -485,7 +499,167 @@ nav .left_bar img {
 	text-align: center;
 	font-size: 2.2vw;
 	color: #178ed2;
+	margin-bottom: 3.2vw;
 }
+
+#schedule .talk-invited {
+	text-align: center;
+	font-size: 2.2vw;
+	margin-bottom: 2vw;
+}
+
+#schedule .talk-invited .block-1 {
+	width: 7vw;
+	vertical-align: top;
+	display: inline-block;
+}
+
+#schedule .talk-invited .block-1 img {
+	width: 100%;
+	vertical-align: top;
+	margin-left: -0.6vw;
+	border-radius: 0.32vw;
+}
+
+#schedule .talk-invited .block-2 {
+	text-align: left;
+	padding-left: 1.2vw;
+	font-size: 1.1vw;
+	width: 50vw;
+	display: inline-block
+}
+
+#schedule .timing {
+	padding: 0.2vw;
+	padding-left: 0.4vw;
+	padding-right: 0.4vw;
+	background-color: rgba(23, 142, 210, 0.6);
+	display: inline-block;
+	color: rgba(255, 255, 255, 1.0);
+	border-radius: 0.32vw;
+}
+
+/*  ---------------------------------------------------  */
+
+#schedule .talk-challenges {
+	text-align: center;
+	font-size: 2.2vw;
+	margin-top: 3.2vw;
+	margin-bottom: 3.2vw;
+}
+
+#schedule .challenge {
+	display: inline-block;
+	margin: 0vw;
+	width: 60vw;
+	box-shadow: 0.1vw 0.1vw 0.2vw rgba(255, 111, 0, 0.0), 0 0 0.5vw grey, 0 0 0.2vw grey;
+	background-color: rgb(245, 246, 247);
+	border-radius: 0.5vw;
+	overflow: hidden;
+}
+
+#schedule .challenge .title {
+	text-align: center;
+	font-size: 0.98vw;
+	padding-top: 1.0vw;
+	padding-bottom: 1.0vw;
+	font-weight: bold;
+	color: #178ed2;
+	background-color: rgb(245, 246, 247);
+	margin-bottom: 0vw;
+}
+
+#schedule .challenge .presenter {
+	text-align: center;
+	font-size: 0.8vw;
+	padding-top: 0.6vw;
+	padding-bottom: 1.2vw;
+	font-weight: bold;
+	color: black;
+	background-color: rgb(245, 246, 247);
+	margin-bottom: 0vw;
+}
+
+#schedule .challenge img {
+	width: 25%;
+	height: 10.15vw;
+	float: left;
+}
+
+#schedule .challenge .details {
+	width: 75%;
+	display: inline-block;
+	padding-top: 0.8vw;
+}
+
+#schedule .challenge:hover {
+	/*box-shadow: 0.4vw 0.4vw 0.8vw rgba(255, 111, 0, 0.0), 0 0 2vw grey, 0 0 1vw grey;*/
+}
+
+#schedule .challenge .details td img{
+    display: block;
+    height: 2.0vw;
+    object-fit: contain;
+}
+
+#schedule .challenge .details .target table {
+	width: 100%;
+}
+
+#schedule .challenge .details .target td {
+	color: rgba(255, 111, 0, 0.75);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.75vw;
+	line-height: 1.12vw;
+	vertical-align: middle;
+}
+
+/*  ---------------------------------------------------  */
+
+#schedule .accepted-paper {
+	text-align: center;
+	font-size: 2.2vw;
+	margin-top: 0.8vw;
+	margin-bottom: 0.8vw;
+}
+
+#schedule .accepted-paper .block-1 {
+	width: 7vw;
+	vertical-align: top;
+	display: inline-block;
+}
+
+#schedule .accepted-paper .block-1 img {
+	width: 18%;
+	padding: 0.8vw;
+	vertical-align: top;
+}
+
+#schedule .accepted-paper .block-2 {
+	text-align: left;
+	padding-left: 1.2vw;
+	font-size: 1.1vw;
+	width: 50vw;
+	display: inline-block;
+}
+
+#schedule .accepted-paper .block-2 .authors {
+	font-size: 0.84vw;
+	margin-bottom: -0.2vw;
+	margin-top: -0.2vw;
+	font-style: italic;
+}
+
+#schedule .accepted-paper .block-2 .affiliation {
+	font-size: 0.7vw;
+}
+
+#schedule .accepted-paper .block-2 .paper_title {
+	font-size: 0.9vw;
+}
+
+/*  ---------------------------------------------------  */
 
 #schedule .tba {
 	margin-top: 3.2vw;
@@ -552,5 +726,61 @@ nav .left_bar img {
 
 .italic{
 	font-style: italic
+}
+
+/* Live streaming animation */
+
+.blinking {
+  -webkit-animation: 1.6s blink ease infinite;
+  -moz-animation: 1.6s blink ease infinite;
+  -ms-animation: 1.6s blink ease infinite;
+  -o-animation: 1.6s blink ease infinite;
+  animation: 1.6s blink ease infinite;
+  
+}
+
+@keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
