@@ -2560,3 +2560,60 @@ hr {
   transform: translate3d(0, 0, 0) scale(1);
 }
 
+/* Live Circle */
+
+.blinking {
+  -webkit-animation: 1.6s blink ease infinite;
+  -moz-animation: 1.6s blink ease infinite;
+  -ms-animation: 1.6s blink ease infinite;
+  -o-animation: 1.6s blink ease infinite;
+  animation: 1.6s blink ease infinite;
+  
+}
+
+@keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
