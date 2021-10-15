@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title> MAI 2021 Workshop </title>
+    <link rel="stylesheet" href="style_challenge.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="js/modernizr.js"></script>
+    <meta name="viewport" content="width=device-width">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	  
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<nav>
+	<ul class="left_bar">
+		<a href="index.html"> <img src="assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<!--<a href="#live"> <li style="color: rgb(238, 0, 106);"> LIVE <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg>
+</li></a>-->
+		<a href="#challenges"> <li> CHALLENGES </li></a>
+		<a href="#runtime"> <li> RUNTIME </li></a>
+		<a href="#organizers"> <li> ORGANIZERS </li></a>
+		<a href="#dates"> <li> DATES </li></a>
+		<a href="#papers"> <li> PAPERS </li></a>
+		<a href="#schedule"> <li> SCHEDULE </li></a>
+		<!--a href="#tutorial"> <li> TUTORIAL </li></a-->
+		<a href="#contacts"> <li> CONTACTS </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a href="#submission" class="submit_button"> <li> SUBMIT </li></a>
+	</ul>
+</nav>
+
+<img src="assets/img/mai_logo_final_tex_2022.jpg" style="width: 100%; margin-top: 4.0vw;">
+
+<div id="workshop">
+
+		<div class="description"> 	
+		
+		<p> Over the past years, mobile AI-based applications are becoming more and more ubiquitous. Various deep learning models can now be found on any mobile device, starting from smartphones running portrait segmentation, image enhancement, face recognition and natural language processing models, to smart-TV boards coming with sophisticated image super-resolution algorithms. The performance of mobile NPUs and DSPs is also increasing dramatically, making it possible to run complex deep learning models and to achieve fast runtime in the majority of tasks.
+		</p>
+
+		<p style="margin-top: 1.2vw;"> While many research works targeted at efficient deep learning models have been proposed recently, the evaluation of the obtained solutions is usually happening on desktop CPUs and GPUs, making it nearly impossible to estimate the actual inference time and memory consumption on real mobile hardware. To address this problem, we introduce the first Mobile AI Workshop, where all deep learning solutions are developed for and evaluated on mobile devices.
+		</p>
+		
+		<p style="margin-top: 1.2vw;"> Due to the performance of the last-generation mobile AI hardware, the topics considered in this workshop will go beyond the simple classification tasks, and will include such challenging problems as <span style="font-style: italic;">image denoising, HDR photography, accurate depth estimation, learned image ISP pipeline, real-time image and video super-resolution</span>. All information about the challenges, papers, invited talks and workshop industry partners is provided below.
+		</p>
+	</div>
+<div>
+
+<div id="challenges">
+	<p class="title"> CHALLENGES </p>
+	<p class="tba">[ TO BE ANNOUNCED ]</p>
+</div>
+	
+<div id="challenges">
+	<p class="title"> PREVIOUS CHALLENGES </p>
+
+	<a href="https://arxiv.org/pdf/2105.07809.pdf" target="_blank">
+		<!-- Codalab link: https://competitions.codalab.org/competitions/28054 -->
+		<div class="challenge">
+			
+			<p class="title"> Learned Smartphone ISP <p>		
+			<img src="assets/challenges/title_raw.jpg">
+
+			<div class="details">
+				<div class="target">
+					<table> <tr> <td><img src="assets/img/soc.png"></td><td><span class="grey">Evaluation Platform:</span> <br> MediaTek Dimensity APU</td>	</tr></table>
+				</div>			
+				<hr>
+				<table><tr><td>Powered by:</td><td><img src="assets/organizers/mediatek.png"></td></tr></table>
+			</div>				
+		</div>
+	</a>
+	
+	<a href="https://arxiv.org/pdf/2105.08629.pdf" target="_blank">
+		<!-- Codalab link: https://competitions.codalab.org/competitions/28120 -->
+		<div class="challenge">
+			
+			<p class="title"> Image Denoising <p>		
+			<img src="assets/challenges/title_denoising.jpg">
+
+			<div class="details">
+				<div class="target">
+					<table> <tr> <td><img src="assets/img/soc.png"></td><td><span class="grey">Evaluation Platform:</span> <br> Exynos Mali GPU </td></tr></table>
+				</div>			
+				<hr>
+				<table><tr><td>Powered by:</td><td><img src="assets/organizers/samsung.png"></td></tr></table>
+			</div>				
+		</div>
+	</a>
+	
+	<a href="https://arxiv.org/pdf/2105.07825.pdf" target="_blank">
+		<!-- Codalab link: https://competitions.codalab.org/competitions/28119 -->
+		<div class="challenge">
+			
+			<p class="title"> Image Super-Resolution <p>		
+			<img src="assets/challenges/title_superres.jpg">
+
+			<div class="details">
+				<div class="target">
+					<table> <tr> <td><img src="assets/img/soc.png"></td><td><span class="grey">Evaluation Platform:</span> <br> Synaptics Dolphin NPU</td>	</tr></table>
+				</div>			
+				<hr>
+				<table><tr><td>Powered by:</td><td><img src="assets/organizers/synaptics.png"></td></tr></table>
+			</div>				
+		</div>
+	</a>
+		
+	<a href="https://arxiv.org/pdf/2105.08826.pdf" target="_blank">
+		<!-- Codalab link: https://competitions.codalab.org/competitions/28112 -->
+		<div class="challenge">
+			
+			<p class="title"> Video Super-Resolution <p>		
+			<img src="assets/challenges/title_video.jpg">
+
+			<div class="details">
+				<div class="target">
+					<table> <tr> <td><img src="assets/img/soc.png"></td><td><span class="grey">Evaluation Platform:</span> <br> Snapdragon Adreno GPU </td>	</tr></table>
+				</div>			
+				<hr>
+				<table><tr><td>Powered by:</td><td><img src="assets/organizers/oppo.png"></td></tr></table>
+			</div>				
+		</div>
+	</a>
+	
+	<a href="https://arxiv.org/pdf/2105.08630.pdf" target="_blank">
+		<!-- Codalab link: https://competitions.codalab.org/competitions/28122 -->
+		<div class="challenge">
+			
+			<p class="title"> Depth Estimation <p>		
+			<img src="assets/challenges/title_depth.jpg">
+
+			<div class="details">
+				<div class="target">
+					<table> <tr> <td><img src="assets/img/soc.png"></td><td><span class="grey">Evaluation Platform:</span> <br> Raspberry Pi 4</td>	</tr></table>
+				</div>			
+				<hr>
+				<table><tr><td>Powered by:</td><td><img src="assets/organizers/raspberry.png"></td></tr></table>
+			</div>				
+		</div>
+	</a>
+		
+	<a href="https://arxiv.org/pdf/2105.08819.pdf" target="_blank">
+		<!-- Codalab link: https://competitions.codalab.org/competitions/28113 -->
+		<div class="challenge">
+			
+			<p class="title"> Camera Scene Detection <p>		
+			<img src="assets/challenges/title_scene.png">
+
+			<div class="details">
+				<div class="target">
+					<table> <tr> <td><img src="assets/img/soc.png"></td><td><span class="grey">Evaluation Platform:</span> <br> Apple Bionic </td>	</tr></table>
+				</div>			
+				<hr>
+				<table><tr><td>Powered by:</td><td><img src="assets/organizers/cvl.png"></td></tr></table>
+			</div>				
+		</div>
+	</a>
+	
+</div>
+
+<div id="runtime">
+	<p class="title"> RUNTIME VALIDATION </p>
+	<p class="description">
+	In each MAI 2021 challenge track, the participants have a possibility to check the runtime of their solutions remotely on the target platforms. For this, the converted <span style="font-style: italic;">TensorFlow Lite</span> models should be uploaded to a <span style="font-weight: bold;">special web-server</span>, and their runtime on the actual target devices will be returned instantaneously or withing 24 hours, depending on the track. The detailed model conversion instructions and links can be found in the corresponding challenges.
+	</br>
+	</br>
+	Besides that, we strongly encourage the participants to check the speed and RAM consumption of the obtained models locally on your own Android devices. This will allow you to perform model profiling and debugging faster and much more efficiently. To do this, one can use <a href="http://ai-benchmark.com/" target="_blank" class="link_red_dotted">AI Benchmark application</a> allowing you to load a custom TFLite model and run it with various acceleration options, including <span style="font-style: italic;">CPU</span>, <span style="font-style: italic;">GPU</span>, <span style="font-style: italic;">DSP</span> and <span style="font-style: italic;">NPU</span>:
+	</br>
+	</br>
+	<span class="instruction_item">1.&nbsp; Download AI Benchmark from the <a href="https://play.google.com/store/apps/details?id=org.benchmark.demo" target="_blank" class="link_red_dotted">Google Play</a> / <a href="https://ai-benchmark.com/download.html" target="_blank" class="link_red_dotted">website</a> and run its standard tests.</span></br>
+	<span class="instruction_item">2.&nbsp; After the end of the tests, enter the <span style="font-weight: bold;">PRO Mode</span> and select the <span style="font-weight: bold;">Custom Model</span> tab there.</span></br>
+	<span class="instruction_item">3.&nbsp; Rename the exported TFLite model to <span style="font-style: italic;">model.tflite</span> and put it into the <span style="font-weight: bold;">Download</span> folder of your device.</span></br>
+	<span class="instruction_item">4.&nbsp; Select your mode type, the desired acceleration / inference options and run the model.</span></br>
+	</br>
+	You can find the screenshots demonstrating these 4 steps below:</br>
+	</p>
+	<img src="assets/img/ai_benchmark_custom.png">
+	
+</div>
+
+<div id="organizers">
+	<p class="title"> ORGANIZERS </p>	
+	
+	<p class="tba">[ TO BE ANNOUNCED ]</p>
+
+	<!--<img style="width: 100%;" src="assets/organizers/organizers.png"></td><td><span class="grey"-->
+
+</div>
+
+<div id="dates">
+	<p class="title"> TIMELINE</p>
+	<p class="tba">[ TO BE ANNOUNCED ]</p>
+	
+	<!--table class="timeline">
+	    <thead>
+	        <tr>
+	            <th style="width: 64%;">Challenge Event</th>
+	            <th>Date &nbsp; [ 5pm Pacific Time, 2021 ]</th>
+	        </tr>
+	    </thead>
+	 	<tbody>
+	        <tr><td>Website online</td><td>January 7</td></tr>
+	        <tr><td>Train / validation data released </td><td>January 15</td></tr>
+	        <tr><td>Validation server online </td><td>January 20</td></tr>
+	        <tr><td>Final test data released </td><td>March 15</td></tr>
+	        <tr><td>Final models / recontruction results submission deadline </td><td>March 20</td></tr>
+	        <tr><td>Fact sheets / codes submission deadline </td><td>March 20</td></tr>
+	        <tr><td>Preliminary test results released to the participants </td><td>March 22</td></tr>
+	        <tr><td>Paper submission deadline <span style="color: rgb(234, 29, 111);">/ challenge papers only !</span> </td><td><span style="color: rgb(234, 29, 111);">April 4</span></td></tr>
+	    </tbody>
+	</table>
+
+	<table class="timeline" style="margin-top: 3.2vw;">
+	    <thead>
+	        <tr>
+	            <th style="width: 64%;">Workshop Event</th>
+	            <th>Date &nbsp; [ 5pm Pacific Time, 2021 ]</th>
+	        </tr>
+	    </thead>
+	 	<tbody>
+	        <tr><td>Paper submission server online </td><td> January 15</span> </td></tr>
+	        <tr><td>Paper submission deadline </td><td>March 15</td></tr>
+	        <tr><td>Paper decision notification </td><td>April 5</td></tr>
+	        <tr><td>Camera ready deadline </td><td>April 15</td></tr>
+	        <tr><td>Workshop day </td><td><span style="color: rgb(234, 29, 111);">June 20</span></td></tr>
+	    </tbody>
+	</table-->
+	
+</div>
+
+<div id="papers">
+	<p class="title"> CALL FOR PAPERS </p>
+	
+	<p class="description">
+	Being a part of <span style="font-weight: bold;">CVPR 202*,</span> we invite the authors to submit high-quality original papers proposing various machine learning based solutions for mobile, embedded and IoT platforms. The topics of interest cover all major aspects of AI and deep learning research for mobile devices including, but not limited to:
+
+	</p>
+	
+	<table>
+	
+		<tr>
+			<th style="width: 50%;"></th>
+			<th style="width: 50%;"></th>
+		</tr>
+	
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Efficient deep learning models for mobile devices</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Image / video super-resolution on low-power hardware</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; General smartphone photo and video enhancement</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Deep learning applications for mobile camera ISPs</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Fast image classification / object detection algorithms</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Real-time semantic image segmentation</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Image or sensor based identity recognition</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Activity recognition using smartphone sensors</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Depth estimation w/o multiple cameras</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Portrait segmentation / bokeh effect rendering</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Perceptual image manipulation on mobile devices</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; NLP models optimized for mobile inference</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Artifacts removal from mobile photos / videos</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; RAW image and video processing</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Low-power machine learning inference</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Machine and deep learning frameworks for mobile devices</p></td>
+		</tr>
+		<tr>
+			<td><p class="topic">&bull;&nbsp;&nbsp; AI performance evaluation of mobile and IoT hardware</p></td>
+			<td><p class="topic">&bull;&nbsp;&nbsp; Industry-driven applications related to the above problems</p></td>
+		</tr>
+		
+	</table>
+	
+	<p class="description">
+	To ensure high quality of the accepted papers, all submissions will be evaluated by research and industry experts from the corresponding fields.
+	All accepted workshop papers will be published in the <span style="font-weight: bold;">CVPR 202* Workshop Proceedings</span> by <a href="https://openaccess.thecvf.com/CVPR2020_workshops/CVPR2020_w31" target="_blank" style="font-style: italic; text-decoration-style: dotted; color: rgb(23, 142, 210);">Computer Vision Foundation Open Access</a> and <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank" style="font-style: italic; text-decoration-style: dotted; color: rgb(23, 142, 210);">IEEE Xplore Digital Library.</a>
+	The authors of the best selected papers will be invited to present their work during the actual workshop event at CVPR 202*.
+	</br></br>
+	The detailed submission instructions and guidelines can be found <a href="#submission" style="text-decoration: none; color: rgb(23, 142, 210);">here.</a>
+	</p>
+	
+</div>
+
+<div id="submission">
+	<p class="title"> SUBMISSION DETAILS </p>
+	<p class="tba">[ TO BE ANNOUNCED ]</p>
+	
+	<!--table class="timeline" style="margin-top: 4vw;">
+
+	 	<tbody>
+
+	        <tr><td style="width: 26%;">Format and paper length </td>
+	        	<td class="submission_details">A paper submission has to be in English, in pdf format, and at most 8 pages (excluding references) in double column. The paper format must follow the same guidelines as for all CVPR 2021 submissions: <a href="http://cvpr2021.thecvf.com/node/33" target="_blank" class="link_red_dotted">http://cvpr2021.thecvf.com/node/33</a> </td></tr>
+
+			<tr><td>Author kit </td>
+	        	<td class="submission_details">The author kit provides a LaTeX2e template for paper submissions. Please refer to this kit for detailed formatting instructions: <a href="http://cvpr2021.thecvf.com/sites/default/files/2020-09/cvpr2021AuthorKit_2.zip" class="link_red_dotted">http://cvpr2021.thecvf.com/sites/default/files/2020-09/cvpr2021AuthorKit_2.zip</a>
+	        	 </td></tr>
+
+	        <tr><td>Double-blind review policy </td>
+	        	<td class="submission_details">The review process is double blind. Authors do not know the names of the chair / reviewers of their papers. Reviewers do not know the names of the authors. </td></tr>
+	        	
+	        <tr><td>Dual submission policy </td>
+	        	<td class="submission_details">Dual submission is allowed with CVPR2021 main conference only. If a paper is submitted also to CVPR and accepted, the paper cannot be published both at the CVPR and the workshop.
+	        	 </td></tr>
+
+			<tr><td>Proceedings </td>
+	        	<td class="submission_details">Accepted and presented papers will be published after the conference in CVPR Workshops proceedings together with the CVPR2021 main conference papers.
+	        	 </td></tr>
+
+			<tr><td>Submission site </td>
+	        	<td class="submission_details">
+	        	<a href="https://cmt3.research.microsoft.com/MAI2021" target="_blank" class="link_red_dotted">https://cmt3.research.microsoft.com/MAI2021</a>
+	        	 </td></tr>
+
+
+	    </tbody>
+	</table-->
+	
+</div>
+
+<div id="schedule">
+	<p class="title"> SCHEDULE </p>	
+	<p class="tba">[ TO BE ANNOUNCED ]</p>	
+</div>
+
+<!--div id="tutorial">
+	<p class="title"> DEEP LEARNING ON MOBILE DEVICES: TUTORIAL </p>
+	<p class="tba">[ TO BE ANNOUNCED ]</p>
+</div-->
+
+<div id="contacts">
+	<p class="title">CONTACTS</p>
+	
+	<table>
+		<tr>
+			
+			<td><img style="width: 10vw; vertical-align: top; margin-left: -0.6vw; border-radius: 0.32vw;" src="assets/img/andrey.jpg"></td>
+			
+			<td style="text-align: left; vertical-align: top; text-align: left; padding-left: 0.9vw;">
+				<p style="margin-top: 1.2vw;"><a target="_blank" href="https://www.linkedin.com/in/andrey-ignatov" style="color: #ea1d6f; font-size: 1.2vw; text-decoration: none;">
+					Andrey Ignatov
+				</a></p>
+				<p style="margin-top: 0.7vw;">Computer Vision Lab </p>
+				<p>ETH Zurich, Switzerland </p>
+				<p style="margin-top: 0.5vw; font-size: 0.9vw; color: #ea1d6f;">andrey@vision.ee.ethz.ch</p>
+			</td>
+			
+			<td><img style="width: 10vw; vertical-align: top; margin-left: 2.6vw; border-radius: 0.32vw;" src="assets/img/radu.jpg"></td>
+			
+			<td style="text-align: left; vertical-align: top; text-align:left; padding-left: 0.5vw;">
+				<p style="margin-top: 1.2vw;"><a target="_blank" href="http://www.vision.ee.ethz.ch/~timofter/" style="color: #ea1d6f; font-size: 1.2vw; text-decoration: none;">
+					Radu Timofte
+				</a></p>
+				<p style="margin-top: 0.7vw;">Computer Vision Lab </p>
+				<p>ETH Zurich, Switzerland </p>
+				<p style="margin-top: 0.5vw; font-size: 0.9vw; color: #ea1d6f;">timofter@vision.ee.ethz.ch</p>
+			</td>
+						
+		</tr>
+	</table>
+	
+</div>
+
+<div id="about">
+	<div id="content">
+		<p> Computer Vision Laboratory, ETH Zurich</p>
+		<p style="color: #ea1d6f;">Switzerland, 2021</p>
+	</div>
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
