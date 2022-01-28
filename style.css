@@ -640,9 +640,9 @@ nav .left_bar_samples li {
 }
 
 #ranking .results-proto {
-	width: 91.6vw;
+	width: 92.6vw;
 	float: left;
-	margin-left: 4.335vw;
+	margin-left: 3.84vw;
 	padding-top: 0.8vw;
 	padding-bottom: 0.7vw;
 	margin-top: -1.2vw;
@@ -679,9 +679,9 @@ nav .left_bar_samples li {
 }
 
 #ranking table {
-	width: 92vw;
+	width: 93vw;
 	margin-bottom: 4vw;
-	margin-left: 4.2vw;
+	margin-left: 3.7vw;
 	font-size: 0.8vw;
 }
 
