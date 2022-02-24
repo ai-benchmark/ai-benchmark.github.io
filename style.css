@@ -941,7 +941,7 @@ nav .left_bar_samples li {
 
 #forum_link {
 	position: fixed;
-	margin-top: 7.4vw;
+	margin-top: 4.2vw;
 	height: 2.4vw;
 	width: 100%;
 	overflow: hidden;
@@ -964,7 +964,7 @@ nav .left_bar_samples li {
 }
 
 #ranking .after-forum-margin {
-	margin-top: 12vw;
+	margin-top: 8vw;
 }
 
 #news_link img {
@@ -1044,7 +1044,7 @@ hr {
 	}
 	
 	#forum_link {
-		margin-top: 11.6vw;
+		margin-top: 6.4vw;
 		height: 4.2vw;
 		line-height: 3.2vw;
 	}
@@ -1055,7 +1055,7 @@ hr {
 	}
 	
 	#ranking .after-forum-margin {
-		margin-top: 18vw
+		margin-top: 12vw
 	}
 	
 	#news_link img {
