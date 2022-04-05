@@ -166,7 +166,7 @@ nav .left_bar_samples li {
 	visibility: hidden;
 	position: fixed;
     top: 0;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     z-index: 990;
     height: 4.26vw;
     line-height: 1.7vw;
@@ -175,8 +175,8 @@ nav .left_bar_samples li {
 #nav_mobile li {
     display: inline-block;
     padding: 2.4vw;
-    padding-right: 2.8vw;
-    padding-left: 2.8vw;
+    padding-right: 2.0vw;
+    padding-left: 2.0vw;
 }
 
 #nav_mobile li:hover {
