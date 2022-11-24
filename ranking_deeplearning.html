@@ -45,10 +45,10 @@
 			AI&nbsp; Benchmark&nbsp; for&nbsp; Windows,&nbsp; Linux&nbsp; and&nbsp; macOS:&nbsp; &nbsp;Let &nbsp;the &nbsp;AI &nbsp;Games &nbsp;Begin... &nbsp; <img src="assets/img/goto_white.png">
 		</p></a>
 	</div-->
-	<div id="news_link">
+	<!--div id="news_link">
 		<a href="https://ai-benchmark.com/workshops/mai/2021/#live"><p style="word-spacing: 0.15vw; font-size: 0.99vw; font-weight: 600; background-color: rgba(255, 255, 255, 1.0); color: rgb(238, 0, 106);">
 			Live @ Mobile AI CVPR Workshop <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw; margin-right: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg> Tutorials from Google, MediaTek, Samsung, Qualcomm, Huawei, Imagination, OPPO and AI Benchmark</p></a>
-	</div>
+	</div-->
 	<div id="forum_link">
 		<a href="https://ai-benchmark.net/"><p>
 			Have some questions regarding the scores? Faced some issues? Want to discuss the results? Welcome to our new <span style="color: rgba(123, 142, 210, 1.0); font-weight: 700;">AI Benchmark Forum!</span>
@@ -91,33 +91,37 @@
 	<div class="after-forum-margin"></div>
 
 	<div class="title">
+	
 		<table class="header_table">
 			<tr>
-				<th style="width: 8.5%; text-align: right;"><a href="ranking.html" class="ranking_links">Phones</a></th>
-				<th style="width: 2%;">|</th>
-				<th style="width: 8.5%; text-align: left;"><a href="ranking_processors.html" class="ranking_links">Mobile SoCs</a></th>
-				<th style="width: 1%;"></th>
-	  			<th class="performance_ranking" style="width: 60%; vertical-align: top;">Deep Learning Hardware Ranking</th>
- 	 			<th style="width: 18%;"><a href="ranking_deeplearning.html" class="ranking_links">Desktop GPUs and CPUs</a></th>
-				<th style="width: 2%;"></th>
+				<th style="width: 3%;"></th>
+				<th style="width: 25%; text-align: left;">
+					<a href="ranking.html" class="ranking_links">Phones</a> &nbsp;&nbsp; | &nbsp;&nbsp; 
+					<a href="ranking_processors.html" class="ranking_links">Mobile SoCs</a> &nbsp;&nbsp; | &nbsp;&nbsp; 
+					<a href="ranking_IoT.html" class="ranking_links">IoT</a> 
+				</th>
+	  			<th class="performance_ranking" style="width: 44%; vertical-align: top;">Deep Learning Hardware Ranking</th>
+ 	 			<th style="width: 24%; text-align: right;"><a href="ranking_deeplearning.html" class="ranking_links">Desktop GPUs and CPUs</a></th>
+				<th style="width: 4%;"></th>
 			</tr>
 		</table>
+	
 	</div>
 	
 	<div><a href="ranking_deeplearning_detailed.html"><button class="results-proto">View Detailed Results</button></a></div>
 	
 	<table id="scoreTable">
   		<tr>
-  			<th onclick="sortTable(0)" class="highlight" style="width: 17%;">Model</th>
-  			<th onclick="sortTable(1)" class="highlight" style="width: 10%;">TF Version</th>
-  			<th onclick="sortTable(2)" class="highlight" style="width: 10%;">Cores</th>
-  			<th onclick="sortTable(3)" class="highlight" style="width: 9%;">Frequency, GHz</th>
-   			<th onclick="sortTable(4)" class="highlight" style="width: 9%;">Acceleration </th>
-   			<th onclick="sortTable(5)" class="highlight" style="width: 9%;">Platform</th>
-   			<th onclick="sortTableInt(6)" class="highlight" style="width: 6%;">RAM, GB</th>
-   			<th onclick="sortTableInt(7)" class="highlight" style="width: 6%;">Year</th>
-   			<th onclick="sortTableInt(8)" class="highlight" style="width: 8%;">Inference </br> Score</th>
-   			<th onclick="sortTableInt(9)" class="highlight" style="width: 8%;">Training </br> Score</th>
+  			<th onclick="sortTableFast(0)" class="highlight" style="width: 17%;">Model</th>
+  			<th onclick="sortTableFastFloat(1)" class="highlight" style="width: 10%;">TF Version</th>
+  			<th onclick="sortTableFastFloat(2)" class="highlight" style="width: 10%;">Cores</th>
+  			<th onclick="sortTableFastFloat(3)" class="highlight" style="width: 9%;">Frequency, GHz</th>
+   			<th onclick="sortTableFast(4)" class="highlight" style="width: 9%;">Acceleration </th>
+   			<th onclick="sortTableFast(5)" class="highlight" style="width: 9%;">Platform</th>
+   			<th onclick="sortTableFastFloat(6)" class="highlight" style="width: 6%;">RAM, GB</th>
+   			<th onclick="sortTableFastFloat(7)" class="highlight" style="width: 6%;">Year</th>
+   			<th onclick="sortTableFastFloat(8)" class="highlight" style="width: 8%;">Inference </br> Score</th>
+   			<th onclick="sortTableFastFloat(9)" class="highlight" style="width: 8%;">Training </br> Score</th>
  			<th class="highlight" style="width: 16%;">AI-Score</th>
   		</tr>
   		
@@ -338,142 +342,40 @@
 	</div>
 </div>
 
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/main.js"></script>
 <script>
-	function open_demo() {
-		document.getElementById('demos').style.display="block";
-		document.getElementById('demo-button').style.display="none";
-	}
-	function close_demo() {
-		document.getElementById('demos').style.display="none";
-		document.getElementById('demo-button').style.display="block";
-	}
-</script>
+function sortTableFast(col, reverse=false) {
 
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("scoreTable");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-    for (i = 2; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
+	table = document.getElementById("scoreTable");
+    
+    var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+    tr = Array.prototype.slice.call(tb.rows, 2), // put rows into array
+    reverse = -((+reverse) || -1);
+    tr = tr.sort(function (a, b) { // sort rows
+        return reverse // `-1 *` if want opposite order
+            * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                .localeCompare(b.cells[col].textContent.trim())
+               );
+    });
+    for(i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
+    
 }
-</script>
 
-<script>
-function sortTableFloat(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("scoreTable");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-    for (i = 2; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      if (dir == "asc") {
-        if (parseFloat(x.innerHTML.substring(0, x.innerHTML.length - 2)) > parseFloat(y.innerHTML.substring(0, y.innerHTML.length - 2))) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (parseFloat(x.innerHTML.substring(0, x.innerHTML.length - 2)) < parseFloat(y.innerHTML.substring(0, y.innerHTML.length - 2))) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
+function sortTableFastFloat(col, reverse=true) {
 
-<script>
-function sortTableInt(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("scoreTable");
-  switching = true;
-  dir = "asc";
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-    for (i = 2; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      
-      score_x = parseInt(x.innerHTML)
-      score_y = parseInt(y.innerHTML)
-      
-      if (dir == "asc") {
-      	if (score_x == 0) {
-      		score_x = 1000000;
-      	}
-        if (score_x > score_y && score_y != 0) {
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (score_x < score_y) {
-          shouldSwitch= true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
+	table = document.getElementById("scoreTable");
+
+    var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+    tr = Array.prototype.slice.call(tb.rows, 2), // put rows into array
+    reverse = -((+reverse) || -1);
+    tr = tr.sort(function (a, b) { // sort rows
+        return reverse // `-1 *` if want opposite order
+            * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                .localeCompare(b.cells[col].textContent.trim(), undefined, {numeric: true})
+               );
+    });
+    for(i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
 }
+
 </script>
 
 </body>

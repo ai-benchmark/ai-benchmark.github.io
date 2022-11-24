@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i	" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <meta name="viewport" content="width=device-width">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: none;">
+
+<nav>
+	<ul class="left_bar">
+		<a href="../index.html"> <img src="../assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<a href="../index.html"> <li> BENCHMARK </li></a>
+		<a href="../ranking.html"> <li> RANKING </li></a>
+		<a href="../news.html"> <li> NEWS </li></a>
+		<a href="../tests.html"> <li> AI-TESTS </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a href="../download.html"> <img style="width: 7.5vw; margin-top: 1.07vw; position: fixed; margin-left: -9.5vw;" src="../assets/img/download.png"> </a>
+		<a href="../research.html"> <li style="color: #e94f70; font-size: 0.8vw; font-weight: 600;"> RESEARCH &nbsp; <img src="../assets/img/goto.png"> </li></a>
+		<a href="../about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+</nav>
+
+<div id="nav_mobile">
+	<ul class="middle_bar">
+		<a href="../index.html"> <li> BENCHMARK </li></a>
+		<a href="../news.html"> <li> NEWS </li></a>
+		<a href="../ranking.html"> <li> RANKING </li></a>
+		<a href="../tests.html"> <li> AI-TESTS </li></a>
+		<a href="../research.html" > <li style="color: #e94f70; font-size: 1.57vw; font-weight: 600; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="../assets/img/goto.png"> </li></a>
+		<a href="../download.html"> <img style="width: 11.2vw; padding-left: 3.6vw; vertical-align: middle;" src="../assets/img/download.png"> </a>
+	</ul>
+</div>
+
+<div id="news">
+
+<h1 class="title1"> <span style="color: #ea1d6f;">Spreadtrum Reborn:</span> &nbsp;<span class="title3">Performance Review of the Unisoc Tiger T710 </span></h1>
+
+<h1 class="paragraph">For many years, Unisoc was holding a small share of the mobile SoC market and was mainly known for its budget processors for low-end Android devices. It looks like with <a target="_blank" href="https://www.mysmartprice.com/gear/2018/06/23/spreadtrum-renamed-unisoc-sc9832e-sc9863-processors-ar-vr-machine-learning-smartphones/">its recent rebranding</a> you should forget everything that you knew about it &ndash; while being a pre-release engineering sample, its new mid-range chipset is easily beating the giants of the SoC industry.
+</br>
+</br>
+Below we present a detailed performance analysis of the Unisoc Tiger T710. Please note that this is a pre-release sample (also known as <span class="test_ids">ud710_3h10_native</span>), thus the results of the final commercial version might be slightly different.</h1>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/ai_benchmark_results.png"><img style="width: 100%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/ai_benchmark_results.png"></a>
+
+<h1 class="paragraph_title"> AI Performance: &nbsp;Float & Quantized AI Models </h1>
+
+<h1 class="paragraph">Unisoc T710 has a dedicated NPU providing acceleration for both float and quantized AI models. This is probably the most impressive part of the new Tiger - for the most common float AI models, it is just slightly slower than Kirin 810 (featuring Huawei's next-gen DaVinci NPU), but outperforms all the rest SoCs by a huge margin: <span style="color: #ea1d6f;">almost 50% performance boost</span> compared to Snapdragon 855 Plus, Kirin 980, Helio P90 and Exynos 9825 Octa.</h1>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/float_score.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/float_score.png"></a>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/quantized_score.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/quantized_score.png"></a>
+
+<h1 class="paragraph">As for quantized AI models - Unisoc doesn't disappoint here too, easily outperforming all chipsets from Qualcomm, HiSilicon, MediaTek and Samsung. Yes, that's not a mistake - T710 is even faster than the Qualcomm's flagship presented this month, outmatching it in all performance categories:</h1>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/float_inference.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/float_inference.png"></a>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/quantized_inference.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/quantized_inference.png"></a>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/error_float.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/error_float.png"></a>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/error_quant.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/error_quant.png"></a>
+
+<h1 class="paragraph">On the charts above, one can see the average inference time and prediction error for several common AI models used in image classification, face recognition, image enhancement and super-resolution tasks. Tiger T710 is generally demonstrating a 30-70% advantage over Snapdragon 855 Plus in case of float inference, and comparable runtime for quantized models. But when it comes to inference accuracy, Qualcomm's chipset is completely falling behind the Unisoc, showing up to 12 times larger prediction errors in the corresponding tasks. While one can "boost" the performance by adding some specific software optimizations leading to faster computation speed at the cost of significantly degraded precision, Unisoc did not use this trick in its chipset – Tiger T710 is <span style="color: #ea1d6f;">demonstrating very decent accuracy results</span> in nearly all tests, fairly taking the first place.</h1>
+
+<h1 class="paragraph_title"> CPU Performance </h1>
+
+<h1 class="paragraph">Unisoc's CPU configuration is quite typical for the upper mid-range SoC segment: four big Cortex-A75 cores clocked at 2.0GHz and four small Cortex-A55 cores clocked at 1.8GHz. The tests show that its integer performance lies between the results of Snapdragon 835 and 845 and is around 30% better than the performance of Snapdragon 730, Kirin 810 and Helio P90 playing in the same segment.</h1>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/cpu_score_int.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/cpu_score_int.png"></a>
+
+<a href="assets/2019_04_18_spreadtrum_ud710/cpu_score_float.png"><img style="width: 49.7%;	margin-top: 0.2vw; margin-bottom: 0vw;" src="assets/2019_04_18_spreadtrum_ud710/cpu_score_float.png"></a>
+
+<h1 class="paragraph">As for T710's float CPU performance, it is basically the same as in Qualcomm's and MediaTek's mid-range chipsets, and is around 20% lower compared to Kirin 810. So, on the whole, Unisoc T710 is performing at the level of the latest Kirin SoC and is slightly faster than both SDM730 and Helio P90, which should be enough to stay relevant for the next year or two.</h1>
+
+<h1 class="paragraph_title"> Other Performance Aspects </h1>
+
+<h1 class="paragraph">Same as Helio P90, Unisoc T710 is using <a target="_blank" href="https://www.imgtec.com/powervr-gpu/gm9446/">PowerVR GM 9446 GPU</a> from Imagination Technologies that should be slightly faster than Adreno 616 present in the Snapdragon 710. This means that T710 shouldn't have any major problems on the GPU side as well, though it is not an ultimate gaming solution &ndash; just well enough for its segment. </h1>
+
+<h1 class="paragraph">In total, Tiger T710 is a very decent chip with the best overall AI performance one can get right now. Just recently, it was impossible to imaging some Unisoc chipset being at the top of the performance ranking, outrunning all competitive solutions. A miracle? Yes, quite close to that. Good GPU, excellent CPU and a really outstanding NPU &ndash; Tiger T710 is becoming one of the most interesting proposals in the mid-range SoC segment.</h1>
+
+<h1 class="meta">
+	<p>31 July 2019 <span style="float: right;"><a href="mailto:andrey@vision.ee.ethz.ch" style="text-decoration: none; color: rgb(51, 51, 51);">Andrey Ignatov</a> | <a href="http://ai-benchmark.com" style="text-decoration: none;"><lh>AI Benchmark</lh><a></span></p>
+
+<div id="news_link_bottom">
+	<a href="2019_02_05_february_updates.html" style="text-decoration: none;"><p>
+		Chipsets: &nbsp;Snapdragon 855, &nbsp;MediaTek P90, &nbsp;Kirin 980 &nbsp;or&nbsp; Exynos 9820 &nbsp;—&nbsp; who rules the game? &nbsp; <img src="assets/img/goto_white.png">
+	</p></a>
+</div>
+
+</div>
+
+<div id="about">
+	<div id="content">
+		<p >Copyright © 2022 by A.I.</p>
+		<p style="color: #ea1d6f">ETH Zurich, Switzerland</p>
+	</div>
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

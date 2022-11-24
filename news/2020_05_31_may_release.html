@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i	" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <meta name="viewport" content="width=device-width">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: none;">
+
+<nav>
+	<ul class="left_bar">
+		<a href="../index.html"> <img src="../assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<a href="../index.html"> <li> BENCHMARK </li></a>
+		<a href="../ranking.html"> <li> RANKING </li></a>
+		<a href="../news.html"> <li> NEWS </li></a>
+		<a href="../tests.html"> <li> AI-TESTS </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a href="../download.html"> <img style="width: 7.5vw; margin-top: 1.07vw; position: fixed; margin-left: -9.5vw;" src="../assets/img/download.png"> </a>
+		<a href="../research.html"> <li style="color: #e94f70; font-size: 0.8vw; font-weight: 600;"> RESEARCH &nbsp; <img src="../assets/img/goto.png"> </li></a>
+		<a href="../about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+</nav>
+
+<div id="nav_mobile">
+	<ul class="middle_bar">
+		<a href="../index.html"> <li> BENCHMARK </li></a>
+		<a href="../news.html"> <li> NEWS </li></a>
+		<a href="../ranking.html"> <li> RANKING </li></a>
+		<a href="../tests.html"> <li> AI-TESTS </li></a>
+		<a href="../research.html" > <li style="color: #e94f70; font-size: 1.57vw; font-weight: 600; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="../assets/img/goto.png"> </li></a>
+		<a href="../download.html"> <img style="width: 11.2vw; padding-left: 3.6vw; vertical-align: middle;" src="../assets/img/download.png"> </a>
+	</ul>
+</div>
+
+<div id="news">
+
+<h1 class="title1"> <span style="color: #ea1d6f;">AI Benchmark v4:</span> &nbsp;<span class="title3" style="color: #178ed2;">Pushing Mobile NPUs to Their Limits</span></h1>
+
+<h1 class="paragraph">Twice larger number of tests, native hardware acceleration on many mobile platforms, new tasks targeted at multiple model acceleration, the possibility of loading and running custom TFLite models, NPU / DSP throttling tests &mdash; this isn't the full list of improvements coming with the 4th version of AI Benchmark. The detailed description of these and other changes introduced in this release are provided below.</h1>
+
+<a href="assets/2020_05_31_may_release/all_tests.jpg"><img style="width: 100%;	margin-top: -0.7vw; margin-bottom: 1.2vw;" src="assets/2020_05_31_may_release/all_tests.jpg"></a>
+
+<h1 class="paragraph_title"> Native Hardware Acceleration </h1>
+
+<h1 class="paragraph">One of the most awaited features in this release is native AI hardware acceleration on many mobile chipsets. This became possible with the introduction of <a target="_blank" href="https://www.tensorflow.org/lite/performance/delegates">TensorFlow Lite delegates</a> working as a middleware between the standard TFLite runtime and vendors' custom deep learning libraries. Unlike the standard SDK-based benchmarking approach that requires each model to be converted and "optimized" for each vendor, thus making the comparison absolutely unfair, this solution allows to run the <span style="color: #ea1d6f;">identical model</span> on every single mobile device, while benefiting from highly optimized proprietary SDKs and avoiding all limitations of the standard Android NNAPI acceleration path.</h1>
+
+<h1 class="paragraph">
+<img src="assets/2020_05_31_may_release/delegates.png" style="width:28.5%; float: right; margin-left: 3.2vw; margin-top: 0.4vw;">
+
+The following TFLite delegates are already available in AI Benchmark v4:
+<br/><br/>
+
+
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 0.4vw;">Qualcomm Hexagon NN delegate:</span> allows to run quantized deep learning models directly on Snapdragon Hexagon DSPs, is compatible with the <span style="color: #178ed2;">Hexagon 680</span> (Snapdragon 821/820, 660, 636), <span style="color: #178ed2;">Hexagon 682</span> (Snapdragon 835), <span style="color: #178ed2;">Hexagon 683</span> (Snapdragon 662, 460), <span style="color: #178ed2;">Hexagon 685</span> (Snapdragon 845, 712, 710, 675, 670), <span style="color: #178ed2;">Hexagon 686</span> (Snapdragon 665), <span style="color: #178ed2;">Hexagon 688</span> (Snapdragon 730/G), <span style="color: #178ed2;">Hexagon 690</span> (Snapdragon 855/Plus), <span style="color: #178ed2;">Hexagon 692</span> (Snapdragon 720/G), <span style="color: #178ed2;">Hexagon 696</span> (Snapdragon 768/G, 765/G), <span style="color: #178ed2;">Hexagon 698</span> (Snapdragon 865) and newer models. Note that the Hexagon DSP might be locked on some devices and inaccessible by anyone except for the corresponding vendor.
+<br/><br/>
+
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 0.4vw;">Samsung Eden delegate:</span> provides access to the Exynos NPU (can currently run only a few models) and contains optimized GPU kernels for Exynos' Mali GPUs. Is compatible with the <span style="color: #178ed2;">Exynos 9820, 9825, 980, 990</span> and newer models.
+<br/><br/>
+
+<span class="item">&#x25cf;&nbsp;</span><span style="font-weight: 400; margin-right: 0.4vw;">TFLite GPU delegate:</span> a universal OpenCL / OpenGL-based delegate for accelerating floating-point models on mobile GPUs. Is compatible with almost any GPU supporting <span style="color: #178ed2;">OpenGL ES 3.0+</span> and provides excellent results on both new and older-generation devices.
+<br/><br/>
+
+More delegates will be added to AI Benchmark as they become available and ready to use on mobile devices.
+
+</h1>
+
+<h1 class="paragraph_title"> Running Custom TensorFlow Lite Models </h1>
+<h1 class="paragraph">
+<img src="assets/2020_05_31_may_release/custom_tflite.png" style="width:28%; float: left; margin-right: 3.2vw; margin-top: 0.5vw;">
+One can now load and <span style="color: #ea1d6f;">run any TensorFlow Lite model</span> directly in the benchmark (in the PRO Mode) with all acceleration options available for the standard benchmark tests. There is no need for using any complicated tools or Android programming &mdash; just put your <span style="font-style: italic; font-weight: 400;">model.tflite</span> file into the <span style="font-weight: 400;">Download</span> folder, select the desired acceleration options (<span style="font-style: italic;">TFLite CPU backend</span>, <span style="font-style: italic;">Android NNAPI</span>, <span style="font-style: italic;">Hexagon NN</span> / <span style="font-style: italic;">Eden</span> / <span style="font-style: italic;">TFLite GPU</span> delegates when available) and get the resulting latency or a detailed error log if the model is incompatible with the corresponding delegator. You can also select your model manually using the prompted File Manager &mdash; note that in this case the <span style="font-style: italic;">"Show Internal Storage"</span> option should be enabled as the full path to your model file is required.
+</br></br>
+
+
+If you do not have any previous experience of working with the TensorFlow Lite, you can find the detailed instructions on how to convert your pre-trained TensorFlow model to TFLite format <a target="_blank" href="https://www.tensorflow.org/lite/guide/get_started#tensorflow_lite_converter">here</a> (just three lines of code are needed). If you are using PyTorch &mdash; then you first need to export your model to <a target="_blank" href="https://pytorch.org/docs/stable/onnx.html">ONNX</a> and then convert the resulting file to <a target="_blank" href="https://stackoverflow.com/questions/53182177/how-do-you-convert-a-onnx-to-tflite">TFLite</a>. You can also <a target="_blank" href=https://www.tensorflow.org/lite/performance/post_training_quantization#integer_only>quantize</a> your model during the conversion to be able to run it on the Hexagon DSP, Google Coral TPU and some other integer-only mobile AI accelerators.
+
+</h1>
+
+<h1 class="paragraph_title"> NNAPI-1.2 Tests </h1>
+<h1 class="paragraph">
+Since NNAPI-1.1 implements support for a very limited number of ML operations, it cannot accelerate a large number of new deep learning models presented in the past years. Therefore, in AI Benchmark v4 we  <span style="color: #ea1d6f;">introduced 25 new subtests</span>, the majority of which are NNAPI-1.2 compatible. The new benchmark version contains <span style="font-style: italic;">MobileNet-V3</span> and <span style="font-style: italic;">PyNET</span> architectures, <span style="font-style: italic;">LSTM-based</span> OCR and Text Completion models, neural networks with <span style="font-style: italic;">transposed convolution</span> / <span style="font-style: italic;">depth-to-space</span> / <span style="font-style: italic;">gather</span> ops, etc. The number of accuracy tests was also increased from 10 to 18, while the reported errors became more transparent. In total, the 4th benchmark version consists of the <span style="color: #178ed2;">14 benchmark sections</span> listed below:
+</br>
+</br>
+<img src="assets/2020_05_31_may_release/tests.png" style="width:29%; float: right; margin-left: 3.2vw; margin-top: 0.7vw;">
+
+<span class="item-list">
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 1.</span> <span style="color: #178ed2;"> Classification,</span>&nbsp; <span style="color: #ea1d6f;">MobileNet-V2</span>&nbsp;&nbsp;<mode>(INT8 + FP16 + Batch Size=4)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 2.</span> <span style="color: #178ed2;">Classification,</span>&nbsp; <span style="color: #ea1d6f;">Inception-V3</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 3.</span> <span style="color: #178ed2;"> Face Recognition,</span>&nbsp; <span style="color: #ea1d6f;">MobileNet-V3</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 4.</span> <span style="color: #178ed2;"> Classification,</span>&nbsp; <span style="color: #ea1d6f;">MobileNet-V2 x 8</span>&nbsp;&nbsp;<mode>(INT8 + FP16 | Parallel)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 5.</span> <span style="color: #178ed2;"> OCR,</span>&nbsp; <span style="color: #ea1d6f;">CRNN&nbsp; (ResNet-18 + Bi-LSTM)</span>&nbsp;&nbsp;<mode>(FP16 + FP32)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 6.</span> <span style="color: #178ed2;"> Deblurring,</span>&nbsp; <span style="color: #ea1d6f;">PyNET</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 7.</span> <span style="color: #178ed2;"> Super-Resolution,</span>&nbsp; <span style="color: #ea1d6f;">VGG19</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 8.</span> <span style="color: #178ed2;"> Super-Resolution,</span>&nbsp; <span style="color: #ea1d6f;">SRGAN</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 1.2vw;">Section 9.</span> <span style="color: #178ed2;"> Bokeh Rendering,</span>&nbsp; <span style="color: #ea1d6f;">U-Net</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 0.7vw;">Section 10.</span> <span style="color: #178ed2;">Semantic Segmentation,</span>&nbsp; <span style="color: #ea1d6f;">DeepLab-V3+</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 0.7vw;">Section 11.</span> <span style="color: #178ed2;">Semantic Segmentation,</span>&nbsp; <span style="color: #ea1d6f;">DeepLab-V3+</span>&nbsp;&nbsp;<mode>(INT8 + FP16 in Parallel)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 0.7vw;">Section 12.</span><span style="color: #178ed2;"> Image Enhancement,</span>&nbsp; <span style="color: #ea1d6f;">DPED ResNet</span>&nbsp;&nbsp;<mode>(INT8 + FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 0.7vw;">Section 13.</span><span style="color: #178ed2;"> Text Completion,</span>&nbsp; <span style="color: #ea1d6f;">LSTM</span>&nbsp;&nbsp;<mode>(FP16)</mode></br>
+<span class="item">&#x25cf;&nbsp;</span> <span style="font-weight: 400; margin-right: 0.7vw;">Section 14.</span><span style="color: #178ed2;"> Memory limits,</span>&nbsp; <span style="color: #ea1d6f;">SRCNN</span>&nbsp;&nbsp;<mode>(FP16 | Various Resolutions)</mode
+</span></br></br>
+
+Each section might consist of several subtests running quantized and floating-point models on different accelerators, measuring the initialization time and accuracy of the predicted outputs as well as checking the speed of the pure CPU inference.
+
+A more detailed information about each test / model can be found <a target="_blank" href="../archive/tests_v4.html">here</a>.
+</h1>
+
+<h1 class="paragraph_title"> Parallel and NPU / DSP Throttling Tests </h1>
+
+<h1 class="paragraph">
+<img src="assets/2020_05_31_may_release/throttling.jpg" style="width:22%; float: left; margin-right: 3.2vw; margin-top: 0.4vw;">
+
+There are two test categories in AI Benchmark v4 that should be mentioned separately. The first one is the <span style="font-weight: 400;">Parallel Execution</span> category that is aimed at processing multiple data simultaneously. It consists of three different tasks: inference with a large batch size in <span style="font-style: italic;">Section 1</span>, running a floating-point and a quantized model in parallel to check acceleration support for mixed type inference in <span style="font-style: italic;">Section 11</span>. Finally, in the last task the device is running up to 8 floating-point / quantized models simultaneously <span style="font-style: italic;">(Section 5)</span> to see if it is capable of asynchronous model inference and acceleration, which is crucial for many real-world problems involving the use of more than one deep learning model. </br></br>
+
+In the PRO mode, one can find a new <span style="font-weight: 400;">Throttling Test</span> that allows to run the Inception-V3 model on CPU or with any available acceleration option and monitor the resulting FPS over time. This test does not have a time limit, therefore it is possible to check both the short- and long-term thermal stability of the mobile chipset and all its components. We should note that this test will be significantly expanded in the next benchmark versions, introducing more models and considerably more complex setups.
+
+</h1>
+
+<h1 class="paragraph_title"> Scoring System </h1>
+
+<h1 class="paragraph">
+<img src="assets/2020_05_31_may_release/results.png" style="width:29%; float: right; margin-left: 3.2vw; margin-top: 0.5vw;">
+AI Benchmark v4 measures <span style="color: #178ed2;">more than 100 different aspects</span> of AI performance that are grouped in the following categories:</br></br>
+
+<span class="item-list">
+<span class="item">&#x25cf;&nbsp;</span> INT8,&nbsp; NNAPI-1.1 Compatible Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> INT8,&nbsp; NNAPI-1.2 Compatible Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> INT8,&nbsp; Parallel Model Execution</br>
+<span class="item">&#x25cf;&nbsp;</span> INT8,&nbsp; Single / Multi-Thread CPU Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> INT8,&nbsp; Accuracy Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> INT8,&nbsp; Initialization Time</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; NNAPI-1.1 Compatible Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; NNAPI-1.2 Compatible Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; Parallel Model Execution</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; Single / Multi-Thread CPU Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; Accuracy Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; Initialization Time</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; RNN / LSTM Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> FP32,&nbsp; RNN / LSTM Tests</br>
+<span class="item">&#x25cf;&nbsp;</span> FP16,&nbsp; Memory Tests</br>
+</span></br>
+
+The weight of each test category is chosen according to its <span style="font-weight: 400;">popularity</span> among the research and development ML community and its <span style="font-weight: 400;">relevance</span> for mobile inference, therefore the final benchmark score is <span style="color: #ea1d6f;">reflecting the actual user experience</span> of running the existing AI applications on smartphones. More information about the scoring system will be provided in our next AI Benchmark paper, the previous report with a detailed overview of the last release can be found <a target="_blank" href=https://arxiv.org/pdf/1910.06663.pdf>here</a>.</h1>
+
+<h1 class="meta">
+	<p>31 May 2020 <span style="float: right;"><a href="mailto:andrey@vision.ee.ethz.ch" style="text-decoration: none; color: rgb(51, 51, 51);">Andrey Ignatov</a> | <a href="http://ai-benchmark.com" style="text-decoration: none;"><lh>AI Benchmark</lh><a></span></p>
+
+<div id="news_link_bottom">
+	<a href="2019_10_27_npus_review_2019.html" style="text-decoration: none;"><p>
+		From&nbsp; Kirin&nbsp; 970&nbsp; to&nbsp; Snapdragon&nbsp; 855&nbsp; Plus:&nbsp; &nbsp;Performance&nbsp; Review&nbsp; of&nbsp; All&nbsp; SoCs&nbsp; with&nbsp; AI&nbsp; capabilities&nbsp;&nbsp;<img src="assets/img/goto_white.png">
+	</p></a>
+</div>
+
+</div>
+
+<div id="about">
+	<div id="content">
+		<p >Copyright © 2022 by A.I.</p>
+		<p style="color: #ea1d6f">ETH Zurich, Switzerland</p>
+	</div>
+</div>
+
+</body>
+
+</html>
