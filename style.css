@@ -498,7 +498,7 @@ nav .left_bar_samples li {
 
 #ranking_short .results-info {
 	text-align: center;
-	margin-left: 11.1vw;
+	margin-left: -2.0vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
 	padding-top: 1.3vw;
@@ -588,7 +588,7 @@ nav .left_bar_samples li {
 	#ranking_short .results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: 12.2vw;
+		margin-left: -5.2vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
