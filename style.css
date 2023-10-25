@@ -685,6 +685,13 @@ nav .left_bar_samples li {
 	font-size: 0.8vw;
 }
 
+#ranking .power_table {
+	width: 80vw;
+	margin-left: 10vw;
+	font-size: 0.8vw;
+	margin-bottom: -1.0vw;
+}
+
 #ranking .detailed_table {
 	width: 94.2vw;
 	margin-left: 2.9vw;
@@ -728,6 +735,13 @@ nav .left_bar_samples li {
   
 	#ranking {
 		margin-top: 14vw;
+	}
+	
+	#ranking .power_table {
+		width: 92vw;
+		margin-left: 4vw;
+		font-size: 0.8vw;
+		margin-bottom: -1.0vw;
 	}
 	
 	#ranking-excel {

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <meta name="viewport" content="width=device-width">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: none;">
+
+<nav>
+	<ul class="left_bar">
+		<a href="index.html"> <img src="../assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<a href="../index.html"> <li> BENCHMARK </li></a>
+		<a href="../ranking.html"> <li> RANKING </li></a>
+		<a href="../tests.html"> <li> AI-TESTS </li></a>
+		<a href="../news.html"> <li> NEWS </li></a>
+		<a href="https://burnout-benchmark.com"> <li style="color: rgba(233,79,112, 0.85); font-weight: bold; margin-right: -0.25vw; margin-left: -0.25vw;"> BURNOUT </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a href="../download.html"> <img style="width: 7.5vw; margin-top: 1.07vw; position: fixed; margin-left: -9.5vw;" src="../assets/img/download.png"> </a>
+		<a href="../research.html"> <li style="color: #e94f70; font-size: 0.8vw; font-weight: 600;"> RESEARCH &nbsp; <img src="../assets/img/goto.png"> </li></a>
+		<a href="../about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+	
+	<!--div id="news_link">
+		<a href="https://ai-benchmark.com/workshops/mai/2021/#live"><p style="word-spacing: 0.15vw; font-size: 0.99vw; font-weight: 600; background-color: rgba(255, 255, 255, 1.0); color: rgb(238, 0, 106);">
+			Live @ Mobile AI CVPR Workshop <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw; margin-right: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg> Tutorials from Google, MediaTek, Samsung, Qualcomm, Huawei, Imagination, OPPO and AI Benchmark</p></a>
+	</div-->
+	<div id="forum_link">
+		<a href="https://ai-benchmark.net/"><p>
+			Have some questions regarding the scores? Faced some issues? Want to discuss the results? Welcome to our new <span style="color: rgba(123, 142, 210, 1.0); font-weight: 700;">AI Benchmark Forum!</span>
+		</p></a>
+	</div>
+
+</nav>
+
+<div id="nav_mobile">
+	<ul class="middle_bar">
+		<a href="../index.html"> <li> BENCHMARK </li></a>
+		<a href="../news.html"> <li> NEWS </li></a>
+		<a href="../ranking.html"> <li> RANKING </li></a>
+		<a href="../tests.html"> <li> AI-TESTS </li></a>
+		<a href="../research.html" > <li style="color: #e94f70; font-size: 1.57vw; font-weight: 600; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="../assets/img/goto.png"> </li></a>
+		<a href="https://burnout-benchmark.com"> <li style="color: #e94f70; font-weight: bold; margin-right: -0.25vw; margin-left: -0.25vw;"> BURNOUT </li></a>
+		<a href="../download.html"> <img style="width: 11.2vw; padding-left: 3.6vw; vertical-align: middle;" src="../assets/img/download.png"> </a>
+	</ul>
+	
+	<!--div id="news_link">
+		<a href="https://ai-benchmark.com/workshops/mai/2021/#live"><p style="word-spacing: 0.15vw; font-size: 1.3vw; font-weight: 600; background-color: rgba(255, 255, 255, 1.0); color: rgb(238, 0, 106);">
+			Live @ Mobile AI CVPR Workshop <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw; margin-right: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg> Tutorials from Google, MediaTek, Samsung, Qualcomm, Huawei, Imagination, OPPO and AI Benchmark</p></a>
+	</div-->
+	<div id="forum_link">
+		<a href="https://ai-benchmark.net/"><p>
+			Have some questions regarding the scores? Faced some issues? Want to discuss the results? Welcome to our new <span style="color: rgba(123, 142, 210, 1.0); font-weight: 700;">AI Benchmark Forum!</span>
+		</p></a>
+	</div>
+	
+</div>
+
+<div id="ranking">
+
+	<div class="after-forum-margin"></div>
+
+	<div class="title">
+		<table class="header_table" style="margin-bottom: -1.0vw;">
+			<tr>
+				<th style="width: 2%;"></th>
+	  			<th class="performance_ranking" style="width: 34%; vertical-align: top; text-align: left; font-weight: bold;">Power Efficiency Ranking</th>
+	  			<th style="width: 62%; text-align: right;">
+					<a href="ranking.html" class="ranking_links">FPS / Watt Ranking</a> &nbsp;&nbsp; | &nbsp;&nbsp; 
+					<a href="efficiency_vs_performance.html" class="ranking_links">Performance vs. Efficiency Tradeoff</a> &nbsp;&nbsp; | &nbsp;&nbsp; 
+					<a href="results_int8.html" class="ranking_links">INT8 Results</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="results_fp16.html" class="ranking_links">FP16 Results</a>
+				</th>
+				<th style="width: 2%;"></th>
+			</tr>
+		</table>
+	</div>
+	
+	<table id="scoreTable">
+  		<tr>
+  			<th rowspan=2 onclick="sortTableFast(0)" class="highlight" style="width: 14%; font-size: 0.7vw;">Processor</th>
+  			<th rowspan=2 onclick="sortTableFast(1)" class="highlight" style="width: 18%; font-size: 0.7vw;">AI Accelerator</th>
+  			<th rowspan=2 onclick="sortTableFast(2)" class="highlight" style="width: 4%; font-size: 0.7vw;">Year</th>
+  			<th rowspan=2 onclick="sortTableFastFloat(3, true)" class="highlight" style="width: 4%; font-size: 0.7vw;">Lib</th>
+  			<th rowspan=2 onclick="sortTableFastFloat(4)" class="highlight" style="width: 12%; font-size: 0.7vw;">Inference Mode</th>
+   			<th colspan=2 class="highlight" style="width: 4%; font-size: 0.6vw;">Inception-V3</th>
+  			<th colspan=2 class="highlight" style="width: 4%; font-size: 0.6vw;">DeepLabV3+	</th>
+  			<th colspan=2 class="highlight" style="width: 4%; font-size: 0.6vw;">SRGAN</th>
+  			<th colspan=2 class="highlight" style="width: 4%; font-size: 0.6vw;">U-Net</th>
+  			<th colspan=2 class="highlight" style="width: 4%; font-size: 0.6vw;">VSR</th>			
+			<th rowspan=2 onclick="sortTableFastFloat(15)" class="highlight" style="width: 8%; font-size: 0.7vw; background-color: rgba(111, 234, 108, 0.12);">Average </br> FPS / Watt</th>  		</tr>
+
+  		<tr>
+   			<th onclick="sortTableFastFloat(5)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS</th>
+   			<th onclick="sortTableFastFloat(6)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS/Watt</th>
+			<th onclick="sortTableFastFloat(7)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS</th>
+   			<th onclick="sortTableFastFloat(8)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS/Watt</th>
+   			<th onclick="sortTableFastFloat(9)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS</th>
+   			<th onclick="sortTableFastFloat(10)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS/Watt</th>
+   			<th onclick="sortTableFastFloat(11)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS</th>
+   			<th onclick="sortTableFastFloat(12)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS/Watt</th>
+   			<th onclick="sortTableFastFloat(13)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS</th>
+   			<th onclick="sortTableFastFloat(14)" class="highlight" style="width: 4%; font-size: 0.6vw;">FPS/Watt</th>
+  		</tr>
+  		
+	<tr><td></td></tr>
+
+<tr><td class="column_0"><a id=0013 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-8-Gen-2-Processor-Benchmarks-and-Specs.670032.0.html" target="_blank" style="text-decoration: none;">Snapdragon 8 Gen 2</a></td><td class="column_2b">Hexagon DSP / HTP Gen 2</td><td class="column_2b">2022</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">hg</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">413</td><td class="column_5s">54.1</td><td class="column_5s">68</td><td class="column_5s">14.3</td><td class="column_5s">24.5</td><td class="column_5s">4.08</td><td class="column_5s">42</td><td class="column_5s">10.3</td><td class="column_5s">14.5</td><td class="column_5s">6.42</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 11.6</a></td></tr>
+<tr><td class="column_0"><a id=0013 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-8-Gen-2-Processor-Benchmarks-and-Specs.670032.0.html" target="_blank" style="text-decoration: none;">Snapdragon 8 Gen 2</a></td><td class="column_2b">Hexagon DSP / HTP Gen 2</td><td class="column_2b">2022</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">qh.qh</a></td><td class="column_2b">FAST SINGLE ANSWER</td><td class="column_5s">429</td><td class="column_5s">52</td><td class="column_5s">71.2</td><td class="column_5s">14</td><td class="column_5s">25</td><td class="column_5s">3.92</td><td class="column_5s">44.9</td><td class="column_5s">9.05</td><td class="column_5s">15.9</td><td class="column_5s">6.46</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 11.1</a></td></tr>
+<tr><td class="column_0"><a id=0005 href="https://www.notebookcheck.net/MediaTek-Dimensity-9200-Processor-Benchmarks-and-Specs.696452.0.html" target="_blank" style="text-decoration: none;">Dimensity 9200</a></td><td class="column_2b">APU 690</td><td class="column_2b">2022</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">qh.qh</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">80.8</td><td class="column_5s">38.3</td><td class="column_5s">31.3</td><td class="column_5s">7.72</td><td class="column_5s">12.1</td><td class="column_5s">3.23</td><td class="column_5s">23.1</td><td class="column_5s">6.06</td><td class="column_5s">32.5</td><td class="column_5s">11.1</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 9.2</a></td></tr>
+<tr><td class="column_0"><a id=0005 href="https://www.notebookcheck.net/MediaTek-Dimensity-9200-Processor-Benchmarks-and-Specs.696452.0.html" target="_blank" style="text-decoration: none;">Dimensity 9200</a></td><td class="column_2b">APU 690</td><td class="column_2b">2022</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">mm</a></td><td class="column_2b">FAST SINGLE ANSWER</td><td class="column_5s">139</td><td class="column_5s">33.2</td><td class="column_5s">42.9</td><td class="column_5s">8.69</td><td class="column_5s">17.8</td><td class="column_5s">2.14</td><td class="column_5s">33.9</td><td class="column_5s">5.46</td><td class="column_5s">53.1</td><td class="column_5s">11.2</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 8.2</a></td></tr>
+<tr><td class="column_0"><a id=0003 href="https://www.notebookcheck.net/MediaTek-Dimensity-9000-Processor-Benchmarks-and-Specs.588119.0.html" target="_blank" style="text-decoration: none;">Dimensity 9000</a></td><td class="column_2b">APU 590</td><td class="column_2b">2021</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">mm</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">60.3</td><td class="column_5s">38.2</td><td class="column_5s">21.6</td><td class="column_5s">6.17</td><td class="column_5s">8.18</td><td class="column_5s">3.32</td><td class="column_5s">16.3</td><td class="column_5s">4.98</td><td class="column_5s">16.9</td><td class="column_5s">5.2</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 7.3</a></td></tr>
+<tr><td class="column_0"><a id=0012 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-8-Gen-1-Processor-Benchmarks-and-Specs.583406.0.html" target="_blank" style="text-decoration: none;">Snapdragon 8 Gen 1</a></td><td class="column_2b">Hexagon DSP / HTP</td><td class="column_2b">2021</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">mm</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">222</td><td class="column_5s">31.4</td><td class="column_5s">38.6</td><td class="column_5s">9.4</td><td class="column_5s">14.2</td><td class="column_5s">2.37</td><td class="column_5s">28.4</td><td class="column_5s">5.86</td><td class="column_5s">13.4</td><td class="column_5s">4.51</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 7.1</a></td></tr>
+<tr><td class="column_0"><a id=0003 href="https://www.notebookcheck.net/MediaTek-Dimensity-9000-Processor-Benchmarks-and-Specs.588119.0.html" target="_blank" style="text-decoration: none;">Dimensity 9000</a></td><td class="column_2b">APU 590</td><td class="column_2b">2021</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">qh.qh</a></td><td class="column_2b">FAST SINGLE ANSWER</td><td class="column_5s">118</td><td class="column_5s">27.5</td><td class="column_5s">31.6</td><td class="column_5s">6.19</td><td class="column_5s">14.4</td><td class="column_5s">2.53</td><td class="column_5s">25.8</td><td class="column_5s">4.63</td><td class="column_5s">23</td><td class="column_5s">4.91</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 6.3</a></td></tr>
+<tr><td class="column_0"><a id=0001 href="https://www.notebookcheck.net/MediaTek-Dimensity-800-Processor-Benchmarks-and-Specs.512477.0.html" target="_blank" style="text-decoration: none;">Dimensity 800</a></td><td class="column_2b">APU 3.0 (4 cores)</td><td class="column_2b">2020</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">mm</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">14.3</td><td class="column_5s">32</td><td class="column_5s">4.68</td><td class="column_5s">5.79</td><td class="column_5s">1.14</td><td class="column_5s">2.27</td><td class="column_5s">2.61</td><td class="column_5s">3.75</td><td class="column_5s">1.46</td><td class="column_5s">2.36</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 5.2</a></td></tr>
+<tr><td class="column_0"><a id=0009 href="https://www.notebookcheck.net/Google-Tensor-Processor-Benchmarks-and-Specs.581802.0.html" target="_blank" style="text-decoration: none;">Google Tensor G2</a></td><td class="column_2b">Google Tensor TPU 2.0</td><td class="column_2b">2022</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">nn</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">144</td><td class="column_5s">43.8</td><td class="column_5s">36.3</td><td class="column_5s">9.68</td><td class="column_5s">4.06</td><td class="column_5s">0.82</td><td class="column_5s">9.49</td><td class="column_5s">2.78</td><td class="column_5s">9.17</td><td class="column_5s">3.59</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 5.1</a></td></tr>
+<tr><td class="column_0"><a id=0000 href="https://www.notebookcheck.net/MediaTek-Dimensity-1000-Processor-Benchmarks-and-Specs.497862.0.html" target="_blank" style="text-decoration: none;">Dimensity 1000+</a></td><td class="column_2b">APU 3.0 (6 cores)</td><td class="column_2b">2019</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">nn</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">24.2</td><td class="column_5s">30.6</td><td class="column_5s">5.79</td><td class="column_5s">5.38</td><td class="column_5s">2.06</td><td class="column_5s">2.06</td><td class="column_5s">3.9</td><td class="column_5s">3.86</td><td class="column_5s">1.17</td><td class="column_5s">1.74</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 4.7</a></td></tr>
+<tr><td class="column_0"><a id=0002 href="https://www.notebookcheck.net/MediaTek-Dimensity-820-Processor-Benchmarks-and-Specs.494521.0.html" target="_blank" style="text-decoration: none;">Dimensity 820</a></td><td class="column_2b">APU 3.0 (4 cores)</td><td class="column_2b">2020</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">nn</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">15.9</td><td class="column_5s">32.1</td><td class="column_5s">3.3</td><td class="column_5s">4.57</td><td class="column_5s">1.16</td><td class="column_5s">1.82</td><td class="column_5s">2.59</td><td class="column_5s">3.93</td><td class="column_5s">0.65</td><td class="column_5s">1.63</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 4.4</a></td></tr>
+<tr><td class="column_0"><a id=0008 href="https://www.notebookcheck.net/Google-Tensor-Processor-Benchmarks-and-Specs.581802.0.html" target="_blank" style="text-decoration: none;">Google Tensor</a></td><td class="column_2b">Google Tensor TPU</td><td class="column_2b">2021</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">nn</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">142</td><td class="column_5s">38.6</td><td class="column_5s">21</td><td class="column_5s">7.06</td><td class="column_5s">3.78</td><td class="column_5s">0.75</td><td class="column_5s">7.32</td><td class="column_5s">2.39</td><td class="column_5s">8.1</td><td class="column_5s">3.14</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 4.3</a></td></tr>
+<tr><td class="column_0"><a id=0007 href="https://www.notebookcheck.net/Samsung-Exynos-2100-SoC-launched-with-integrated-5G-modem-ARM-Mali-G78-GPU-faster-NPU-and-more.514824.0.html" target="_blank" style="text-decoration: none;">Exynos 2100</a></td><td class="column_2b">GPU (Mali-G78 MP14)</td><td class="column_2b">2021</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">nn</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">21.3</td><td class="column_5s">8.05</td><td class="column_5s">12.5</td><td class="column_5s">2.29</td><td class="column_5s">2.71</td><td class="column_5s">1.02</td><td class="column_5s">4.49</td><td class="column_5s">2.22</td><td class="column_5s">9.02</td><td class="column_5s">6.2</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 3.0</a></td></tr>
+<tr><td class="column_0"><a id=0017 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-888-5G-Processor-Benchmarks-and-Specs.513906.0.html" target="_blank" style="text-decoration: none;">Snapdragon 888</a></td><td class="column_2b">DSP (Hexagon 780) + GPU (Adreno 660)</td><td class="column_2b">2020</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">gg</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">37.9</td><td class="column_5s">15.2</td><td class="column_5s">9.05</td><td class="column_5s">2.17</td><td class="column_5s">4.28</td><td class="column_5s">0.82</td><td class="column_5s">5.75</td><td class="column_5s">1.51</td><td class="column_5s">15.1</td><td class="column_5s">4.53</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 2.8</a></td></tr>
+<tr><td class="column_0"><a id=0010 href="https://www.notebookcheck.net/Huawei-s-Kirin-9000-SoC-trades-blows-with-the-Samsung-Exynos-1080-on-AnTuTu.497855.0.html" target="_blank" style="text-decoration: none;">HiSilicon Kirin 9000</a></td><td class="column_2b">GPU (Mali-G78 MP24)</td><td class="column_2b">2020</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">qh.qg</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">23.1</td><td class="column_5s">8.18</td><td class="column_5s">13.7</td><td class="column_5s">2.33</td><td class="column_5s">4.65</td><td class="column_5s">0.69</td><td class="column_5s">10.1</td><td class="column_5s">1.62</td><td class="column_5s">16.2</td><td class="column_5s">4.53</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 2.5</a></td></tr>
+<tr><td class="column_0"><a id=0016 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-855-SoC-Benchmarks-and-Specs.375436.0.html" target="_blank" style="text-decoration: none;">Snapdragon 855</a></td><td class="column_2b">DSP (Hexagon 690) + GPU (Adreno 640)</td><td class="column_2b">2018</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">gg</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">15.8</td><td class="column_5s">7.16</td><td class="column_5s">6.71</td><td class="column_5s">2.78</td><td class="column_5s">1.29</td><td class="column_5s">0.34</td><td class="column_5s">3.81</td><td class="column_5s">1.33</td><td class="column_5s">8.61</td><td class="column_5s">4.23</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 2.1</a></td></tr>
+<tr><td class="column_0"><a id=0015 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-845-SoC-Benchmarks-and-Specs.299446.0.html" target="_blank" style="text-decoration: none;">Snapdragon 845</a></td><td class="column_2b">DSP (Hexagon 685) + GPU (Adreno 630)</td><td class="column_2b">2018</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">hg</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">12.8</td><td class="column_5s">5.21</td><td class="column_5s">4.84</td><td class="column_5s">1.45</td><td class="column_5s">0.95</td><td class="column_5s">0.27</td><td class="column_5s">2.89</td><td class="column_5s">0.85</td><td class="column_5s">6.68</td><td class="column_5s">2.81</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 1.4</a></td></tr>
+<tr><td class="column_0"><a id=0011 href="https://www.notebookcheck.net/Qualcomm-Snapdragon-710-SoC.366561.0.html" target="_blank" style="text-decoration: none;">Snapdragon 710</a></td><td class="column_2b">DSP (Hexagon 685) + GPU (Adreno 616)</td><td class="column_2b">2018</td><td class="column_2b green"><a href="#footnote" style="text-decoration: none; opacity: 0.8">hg</a></td><td class="column_2b">SUSTAINED SPEED</td><td class="column_5s">5.33</td><td class="column_5s">4.47</td><td class="column_5s">1.93</td><td class="column_5s">1.44</td><td class="column_5s">0.36</td><td class="column_5s">0.26</td><td class="column_5s">1.14</td><td class="column_5s">0.85</td><td class="column_5s">3.02</td><td class="column_5s">2.65</td><td class="column_6 green"><a href="#footnote" style="text-decoration: none; opacity: 0.8"> 1.3</a></td></tr>
+
+  		</table>
+</div>
+
+<div id="footnote">
+	<p> <sup2>xy</sup2> &nbsp;-&nbsp; This device accelerates quantized [<span style="color: #ea1d6f;">x</span>] and floating-point [<span style="color: #ea1d6f;">y</span>] models using the:</p></br>
+	<p> <sup2>n</sup2> &nbsp;&nbsp;-&nbsp;&nbsp; <a href="https://developer.android.com/ndk/guides/neuralnetworks/" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">Android NNAPI</a></p>
+	<p> <sup2>g</sup2> &nbsp;&nbsp;-&nbsp;&nbsp; <a href="https://www.tensorflow.org/lite/performance/gpu" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">TensorFlow Lite GPU Delegate</a>&nbsp; (OpenCL / OpenGL / Metal based)</p></br>
+	<p> <sup2>h</sup2> &nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; <a href="https://www.tensorflow.org/lite/performance/hexagon_delegate" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">Qualcomm Hexagon NN Direct Delegate</a></p>
+	<p> <sup2>qh</sup2> &nbsp;&nbsp;-&nbsp;&nbsp; <a style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">Qualcomm QNN HTP Delegate</a></p>
+	<p> <sup2>qd</sup2> &nbsp;&nbsp;-&nbsp;&nbsp; <a style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">Qualcomm QNN DSP Delegate</a></p>
+	<p> <sup2>qg</sup2> &nbsp;&nbsp;-&nbsp;&nbsp; <a style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">Qualcomm QNN GPU Delegate</a></p></br>
+	<p> <sup2>e</sup2> &nbsp;&nbsp;-&nbsp;&nbsp; <a style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">Samsung ENN Delegate</a></p>
+	<p> <sup2>m</sup2> &nbsp;-&nbsp;&nbsp; <a style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">MediaTek Neuron Delegate</a></p>
+	<p> <sup2>i</sup2> &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; <a href="https://www.tensorflow.org/lite/performance/coreml_delegate" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">Apple CoreML Delegate</a></p>
+	<p> <sup2>c</sup2> &nbsp;&nbsp;-&nbsp;&nbsp; <a href="https://www.tensorflow.org/lite" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">TensorFlow Lite</a> / <a href="https://developer.android.com/ndk/guides/neuralnetworks/" target="_blank" style="text-decoration: none; border-bottom: 0.02vw dotted; color: #ea1d6f;">NNAPI</a> default CPU backend</p></br>
+	<p> <sup2>1</sup2> &nbsp;-&nbsp; This SoC might be using unofficial / prototype hardware or drivers</p>
+	<p> <sup2>2</sup2> &nbsp;-&nbsp; These are the results of an early prototype. The results of the commercial SoC might be different</p>
+</div>
+
+<div id="about">
+	<div id="content">
+		<p >Copyright © 2018-2023 by A.I.</p>
+		<p style="color: #ea1d6f">ETH Zurich, Switzerland</p>
+	</div>
+</div>
+
+<script>
+function sortTableFast(col, reverse=false) {
+
+	table = document.getElementById("scoreTable");
+    
+    var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+    tr = Array.prototype.slice.call(tb.rows, 2), // put rows into array
+    reverse = -((+reverse) || -1);
+    tr = tr.sort(function (a, b) { // sort rows
+        return reverse // `-1 *` if want opposite order
+            * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                .localeCompare(b.cells[col].textContent.trim())
+               );
+    });
+    for(i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
+    
+}
+
+function sortTableFastFloat(col, reverse=true) {
+
+	table = document.getElementById("scoreTable");
+
+    var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+    tr = Array.prototype.slice.call(tb.rows, 2), // put rows into array
+    reverse = -((+reverse) || -1);
+    tr = tr.sort(function (a, b) { // sort rows
+        return reverse // `-1 *` if want opposite order
+            * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                .localeCompare(b.cells[col].textContent.trim(), undefined, {numeric: true})
+               );
+    });
+    for(i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
+}
+
+</script>
+
+</body>
+
+</html>
