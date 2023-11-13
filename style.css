@@ -497,9 +497,7 @@ nav .left_bar_samples li {
 }
 
 .results-info {
-	align: center;
 	text-align: center;
-	margin-left: 37vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
 	padding-top: 1.3vw;
@@ -589,7 +587,7 @@ nav .left_bar_samples li {
 	.results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: 4vw;
+		margin-left: -25vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
