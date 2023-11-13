@@ -496,9 +496,10 @@ nav .left_bar_samples li {
     margin-bottom: 0.9vw;
 }
 
-#ranking_short .results-info {
+.results-info {
+	align: center;
 	text-align: center;
-	margin-left: -2.0vw;
+	margin-left: 37vw;
 	padding-right: 8vw;
 	padding-left: 8vw;
 	padding-top: 1.3vw;
@@ -585,10 +586,10 @@ nav .left_bar_samples li {
 		margin-top: -0.11vw;
 	}
 
-	#ranking_short .results-info {
+	.results-info {
 		padding-right: 12vw;
 		padding-left: 12vw;
-		margin-left: -5.2vw;
+		margin-left: 4vw;
 		padding-top: 2vw;
 		padding-bottom: 1.9vw;
 		margin-top: 7.5vw;
