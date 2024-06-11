@@ -2183,6 +2183,61 @@ hr {
 	padding-top: 0.8vw;
 }
 
+#download .download-item-horizontal {
+	display: inline-block;
+	padding-top: 0.0vw;
+	padding-bottom: 0vw;
+	margin: 2vw;
+	width: 34vw;
+	font-size: 0.9vw;
+	color: #178ed2;
+	box-shadow: 0.2vw 0.2vw 0.4vw rgba(255, 111, 0, 0.0), 0 0 1vw grey, 0 0 0.5vw grey;
+	border-radius: 0.5vw;
+	overflow: hidden;
+}
+
+#download .download-item-horizontal img {
+	width: 100%;
+}
+
+#download .download-item-horizontal .download-info .title {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 1.4vw;
+	padding-top: 1.0vw;
+	padding-bottom: 0.4vw;
+	font-weight: bold;
+	color: rgb(233, 79, 112);
+	margin-bottom: 0vw;
+}
+
+#download .download-item-horizontal .download-info .version {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 0.8vw;
+	padding-top: 0.2vw;
+	padding-bottom: 0.2vw;
+	font-weight: bold;
+	color: rgb(23, 142, 210);
+	margin-bottom: 0vw;
+}
+
+#download .download-item-horizontal .download-info .abstract {
+	text-align: center;
+	padding-top: 0.4vw;
+	padding-right: 1.2vw;
+	padding-left: 1.2vw;
+	padding-bottom: 0.8vw;
+	font-size: 0.84vw;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#download .download-item-horizontal .download-info a {
+	color: #178ed2;
+	text-decoration-style: dotted;
+}
+
+
 #download .paper hr {
 	color: #f5f6f7;
 }
@@ -2238,6 +2293,34 @@ hr {
 		height: 6vw;
 		font-size: 2.1vw;
 		padding-top: 2.2vw;
+	}
+	
+	#download .download-item-horizontal {
+		margin: 4vw;
+		margin-left: 6vw;
+		width: 88vw;
+		box-shadow: 0.2vw 0.2vw 0.4vw rgba(255, 111, 0, 0.0), 0 0 2vw grey, 0 0 2vw grey;
+		border-radius: 1.0vw;
+	}
+
+	#download .download-item-horizontal .download-info .title {
+		font-size: 3.2vw;
+		padding-top: 4.4vw;
+		padding-bottom: 3.6vw;
+	}
+
+	#download .download-item-horizontal .download-info .version {
+		font-size: 2.2vw;
+		padding-top: 1.4vw;
+		padding-bottom: 3.2vw;
+	}
+
+	#download .download-item-horizontal .download-info .abstract {
+		text-align: center;
+		padding: 0.8vw;
+		padding-bottom: 3.2vw;
+		font-size: 2.1vw;
+		line-height: 3.2vw;
 	}
 
 }
