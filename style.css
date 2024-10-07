@@ -909,6 +909,20 @@ nav .left_bar_samples li {
 	cursor: pointer;
 }
 
+#chart {
+	width: 90vw;
+	margin-left: 5vw;
+}
+
+@media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
+
+	#chart {
+		width: 96vw;
+		margin-left: 2vw;
+	}
+
+}
+
 #footnote {
 	width: 76vw;
 	margin-top: 5vw;
