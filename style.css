@@ -517,6 +517,27 @@ nav .left_bar_samples li {
 	cursor: pointer;
 }
 
+.results-detailed-button {
+	text-align: center;
+	margin-left: 6vw;
+	padding-right: 2.2vw;
+	padding-left: 2.2vw;
+	padding-top: 0.6vw;
+	padding-bottom: 0.6vw;
+	margin-top: 0vw;
+	margin-bottom: 0vw;
+	background-color: rgba(255,0,0,0.05);
+	background-position: center center;
+	font-size: 1.0vw;
+	border-radius: 0.4vw;
+	border-color: #ea1d6f;
+	border-style: solid;
+	border-width: 0.08vw;
+	opacity: 0.9;
+	color: #ea1d6f;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1081px), screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	#ranking_short {
@@ -659,6 +680,11 @@ nav .left_bar_samples li {
 	cursor: pointer;
 }
 
+#ranking .results-chart-button {
+	width: 9vw;
+	margin-left: 0.6vw;
+}
+
 #ranking .join-forum {
 	word-spacing: 0.06vw;
 	text-decoration-style: dotted;
@@ -717,6 +743,11 @@ nav .left_bar_samples li {
 	font-size: 2.0vw;
 }
 
+#ranking .header_table .performance_ranking_chart {
+	font-size: 2.6vw;
+	font-weight: bold;
+}
+
 #ranking .ranking_links {
 	text-decoration: none;
 	text-decoration-style: none;
@@ -765,6 +796,11 @@ nav .left_bar_samples li {
 		margin-left: 2.24vw;  	
   	}
   	
+  	#ranking .results-chart-button {
+		width: 10.8vw;
+		margin-left: 0.6vw;
+	}
+  	
   	#ranking .join-forum {
 		word-spacing: 0.06vw;
 		text-decoration-style: dotted;
@@ -802,6 +838,11 @@ nav .left_bar_samples li {
 
 	#ranking .header_table .performance_ranking {
 		font-size: 2.4vw;
+	}
+	
+	#ranking .header_table .performance_ranking_chart {
+		font-size: 4.2vw;
+		font-weight: bold;
 	}
 
 	#ranking .ranking_links {
