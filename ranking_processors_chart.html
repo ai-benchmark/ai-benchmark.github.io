@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> AI-Benchmark </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118781498-1"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118781498-1');
+	</script>
+    
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-image: none; background-color: rgba(0,0,0,0.1);">
+
+<nav>
+	<ul class="left_bar">
+		<a href="index.html"> <img src="assets/img/splash.png"> </a>
+	</ul>
+	<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
+		<a href="#ranking"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="https://burnout-benchmark.com"> <li style="color: rgba(233,79,112, 0.85); font-weight: bold; margin-right: -0.25vw; margin-left: -0.25vw;"> BURNOUT </li></a>
+	</ul>
+	<ul class="right_bar">
+		<a href="download.html"> <img style="width: 7.5vw; margin-top: 1.07vw; position: fixed; margin-left: -9.5vw;" src="assets/img/download.png"> </a>
+		<a href="research.html"> <li style="color: #e94f70; font-size: 0.8vw; font-weight: 600;"> RESEARCH &nbsp; <img src="assets/img/goto.png"> </li></a>
+		<a href="about.html" style="font-size: 1.0vw;"> <li> ABOUT </li></a>
+	</ul>
+	
+	<!--<div id="news_link">
+		<a href="https://ai-benchmark.com/workshops/mai/2022/#live"><p style="word-spacing: 0.15vw; font-size: 0.99vw; font-weight: 600; background-color: rgba(0, 0, 0, 0.1); color: rgb(238, 0, 106);">
+			Live @ Mobile AI CVPR 2022 Workshop <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw; margin-right: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg> Tutorials from MediaTek, Qualcomm, Intel, Huawei, OPPO, Google and AI Benchmark</p></a>
+	</div>-->
+	
+</nav>
+
+<div id="nav_mobile">
+		<ul class="middle_bar">
+		<a href="index.html"> <li> BENCHMARK </li></a>
+		<a href="news.html"> <li> NEWS </li></a>
+		<a href="ranking.html"> <li> RANKING </li></a>
+		<a href="tests.html"> <li> AI-TESTS </li></a>
+		<a href="research.html" > <li style="color: #e94f70; font-size: 1.57vw; font-weight: 600; margin-left: 1.2vw;"> RESEARCH &nbsp; <img style="width: 1.2vw;" src="assets/img/goto.png"> </li></a>
+		<a href="https://burnout-benchmark.com"> <li style="color: #e94f70; font-weight: bold; margin-right: -0.25vw; margin-left: -0.25vw;"> BURNOUT </li></a>
+		<a href="download.html"> <img style="width: 11.2vw; padding-left: 3.6vw; vertical-align: middle;" src="assets/img/download.png"> </a>
+	</ul>
+
+	<!--div id="news_link">
+		<a href="https://ai-benchmark.com/workshops/mai/2021/#live"><p style="word-spacing: 0.15vw; font-size: 1.3vw; font-weight: 600; background-color: rgba(255, 255, 255, 1.0); color: rgb(238, 0, 106);">
+			Live @ Mobile AI CVPR Workshop <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw; margin-right: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg> Tutorials from Google, MediaTek, Samsung, Qualcomm, Huawei, Imagination, OPPO and AI Benchmark</p></a>
+	</div-->
+</div>
+
+<div id="ranking">
+
+	<div class="after-forum-margin"></div>
+
+	<div class="title">
+		<table class="header_table">
+			<tr>
+				<th style="width: 10%;"></th>
+	  			<th class="performance_ranking_chart" style="width: 90%; vertical-align: top;">AI Benchmark Chipset Ranking <a href="ranking_processors.html"><button class="results-detailed-button"> DETAILED </br> RESULTS</button></a></th>
+				<th style="width: 0%;"></th>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="chart">
+	</div>
+      
+      <script>
+      var options = {
+          series: [{
+          name: 'AI Score',
+          data: [6773, 4911, 3633, 3428, 2882, 2368, 2298, 1863, 1696, 1663, 1559, 1327, 1052, 906, 892, 868, 866, 838, 825, 823, 779, 768, 745, 742, 683, 599, 495, 484, 452, 441, 434, 426, 425, 423, 413, 393, 389, 372, 365, 360, 360, 356, 344, 334, 318, 312, 306, 289, 286, 270, 266, 264, 264, 251, 246, 241, 239, 234, 232, 232, 221, 216, 208, 197, 193, 184, 176, 176, 175, 168, 168, 163, 157, 156, 155, 155, 154, 153, 149, 140, 140, 139, 134, 133, 124, 123, 121, 103, 95, 93, 89, 81, 81, 73, 72, 72, 72, 72, 71, 66, 66, 60, 54, 53, 53, 48, 48, 48, 47, 47, 46, 46, 46, 45, 44, 43, 42, 41, 41, 40, 40, 38, 36, 35, 33, 30, 29, 27, 27, 27, 27, 25, 23, 23, 23, 22, 22, 14, 11, 11, 9.0, 9.0, 6.0, 5.0, 2.0, 1.0],
+        }],
+          chart: {
+          type: 'bar',
+          height: 6000
+        },
+        grid: {
+			show: false,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            borderRadiusApplication: 'end',
+            distributed: true,
+            horizontal: true,
+            dataLabels: {
+              position: 'top'
+            },
+          }
+        },
+        colors: ['#f39a1e', '#f39a1e', '#3253dc', '#b3b3b3', '#3253dc', '#3253dc', '#3253dc', '#3253dc', '#3253dc', '#3253dc', '#f39a1e', '#3253dc', '#f39a1e', '#3253dc', '#3253dc', '#4eccc6', '#f39a1e', '#3253dc', '#4eccc6', '#4eccc6', '#4eccc6', '#f39a1e', '#3253dc', '#3253dc', '#f39a1e', '#3253dc', '#169e18', '#f39a1e', '#cf0a2c', '#cf0a2c', '#169e18', '#f39a1e', '#cf0a2c', '#169e18', '#f39a1e', '#f39a1e', '#f39a1e', '#169e18', '#cf0a2c', '#3253dc', '#3253dc', '#cf0a2c', '#f39a1e', '#cf0a2c', '#169e18', '#cf0a2c', '#f39a1e', '#f39a1e', '#f39a1e', '#f39a1e', '#3253dc', '#cf0a2c', '#3253dc', '#169e18', '#b3b3b3', '#cf0a2c', '#f39a1e', '#f39a1e', '#f39a1e', '#169e18', '#169e18', '#f39a1e', '#920784', '#169e18', '#f39a1e', '#3253dc', '#f39a1e', '#3253dc', '#f39a1e', '#3253dc', '#3253dc', '#3253dc', '#169e18', '#f39a1e', '#3253dc', '#3253dc', '#3253dc', '#f39a1e', '#f39a1e', '#f39a1e', '#169e18', '#3253dc', '#f39a1e', '#3253dc', '#169e18', '#3253dc', '#f39a1e', '#3253dc', '#3253dc', '#f39a1e', '#f39a1e', '#f39a1e', '#920784', '#3253dc', '#169e18', '#f39a1e', '#f39a1e', '#920784', '#3253dc', '#169e18', '#3253dc', '#b3b3b3', '#cf0a2c', '#3253dc', '#920784', '#3253dc', '#3253dc', '#3253dc', '#169e18', '#f39a1e', '#cf0a2c', '#f39a1e', '#b3b3b3', '#3253dc', '#169e18', '#f39a1e', '#f39a1e', '#cf0a2c', '#3253dc', '#b3b3b3', '#3253dc', '#3253dc', '#f39a1e', '#169e18', '#3253dc', '#f39a1e', '#f39a1e', '#169e18', '#cf0a2c', '#f39a1e', '#3253dc', '#3253dc', '#169e18', '#3253dc', '#3253dc', '#f39a1e', '#3253dc', '#f39a1e', '#f39a1e', '#b3b3b3', '#169e18', '#b3b3b3', '#b3b3b3', '#3253dc', '#3253dc', '#b3b3b3'],
+        dataLabels: {
+          enabled: true,
+          textAnchor: 'start',
+          style: {
+            colors: ['#ea1d6f'],
+		    fontWeight: 'bold',
+          },
+          formatter: function (val, opt) {
+            return val
+          },
+          offsetX: 20,
+          dropShadow: {
+            enabled: false
+          },
+          background: {
+		    enabled: true,
+		    foreColor: '#fff',
+		    padding: 8,
+		    borderRadius: 3,
+		    borderWidth: 1,
+		    borderColor: '#fffcff',
+		    opacity: 0.9,
+		  },
+        },
+        legend: {
+		   show: false,
+		},
+        stroke: {
+          width: 0,
+          colors: ['#fff']
+        },
+        xaxis: {
+          categories: [['Dimensity 9400', 'NPU 890'], ['Dimensity 9300', 'APU 790'], ['Snapdragon 8 Gen 3', 'Hexagon DSP / HTP Gen 3'], ['Apple A17 Pro', 'Neural Engine (16 cores)'], ['Snapdragon 8 Gen 2', 'Hexagon DSP / HTP Gen 2'], ['Snapdragon 8+ Gen 1', 'Hexagon DSP / HTP'], ['Snapdragon 8 Gen 1', 'Hexagon DSP / HTP'], ['Snapdragon 8s Gen 3', 'Hexagon DSP / HTP'], ['Snapdragon 7+ Gen 3', 'Hex. DSP / HTP + GPU (Adreno 732)'], ['Snapdragon 7+ Gen 2', 'Hex. DSP / HTP + GPU (Adreno 725)'], ['Dimensity 8300 Ultra', 'APU 780'], ['Snapdragon 888', 'DSP (Hex. 780) + GPU (Adreno 660)'], ['Dimensity 9200', 'APU 690'], ['Snapdragon 7 Gen 3', 'Hex. DSP / HTP + GPU (Adreno 720)'], ['Snapdragon 7 Gen 1', 'Hexagon DSP / HTP'], ['Google Tensor G2', 'Google Tensor TPU 2.0'], ['Dimensity 9000', 'APU 590'], ['Snapdragon 778G+', 'DSP (Hex. 770) + GPU (Adreno 642L)'], ['Google Tensor G4', 'Google Tensor TPU 2.0'], ['Google Tensor', 'Google Tensor TPU'], ['Google Tensor G3', 'Google Tensor TPU 2.0'], ['Dimensity 8200 Ultimate', 'APU 580'], ['Snapdragon 7s Gen 2', 'Hexagon DSP + GPU (Adreno 710)'], ['Snapdragon 778G', 'DSP (Hex. 770) + GPU (Adreno 642L)'], ['Dimensity 8200 Ultra', 'APU 580'], ['Snapdragon 6 Gen 1', 'Hexagon DSP / HTP + GPU (Adreno 710)'], ['Exynos 2100', 'GPU (Mali-G78 MP14)'], ['Dimensity 1000+', 'GPU (Mali-G77 MC9)'], ['Kirin 9000 5G', 'GPU (Mali-G78 MP24)'], ['Kirin 9000 5G', 'GPU + NPU (3 Cores, Da Vinci series)'], ['Exynos 2100', 'GPU (Mali-G78 MP14)'], ['Dimensity 1000+', 'GPU (Mali-G77 MC9)'], ['Kirin 9000 5G', 'GPU (Mali-G78 MP24)'], ['Exynos 2400', 'GPU (Xclipse 940)'], ['Dimensity 1000+', 'APU 3.0 (6 cores)'], ['Dimensity 7300 Energy', 'APU 655'], ['Dimensity 7300', 'APU 655'], ['Exynos 990', 'GPU (Mali-G77 MP11)'], ['Kirin 990 5G', 'GPU + NPU (3 cores, Da Vinci series)'], ['Snapdragon 865', 'DSP (Hex. 698) + GPU (Adreno 650)'], ['Snapdragon 870', 'DSP (Hex. 698) + GPU (Adreno 650)'], ['Kirin 990 5G', 'GPU (Mali-G76 MP16)'], ['Dimensity 1080', 'APU 3.0 (6 cores)'], ['Kirin 990 5G', 'GPU (Mali-G76 MP16)'], ['Exynos 9820', 'GPU (Mali-G76 MP12)'], ['Kirin 980', 'GPU (Mali-G76 MP10)'], ['Dimensity 900', 'APU 3.0 (6 cores)'], ['Dimensity 8020', 'APU 570'], ['Dimensity 7030', 'APU 550'], ['Dimensity 7050', 'APU 550'], ['Snapdragon 860', 'DSP (Hex. 690) + GPU (Adreno 640)'], ['Kirin 980', 'GPU (Mali-G76 MP10)'], ['Snapdragon 855', 'DSP (Hex. 690) + GPU (Adreno 640)'], ['Exynos 9820', 'GPU (Mali-G76 MP12)'], ['Q855 + Pixel Neural Core', 'Google TPU + Adreno GPU'], ['Kirin 9000S', 'none'], ['Dimensity 800', 'APU 3.0 (4 cores)'], ['Dimensity 800', 'GPU (Mali-G57 MC4)'], ['Dimensity 820', 'APU 3.0 (4 cores)'], ['Exynos 1380', 'GPU (Mali-G68 MP5)'], ['Exynos 1480', 'GPU (Xclipse 530)'], ['Dimensity 800U', 'GPU (Mali-G57 MC3)'], ['Unisoc T760', 'NPU + GPU (Mali-G57)'], ['Exynos 9810', 'GPU (Mali-G72 MP18)'], ['Dimensity 820', 'GPU (Mali-G57 MC5)'], ['Snapdragon 695', 'DSP (Hex. 686) + GPU (Adreno 619)'], ['MediaTek Helio G95', 'GPU (Mali-G76 MP4)'], ['Snapdragon 765G', 'DSP (Hex. 696) + GPU (Adreno 620)'], ['Dimensity 800', 'GPU (Mali-G57 MC4)'], ['Snapdragon 4 Gen 2', 'none'], ['Snapdragon 750', 'DSP (Hex. 694) + GPU (Adreno 619)'], ['Snapdragon 845', 'DSP (Hex. 685) + GPU (Adreno 630)'], ['Exynos 8895', 'GPU (Mali-G71 MP20)'], ['MediaTek Helio G99', 'GPU (Mali-G57 MC2)'], ['Snapdragon 4 Gen 1', 'none'], ['Snapdragon 720G', 'DSP (Hex. 692) + GPU (Adreno 618)'], ['Snapdragon 732G', 'DSP (Hex. 688) + GPU (Adreno 618)'], ['Dimensity 6080', 'GPU (Mali-G57 MC2)'], ['Dimensity 6300', 'GPU (Mali-G57 MC2)'], ['Dimensity 6020', 'GPU (Mali-G57 MC2)'], ['Exynos 8895', 'GPU (Mali-G71 MP20)'], ['Snapdragon 730', 'DSP (Hex. 688) + GPU (Adreno 618)'], ['MediaTek Helio G90T', 'APU 1.0 + GPU (Mali-G76 MP4)'], ['Snapdragon 835', 'DSP (Hex. 682) + GPU (Adreno 540)'], ['Exynos 9810', 'GPU (Mali-G72 MP18)'], ['Snapdragon 675', 'DSP (Hex. 685) + GPU (Adreno 612)'], ['Dimensity 7020', 'GPU (IMG BXM-8-256)'], ['Snapdragon 710', 'DSP (Hex. 685) + GPU (Adreno 616)'], ['Snapdragon 680', 'DSP (Hex. 686) + GPU (Adreno 610)'], ['MediaTek Helio G85', 'GPU (Mali-G52 MC2)'], ['MediaTek Helio P90', 'APU 2.0'], ['MediaTek Helio G88', 'GPU (Mali-G52 MC2)'], ['Unisoc T612', 'none'], ['Snapdragon 660', 'GPU (Adreno 512)'], ['Exynos 7420 Octa', 'GPU (Mali-T760MP8)'], ['MediaTek Helio P60', 'none'], ['MediaTek Helio P95', 'APU 2.0'], ['Unisoc T606', 'none'], ['Snapdragon 662', 'DSP (Hex. 683) + GPU (Adreno 610)'], ['Exynos 9611', 'none'], ['Snapdragon 636', 'GPU (Adreno 509)'], ['Nvidia Tegra X1', 'none'], ['Kirin 960', 'none'], ['Snapdragon 810', 'GPU (Adreno 430)'], ['Unisoc SC9863A', 'none'], ['Snapdragon 625', 'GPU ('], ['Snapdragon 805', 'none'], ['Snapdragon 805', 'GPU (Adreno 420)'], ['Exynos 850', 'none'], ['MediaTek Helio P22T', 'none'], ['Kirin 659', 'none'], ['MediaTek Helio G37', 'none'], ['Rockchip RK3568', 'none'], ['Snapdragon 801', 'GPU (Adreno 330)'], ['Exynos 7420 Octa', 'none'], ['MediaTek Helio G35', 'none'], ['MediaTek Helio P35', 'none'], ['Kirin 655', 'none'], ['Snapdragon 625', 'none'], ['Rockchip RK3562', 'none'], ['Snapdragon 801', 'none'], ['Snapdragon 800', 'none'], ['MediaTek Helio P20', 'none'], ['Exynos 7880', 'none'], ['Snapdragon 808', 'none'], ['MediaTek Helio G25', 'none'], ['MediaTek Helio A22', 'none'], ['Exynos 5250 Dual', 'none'], ['Kirin 620', 'none'], ['MediaTek Helio A22', 'GPU (PowerVR GE8320)'], ['Snapdragon 450', 'none'], ['Snapdragon 600', 'none'], ['Exynos 7580 Octa', 'none'], ['Snapdragon 600', 'GPU (Adreno 320)'], ['Snapdragon S4 Pro', 'GPU (Adreno 320)'], ['MediaTek MT6739', 'none'], ['Snapdragon S4 Pro', 'none'], ['MediaTek MT6739', 'GPU (PowerVR GE8100)'], ['MediaTek MT6580', 'none'], ['Nvidia Tegra 3', 'none'], ['Exynos 4210 Dual', 'none'], ['TI OMAP 4460', 'none'], ['Intel Atom Z3580', 'none'], ['Snapdragon S2 MSM8255', 'none'], ['Snapdragon S1 MSM7227A', 'none'], ['Intel Atom Z2560', 'none']],
+          max: 7500,
+        },
+        yaxis: {
+          labels: {
+            show: true,
+    		style: {
+		        fontSize: '10px',
+		        fontWeight: 900,
+		      },
+		      maxWidth: 500,
+		      minWidth: 200,
+          },
+        },
+        tooltip: {
+        	enabled: true,
+        },
+        fill: {
+          opacity: 0.9,
+          type: 'gradient',
+          gradient: {
+		    shade: 'white',
+		    type: "horizontal",
+		    shadeIntensity: 0.1,
+		    gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
+		    inverseColors: false,
+		    opacityFrom: 1.0,
+		    opacityTo: 0.9,
+		    stops: [0, 50, 100],
+		    colorStops: []
+		  }
+        },
+        };
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      </script>
+      
+	
+  		
+ </div>
+
+<div id="about">
+	<div id="content">
+		<p >Copyright © 2018-2024 by A.I.</p>
+		<p style="color: #ea1d6f">ETH Zurich, Switzerland</p>
+	</div>
+</div>
+
+<script>
+function sortTableFast(col, reverse=false) {
+
+	table = document.getElementById("scoreTable");
+    
+    var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+    tr = Array.prototype.slice.call(tb.rows, 2), // put rows into array
+    reverse = -((+reverse) || -1);
+    tr = tr.sort(function (a, b) { // sort rows
+        return reverse // `-1 *` if want opposite order
+            * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                .localeCompare(b.cells[col].textContent.trim())
+               );
+    });
+    for(i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
+    
+}
+
+function sortTableFastFloat(col, reverse=true) {
+
+	table = document.getElementById("scoreTable");
+
+    var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+    tr = Array.prototype.slice.call(tb.rows, 2), // put rows into array
+    reverse = -((+reverse) || -1);
+    tr = tr.sort(function (a, b) { // sort rows
+        return reverse // `-1 *` if want opposite order
+            * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                .localeCompare(b.cells[col].textContent.trim(), undefined, {numeric: true})
+               );
+    });
+    for(i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
+}
+
+</script>
+
+</body>
+
+</html>
