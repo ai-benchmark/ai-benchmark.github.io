@@ -32,10 +32,10 @@
 		<a href="index.html"> <img src="assets/img/splash.png"> </a>
 	</ul>
 	<ul class="middle_bar">
-		<!--<a href="#live"> <li style="color: rgb(238, 0, 106);"> LIVE <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg>
-</li></a>-->
+		<a href="#live"> <li style="color: rgb(238, 0, 106);"> LIVE <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg>
+</li></a>
+		<a href="#schedule"> <li> SCHEDULE </li></a>
 		<a href="#challenges"> <li> CHALLENGES </li></a>
-		<!--<a href="#schedule"> <li> SCHEDULE </li></a>-->
 		<a href="#papers"> <li> PAPERS </li></a>
 		<!--a href="#organizers"> <li> ORGANIZERS </li></a-->
 		<a href="#dates"> <li> DATES </li></a>
@@ -64,6 +64,252 @@
 		</p>
 	</div>
 <div>
+
+<div id="live">
+	<p class="title"> LIVE </p>	
+	
+	<iframe style="width: 50vw; height: 28.125vw;" src="https://www.youtube.com/embed/hUC7SGEYsl0?si=T9Ch137afyJ_DzJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<!--p style="margin-top: 2.4vw; font-size: 0.98vw;"> Join the main workshop Zoom conference: <a href="https://ethz.zoom.us/j/61668005465" target="_blank" style="color: rgb(234, 29, 111); text-decoration-style: dotted;">https://ethz.zoom.us/j/61668005465</a></p-->
+		
+</div>
+
+<div id="schedule">
+	<p class="title"> SCHEDULE </p>	
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";' src="assets/speakers/andrey.jpg">
+			<a href="https://vision.ee.ethz.ch/" target="_blank"><img style="margin-top: 0.7vw; width: 75%" src="assets/organizers/eth-zurich.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw;  line-height: 1.4vw;">Deploying Deep Learning Models on Mobile NPUs and Beyond:&nbsp; <span style="font-weight: 500;">What's New in 2025?</span></p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">07:00 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";'>Andrey Ignatov</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">AI Benchmark Project Lead, ETH Zurich</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-andrey"> <span style="font-weight: 600;">Biography:</span> Andrey Ignatov is the project lead of the AI Benchmark initiative targeted at performance evaluation of mobile, IoT and desktop hardware at ETH Zurich, Switzerland. His PhD research was aimed at designing efficient image processing models for smartphone NPUs / DSPs and developing the next-generation deep learning based mobile camera ISP solution. He is the lecturer on Deep Learning for Smartphones course at ETH Zurich and the main author of the AI Benchmark papers describing the current state of deep learning and AI hardware acceleration on mobile devices. He is a co-founder of the AI Witchlabs and co-organizer of the NTIRE and AIM events. His main line of research is focused on image restoration and automatic image quality enhancement, adaptation of AI applications for mobile devices and benchmarking machine learning hardware.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> In this tutorial, we will first recall all basic concepts, steps and optimizations required for efficient AI inference on mobile NPUs. Next, we will go into more detail about the latest mobile platforms from Qualcomm, MediaTek, Google, Samsung, Unisoc and Apple released during the past year, and will compare their inference speed when running common computer vision models. We will talk about power efficiency of mobile NPUs, and will analyze their energy consumption during typical AI workloads. Finally, we will go beyond Android and iOS, covering the topics of AI model deployment on NPUs in Windows, Linux and MacOS systems, analyzing available ML frameworks and their performance. </p>
+		</div>
+
+	</div>
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer; margin-bottom: 0.4vw;" onClick='document.getElementById("bio-allen").style.display="inline-block";' src="">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-allen").style.display="inline-block";' src="">
+			<a href="https://www.mediatek.com/" target="_blank"><img style="margin-top: 0.7vw; width: 80%" src="assets/organizers/mediatek.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw;">Recent Mobile AI Advances and Case Studies</p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">09:00 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-allen").style.display="inline-block";'>CM Cheng, YuSyuan Xu and Haoyun Chen</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">MediaTek Inc.</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-allen"> <span style="font-weight: 600;"></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> In this talk, MediaTek will provide you with an overview of their software and hardware platforms and several mobile-oriented research topics. The first part of the talk would be devoted to the discussion of the recent mobile AI advances and MediaTek AI ecosystem. The second part will focus on two recent case studies: Vision Mamba and MOE, which are related to efficient model deployment of mobile AI hardware.
+ </p>
+		</div>
+
+	</div>
+	
+	
+	<div class="talk-challenges">
+		<a href="https://polybox.ethz.ch/index.php/s/C4bBRiHfs5t2PQ8" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_superres.jpg">
+				<p class="title"> Quantized Image Super-Resolution on Mobile NPUs:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">09:40 Pacific Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 45%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 55%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Google Tensor NPU </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">09:50 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">RepNet-VSR: Reparameterizable Architecture for High-Fidelity Video Super-Resolution</span> </span></p></br>
+			<p class="authors">Biao Wu, Diankai Zhang, Shaoli Liu, Si Gao, Chengjian Zheng, Ning Wang</p></br>
+			<p class="affiliation">☉ &nbsp;ZTE Corporation</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:05 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">CDVS: Compressed Domain On Device Memory Efficient 8K Video SlowMo</span> </span></p></br>
+			<p class="authors">Jing Li, Chengyu Wang, Hamid Sheikh, SeokJun Lee</p></br>
+			<p class="affiliation">☉ &nbsp;Samsung Research America & Purdue University</p></br>
+		</div>
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="https://polybox.ethz.ch/index.php/s/EZN5Lks4m2cKdgL" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_raw.jpg">
+				<p class="title"> Learned Smartphone ISP on Mobile GPUs Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">10:20 Pacific Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite (Adreno GPU) / Dimensity 9400 (Mali GPU) </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:30 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Learned Lightweight Smartphone ISP with Unpaired Data</span> </span></p></br>
+			<p class="authors">Andrei Arhire</p></br>
+			<p class="affiliation">☉ &nbsp;Alexandru Ioan Cuza University</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:45 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Compressed Domain Multiframe Processing</span> </span></p></br>
+			<p class="authors">Chengyu Wang, Jing Li, Saurabh Kumar, Seok-Jun Lee, Hamid Sheikh</p></br>
+			<p class="affiliation">☉ &nbsp;Samsung Research America & SRI-Bangalore</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper" style="margin-top: 4vw; margin-bottom: 4vw;">
+	<hr></br>
+		<div class="block-1"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">11:00 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Break & Lunch</span> </span></p></br></br>
+		</div>
+	<hr>
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="https://polybox.ethz.ch/index.php/s/GHtw4HtWKS4B2kF" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_rgb.jpg">
+				<p class="title"> RGB Photo Enhancement on Mobile GPUs Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">12:00 Pacific Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite (Adreno GPU) / Dimensity 9400 (Mali GPU) </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">12:15 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">PETAH: Parameter Efficient Task Adaptation for Hybrid Transformers</span> </span></p></br>
+			<p class="authors">Syed Shakib Sarwar, Mostafa Elhoushi, Maximilian Augusting, Yuecheng Li, Sai Zhang, Barbara De Salvo</p></br>
+			<p class="affiliation">☉ &nbsp;Meta Inc. & IEEE & University of Tubingen & New York University</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">12:30 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">ActNAS: Generating Efficient YOLO Models using Activation NAS</span> </span></p></br>
+			<p class="authors">Sudhakar Sah, Ravish Kumar, Darshan Ganji, Ehsan Saboori</p></br>
+			<p class="affiliation">☉ &nbsp;Deeplite</p></br>
+		</div>
+	</div>
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">12:45 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">FLAR-SVD: Fast and Latency-Aware Singular Value Decomposition for Model Compression</span> </span></p></br>
+			<p class="authors">Moritz Thoma, Jorge Villasante, Emad Aghajanzadeh, Shambhavi Sampath, Pierpaolo Mori et al.</p></br>
+			<p class="affiliation">☉ &nbsp;BMW Group & Technical University of Munich</p></br>
+		</div>
+	</div>	
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:00 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">S2A: A Unified Framework for Parameter and Memory Efficient Transfer Learning</span> </span></p></br>
+			<p class="authors">Tian Jin, Enjun Du, Ding Luo</p></br>
+			<p class="affiliation">☉ &nbsp;Sichuan University, Beijing Institute of Technology, Sichuan University</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:15 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Robust 6DoF Pose Estimation Against Depth Noise and Evaluation on a Mobile Dataset</span> </span></p></br>
+			<p class="authors">Zixun Huang, Keling Yao, Zhihao Zhao, Chuanyu Pan, Allen Yang</p></br>
+			<p class="affiliation">☉ &nbsp;UC Berkeley & Carnegie Mellon University & University of California</p></br>
+		</div>
+	</div>	
+
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:30 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Cycle Training with Semi-Supervised Domain Adaptation for Real-Time Mobile Scene Detection</span> </span></p></br>
+			<p class="authors">Huu-Phong Phan-Nguyen, Anh Dao, Tien-Huy Nguyen, Tuan Quang et al.</p></br>
+			<p class="affiliation">☉ &nbsp;University of Infomation Technology & Michigan State University & LPL Financial Corp et al.</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:45 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">RepFC: Universal Structural Reparametrization Block for High Performance</span> </span></p></br>
+			<p class="authors">Shambhavi Balamuthu Sampath, Judeson Anthony Fernando, Moritz Thoma, Nael Fasfous et al.</p></br>
+			<p class="affiliation">☉ &nbsp;BMW Group & Technical University of Munich</p></br>
+		</div>
+	</div>	
+		
+	</br>
+	<hr>
+	</br>
+	</br>
+	
+	<div class="accepted-paper" >
+		<div class="block-1"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:00 Pacific Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"> Discussion & Wrap Up </span> </span></p></br>
+		</div>
+	</div>
+	
+</div>
 
 <div id="challenges">
 	<p class="title"> CHALLENGES </p>
@@ -212,42 +458,6 @@
 		</div>
 	</a>
 </div>
-
-<!--div id="schedule">
-	<p class="title"> SCHEDULE </p>	
-	
-	<div class="talk-invited">
-
-		<div class="block-1">
-			<img style="cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";' src="assets/speakers/andrey.jpg">
-			<a href="https://vision.ee.ethz.ch/" target="_blank"><img style="margin-top: 0.7vw; width: 75%" src="assets/organizers/eth-zurich.png"></a>
-		</div>
-		
-		<div class="block-2">
-			<p style="font-weight: 600; font-size: 1.0vw;  line-height: 1.4vw;">Deep Learning on Mobile Devices:&nbsp; <span style="font-weight: 500;">What's New in 2024?</span></p></br>
-			<p style="font-size: 0.9vw;"> <span class="timing">08:30 Pacific Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";'>Andrey Ignatov</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">AI Benchmark Project Lead, ETH Zurich</span></p></br>
-			
-			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-andrey"> <span style="font-weight: 600;">Biography:</span> Andrey Ignatov is the project lead of the AI Benchmark initiative targeted at performance evaluation of mobile, IoT and desktop hardware at ETH Zurich, Switzerland. His PhD research was aimed at designing efficient image processing models for smartphone NPUs / DSPs and developing the next-generation deep learning based mobile camera ISP solution. He is the lecturer on Deep Learning for Smartphones course at ETH Zurich and the main author of the AI Benchmark papers describing the current state of deep learning and AI hardware acceleration on mobile devices. He is a co-founder of the AI Witchlabs and co-organizer of the NTIRE and AIM events. His main line of research is focused on image restoration and automatic image quality enhancement, adaptation of AI applications for mobile devices and benchmarking machine learning hardware.</br></br></p>
-			
-			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> In this tutorial, we will review the recent Android AI software stack updates, and will talk about the performance of the latest mobile chipsets from Qualcomm, MediaTek, Google, Samsung and Unisoc released during the past year. We will also discuss the power efficiency of mobile chipsets and their NPUs, and will analyze their energy consumption for a number of typical AI workloads.</p>
-		</div>
-
-	</div>
-	
-	</br>
-	<hr>
-	</br>
-	</br>
-	
-	<div class="accepted-paper" >
-		<div class="block-1"></div>			
-		<div class="block-2">
-			<p class="paper_title"><span class="timing">09:00 Pacific Time</span> &nbsp; &nbsp;
-			<span style="font-weight: bold;">Accepted Paper Presentations and Discussions</span> </span></p></br>
-		</div>
-	</div>
-	
-</div-->
 
 	
 <div id="challenges">
