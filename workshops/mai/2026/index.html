@@ -32,8 +32,8 @@
 		<a href="index.html"> <img src="assets/img/splash.png"> </a>
 	</ul>
 	<ul class="middle_bar">
-		<!--a href="#live"> <li style="color: rgb(238, 0, 106);"> LIVE <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg>
-</li></a-->
+		<a href="#live"> <li style="color: rgb(238, 0, 106);"> LIVE <svg style="height: 0.6vw; width: 0.6vw; margin-left: 0.4vw;" class="blinking"><circle cx="0.3vw" cy="0.3vw" r="0.3vw" fill="rgb(238, 0, 106)" /></svg>
+</li></a>
 		<a href="#schedule"> <li> SCHEDULE </li></a>
 		<a href="#challenges"> <li> CHALLENGES </li></a>
 		<a href="#papers"> <li> PAPERS </li></a>
@@ -65,8 +65,362 @@
 	</div>
 <div>
 
+<div id="live">
+	<p class="title"> LIVE </p>	
+	
+	<iframe style="width: 50vw; height: 28.125vw;" src="https://www.youtube.com/embed/9CW6fEbMEf0?si=JNWegij63AKz-zKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<p style="margin-top: 2.4vw; font-size: 0.98vw;"> Join the main workshop Zoom conference for a Q&A session: <a href="https://ethz.zoom.us/j/61668005465" target="_blank" style="color: rgb(234, 29, 111); text-decoration-style: dotted;">https://ethz.zoom.us/j/69792970453</a></p>
+		
+</div>
+
+<div id="schedule">
+	<p class="title"> SCHEDULE </p>	
+	
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";' src="assets/speakers/andrey.jpg">
+			<a href="https://vision.ee.ethz.ch/" target="_blank"><img style="margin-top: 0.7vw; width: 75%" src="assets/organizers/eth-zurich.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw;  line-height: 1.4vw;">Deploying Deep Learning Models on Mobile NPUs:&nbsp; <span style="font-weight: 500;">What's New in 2026?</span></p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">09:00 Denver Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-andrey").style.display="inline-block";'>Andrey Ignatov</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">AI Benchmark Project Lead, ETH Zurich</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-andrey"> <span style="font-weight: 600;">Biography:</span> Andrey Ignatov is the project lead of the AI Benchmark initiative targeted at performance evaluation of mobile, IoT and desktop hardware at ETH Zurich, Switzerland. His PhD research was aimed at designing efficient image processing models for smartphone NPUs / DSPs and developing the next-generation deep learning based mobile camera ISP solution. He is the lecturer on Deep Learning for Smartphones course at ETH Zurich and the main author of the AI Benchmark papers describing the current state of deep learning and AI hardware acceleration on mobile devices. He is a co-founder of the AI Witchlabs and co-organizer of the NTIRE and AIM events. His main line of research is focused on image restoration and automatic image quality enhancement, adaptation of AI applications for mobile devices and benchmarking machine learning hardware.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> In this tutorial, we will review the recent Android AI software stack updates, and will talk about the performance of the latest mobile chipsets from Qualcomm, MediaTek, Google, Samsung and Unisoc released during the past year. We will also discuss the power efficiency of mobile chipsets and their NPUs, and will analyze their energy consumption for a number of typical AI workloads. </p>
+		</div>
+
+	</div>
+		
+	<div class="talk-invited">
+
+		<div class="block-1">
+			<img style="cursor: pointer;" onClick='document.getElementById("bio-felix").style.display="inline-block";' src="assets/speakers/Felix_Baum.jpg">
+			<a href="https://www.qualcomm.com/" target="_blank"><img style="margin-top: 0.7vw; width: 94%;" src="assets/organizers/qc_logo_flt_rgb_blu_pos.png"></a>
+		</div>
+		
+		<div class="block-2">
+			<p style="font-weight: 600; font-size: 1.0vw; line-height: 1.4vw;">A Practical Guide to Getting the DNN Accuracy You Need and the Performance You Deserve </p></br>
+			<p style="font-size: 0.9vw;"> <span class="timing">09:30 Denver Time</span> &nbsp; ┈ &nbsp; <span style="color: rgb(234, 29, 111); cursor: pointer;" onClick='document.getElementById("bio-felix").style.display="inline-block";'>Felix Baum</span> &nbsp; ┈ &nbsp; <span style="font-style: italic;">Director Product Management, Qualcomm Technologies</span></p></br>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw; display: none;" id="bio-felix"> <span style="font-weight: 600;">Biography:</span> Felix Baum is responsible for AI Software Products at Qualcomm Technologies Inc. (QTI). Felix has spent 20+ years in the embedded industry, both as an embedded developer and as a product manager. He previously led QTI product management for the Hexagon Software supporting DSPs with scalar, vector and tensor accelerators for camera, video, machine learning and audio verticals. Prior to that, he led marketing and product management efforts for various real-time operating system technologies. His career began at NASA's Jet Propulsion Laboratory at the California Institute of Technology, designing flight software for various spacecraft and managing integration for a launch campaign of the GRACE mission. Felix holds a master's degree in computer science from the California State University at Northridge and a Master of Business Administration from the University of California at Los Angeles.</br></br></p>
+			
+			<p style="font-size: 0.9vw; text-align: justify; line-height: 1.2vw; letter-spacing: 0.008vw;"> <span style="font-weight: 600;">Abstract:</span> Every day, developers struggle to take DNN workloads that were originally developed on workstations and migrate them to run on edge devices. Whether the application is in mobile, compute, IoT, XR or automotive, most AI developers start their algorithm development in the cloud or on a workstation and later migrate to on-device as an afterthought. Qualcomm is helping these developers on multiple fronts-democratizing AI at the edge by supporting frameworks and data types that developers are most familiar with, and at the same time building a set of tools to assist sophisticated developers who are taking extra steps to extract the best performance and power efficiency. In this session, we present the workflow and steps for effectively migrating DNN workloads to the edge. We discuss quantization issues, explore how the accuracy of models affects performance and power and outline the Qualcomm tools that help developers successfully launch new use cases on mobile and other edge devices.</p>
+		</div>
+
+	</div>
+	
+	
+	<div class="talk-challenges">
+		<a href="#" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_superres.jpg">
+				<p class="title"> 4K Image Super-Resolution on Mobile NPUs:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">10:00 Denver Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite Gen 5 NPU & Dimensity 9500 NPU </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+		
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:10 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Nguyen_Efficient_INT8_Single-Image_Super-Resolution_via_Deployment-Aware_Quantization_and_Teacher-Guided_Training_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">Efficient INT8 Single-Image Super-Resolution via Deployment-Aware Quantization</a></span> </span></p></br>
+			<p class="authors">Pham Phuong Nam Nguyen, Nam Tien Le, Thi Kim Trang Vo, Nhu Tinh Anh Nguyen</p></br>
+			<p class="affiliation">☉ &nbsp;University of Information Technology & Ho Chi Minh City University of Technology & Vietnam National University</p></br>
+		</div>
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="#" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_video.jpg">
+				<p class="title"> Real-Time Video Super-Resolution on Smartphone GPUs:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">10:25 Denver Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite (Adreno GPU) / Dimensity 9400 (Mali GPU) </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="#" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_denoising.jpg">
+				<p class="title"> Image Denoising on Smartphone GPUs:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">10:35 Denver Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite (Adreno GPU) / Dimensity 9400 (Mali GPU) </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">10:45 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Falaleev_FastSHADE_Fast_Self-augmented_Hierarchical_Asymmetric_Denoising_for_Efficient_Inference_on_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">FastSHADE: Fast Self-augmented Hierarchical Asymmetric Denoising for Efficient Inference</a></span> </span></p></br>
+			<p class="authors">Nikolay Falaleev</p></br>
+			<p class="affiliation">☉ &nbsp;Fanis, London, UK</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">11:00 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Kayani_Real_Image_Denoising_with_Knowledge_Distillation_for_High-Performance_Mobile_NPUs_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">Real Image Denoising with Knowledge Distillation for High-Performance Mobile NPUs</a></span> </span></p></br>
+			<p class="authors">Faraz Kayani, Sarmad Kayani, Asad Ahmed, Radu Timofte, Dmitry Ignatov</p></br>
+			<p class="affiliation">☉ &nbsp;University of Wuerzburg, Germany</p></br>
+		</div>
+	</div>
+
+	<div class="talk-challenges">
+		<a href="#" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_rgb.jpg">
+				<p class="title"> RGB Photo Enhancement on Smartphone GPUs:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">11:15 Denver Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite (Adreno GPU) / Dimensity 9400 (Mali GPU) </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">11:25 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Thanh_Bridging_the_Training-Deployment_Gap_Gated_Encoding_and_Multi-Scale_Refinement_for_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">Bridging the Training-Deployment Gap: Gated Encoding and Multi-Scale Refinement for Efficient Quantization-Aware Image Enhancement</a></span> </span></p></br>
+			<p class="authors">Dat To Thanh, Nghia Nguyen Trong, Hoang Vo, Hieu Bui-Minh, Tinh-Anh Nguyen-Nhu </p></br>
+			<p class="affiliation">☉ &nbsp;Vietnam National University & Da Nang University of Economics </p></br>
+		</div>
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="#" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_raw.jpg">
+				<p class="title"> Learned Smartphone ISP on Mobile GPUs Challenge:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">11:40 Denver Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite (Adreno GPU) / Dimensity 9400 (Mali GPU) </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="talk-challenges">
+		<a href="#" target="_blank">
+			<div class="challenge">
+				<img src="assets/challenges/title_bokeh.jpg">
+				<p class="title"> Bokeh Effect Rendering on Smartphone GPUs:&nbsp; Results and Top Solutions <p>
+				<p class="presenter"> <span class="timing">11:50 Denver Time</span> &nbsp; ┈ &nbsp; Andrey Ignatov, ETH Zurich <p>	
+				<div class="details">
+					<div class="target">
+						<table>
+							<tr>
+								<td style="width: 35%;"><img style="height: 1.2vw; float: right;" src="assets/img/soc.png"></td>
+								<td style="width: 65%; text-align: left; padding-left: 0.0vw;"><span class="grey">Evaluation Platform:</span> <br> Snapdragon 8 Elite (Adreno GPU) / Dimensity 9400 (Mali GPU) </td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">12:00 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Wu_LiteBokeh_Compact_Model_for_Real-time_Bokeh_Rendering_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">LiteBokeh: Compact Model for Real-time Bokeh Rendering</a></span> </span></p></br>
+			<p class="authors">Biao Wu, Yaowei Guo, Si Gao, Shaoli Liu, Chengjian Zheng, Diankai Zhang, Ning Wang </p></br>
+			<p class="affiliation">☉ &nbsp;ZTE Corporation</p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper" style="margin-top: 4vw; margin-bottom: 4vw;">
+	<hr></br>
+		<div class="block-1"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">12:15 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;">Break & Lunch</span> </span></p></br></br>
+		</div>
+	<hr>
+	</div>
+	
+	<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:00 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Moon_Accelerating_On-Device_LLM_Inference_via_Activation-guided_FFN_Distillation_on_Raspberry_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted"> Accelerating On-Device LLM Inference via Activation-guided FFN Distillation on Raspberry Pi </a></span> </span></p></br>
+			<p class="authors">HyeonCheol Moon, SungHyeon Bae, Jinwoo Jeong </p></br>
+			<p class="affiliation">☉ &nbsp;Korea Electronics Technology Institute </p></br>
+		</div>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:15 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Li_RealisMobile_High-Fidelity_Image_Generation_and_Inference_Acceleration_System_for_Mobile_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">RealisMobile: High-Fidelity Image Generation and Inference Acceleration System for Mobile Devices using Realistic Vision </a></span> </span></p></br>
+			<p class="authors">Fan Li, Xiaotong Luo, Yuan Gao, Wenjun Zeng </p></br>
+			<p class="affiliation">☉ &nbsp;OmniVision-IDT Joint Laboratory for Intelligent Image Sensing & Eastern Institute of Technology, Ningbo & The Hong Kong Polytechnic University</p></br>
+		</div>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:30 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Kodavanti_EdgeDiT_Hardware-Aware_Diffusion_Transformers_for_Efficient_On-Device_Image_Generation_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">EdgeDiT: Hardware-Aware Diffusion Transformers for Efficient On-Device Image Generation </a></span> </span></p></br>
+			<p class="authors">Sravanth Kodavanti, Manjunath Arveti, Sowmya Vajrala, Srinivas Miriyala, Vikram N R </p></br>
+			<p class="affiliation">☉ &nbsp;Samsung Research Institute Bangalore, India </p></br>
+		</div>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">13:45 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Vajrala_Quantization_with_Unified_Adaptive_Distillation_to_enable_multi-LoRA_Based_One-For-All_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">Quantization with Unified Adaptive Distillation to enable multi-LoRA Based One-For-All Generative Vision Models on Edge </a></span> </span></p></br>
+			<p class="authors">Sowmya Vajrala, Aakash Parmar, Prasanna R, Sravanth Kodavanti, Manjunath Arveti, Srinivas Soumitri Miriyala, Ashok Senapati </p></br>
+			<p class="affiliation">☉ &nbsp;Samsung Research Institute Bangalore, India </p></br>
+		</div>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:00 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Haberer_Slimmable_ConvNeXt_Width-Adaptive_Inference_for_Efficient_Multi-Device_Deployment_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">Slimmable ConvNeXt: Width-Adaptive Inference for Efficient Multi-Device Deployment </a></span> </span></p></br>
+			<p class="authors">Janek Haberer, Jon Eike Wilhelm, Olaf Landsiedel </p></br>
+			<p class="affiliation">☉ &nbsp;Kiel University & Hamburg University of Technology & UNU-INWEH </p></br>
+		</div>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:15 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Kumar_MobileAgeNet_Lightweight_Facial_Age_Estimation_for_Mobile_Deployment_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">MobileAgeNet: Lightweight Facial Age Estimation for Mobile Deployment </a></span> </span></p></br>
+			<p class="authors">Arun Kumar, Aswathy Baiju, Radu Timofte, Dmitry Ignatov </p></br>
+			<p class="affiliation">☉ &nbsp;University of Wuerzburg, Germany </p></br>
+		</div>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:30 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Zhao_ZCLIP_Generalization-Aware_Compression_and_Geometry-Preserving_Continual_Learning_for_Vision-Language_Models_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">ZCLIP: Generalization-Aware Compression and Geometry-Preserving Continual Learning for Vision-Language Models on Edge Devices </a></span> </span></p></br>
+			<p class="authors">Kaiqi Zhao, Yitao Chen </p></br>
+			<p class="affiliation">☉ &nbsp;Oakland University </p></br>
+		</div>
+	</div>
+	
+		<div class="accepted-paper">
+		<div class="block-1"><img class="paper-icon" src="assets/img/paper_icon.png"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">14:45 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"><a href="https://openaccess.thecvf.com/content/CVPR2026W/MAI/papers/Wijata_RGB_is_Almost_All_You_Need_Estimating_Soil_Parameters_Using_CVPRW_2026_paper.pdf" target="_blank" class="link_red_dotted">RGB is (Almost) All You Need: Estimating Soil Parameters Using TerraMind </a></span> </span></p></br>
+			<p class="authors">Agata M. Wijata, Bogdan Ruszczak, Adriana Niepala, Lukasz Tulczyjew, Agata Sage, Nicolas Longepe, Jakub Nalepa </p></br>
+			<p class="affiliation">☉ &nbsp;Silesian University of Technology & Opole University of Technology & Φ-Lab, ESA </p></br>
+		</div>
+	</div>
+	
+	<div class="accepted-paper" >
+		<div class="block-1"></div>			
+		<div class="block-2">
+			<p class="paper_title"><span class="timing">15:00 Denver Time</span> &nbsp; &nbsp;
+			<span style="font-weight: bold;"> Discussion & Wrap Up </span> </span></p></br>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="challenges">
-	<p class="title"> CHALLENGES:&nbsp; ONGOING </p>
+	<p class="title"> CHALLENGES </p>
 
 	<a href="https://www.codabench.org/competitions/14062/" target="_blank">
 		<!-- Codalab link: https://codalab.lisn.upsaclay.fr/competitions/21487 -->
@@ -850,7 +1204,7 @@
 	        <tr><td>Paper submission deadline [late submission & challenge papers] </td><td><span style="color: rgb(234, 29, 111);">March 22</span></td></tr>
 			<tr><td>Paper decision notification [late submission] </td><td>March 25</td></tr>
 	        <tr><td>Camera ready deadline </td><td>April 8</td></tr>
-	       	<tr><td>Workshop day </td><td><span style="color: rgb(234, 29, 111);">June (TBA)</span></td></tr>
+	       	<tr><td>Workshop day </td><td><span style="color: rgb(234, 29, 111);">June 4</span></td></tr>
 	    </tbody>
 	</table>
 	
