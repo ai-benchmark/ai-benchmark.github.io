@@ -2572,6 +2572,22 @@ hr {
 	font-style: italic
 }
 
+/* ----------------- Chart ----------------- */
+
+.apexcharts-yaxis-label tspan:first-child {
+    font-weight: 900;
+}
+
+.apexcharts-yaxis-label tspan:not(:first-child) {
+    font-weight: 100;
+    font-size: 0.9em;
+    baseline-shift: -3px;
+}
+
+.apexcharts-yaxis-label {
+    transform: translateY(5px);
+}
+
 /* ----------------- Slider ---------------- */
 
 .cd-image-container {
